@@ -6,10 +6,10 @@ function propositionElement(item) {
   // degree of remark. Direct subpropositions X.0Y receive one extra visual
   // indent; X.00Y receive two. Thus X.01 aligns with X.11, while X.001
   // aligns with third-degree remarks such as X.141.
-  if (/^[2345]\.0[1-9]$/.test(item.number)) {
+  if (/^\d+\.0[1-9]$/.test(item.number)) {
     wrapper.classList.add("tractatus-secondary-direct");
   }
-  if (/^[34]\.00[1-9]$/.test(item.number)) {
+  if (/^\d+\.00[1-9]$/.test(item.number)) {
     wrapper.classList.add("tractatus-tertiary-direct");
   }
 
@@ -115,7 +115,8 @@ async function loadTractatus() {
     const branchFiles = [
       ["3", "data/tractatus3.json"],
       ["4", "data/tractatus4.json"],
-      ["5", "data/tractatus5.json"]
+      ["5", "data/tractatus5.json"],
+      ["6", "data/tractatus6.json"]
     ];
 
     for (const [number, path] of branchFiles) {
