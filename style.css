@@ -45,9 +45,9 @@ h1 { margin: 0 0 10px; font-weight: normal; font-size: clamp(1.8rem, 4vw, 2.7rem
 .proposition.open > .proposition-row .chevron { transform: rotate(90deg); }
 .children { display: none; margin: 8px 0 4px 38px; padding-left: 22px; border-left: 1px solid var(--line); }
 .proposition.open > .children { display: block; }
-/* In Wittgenstein's decimal system 2.01–2.06 are direct remarks on 2,
-   but their degree is the same as remarks such as 2.11 on 2.1. */
+/* Direct X.0Y remarks have one extra visual degree; X.00Y remarks have two. */
 .tractatus-secondary-direct { margin-left: 60px; }
+.tractatus-tertiary-direct { margin-left: 120px; }
 .comment-button { display: inline-flex; width: 1.45em; height: 1.45em; margin-left: 7px; padding: 0; align-items: center; justify-content: center; vertical-align: .08em; border: 1px solid var(--muted); border-radius: 50%; background: transparent; color: var(--muted); font-family: Georgia, "Times New Roman", serif; font-size: .62em; font-weight: bold; line-height: 1; cursor: pointer; }
 .comment-button:hover, .comment-button:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
 .comment { display: none; margin: 8px 0 14px 76px; padding: 14px 18px; background: var(--soft); border-left: 2px solid var(--accent); font-size: .95rem; }
@@ -78,6 +78,7 @@ footer { max-width: 920px; margin: 0 auto; padding: 22px 28px 38px; border-top: 
   .text { font-size: 1.04rem; }
   .children { margin-left: 18px; padding-left: 12px; }
   .tractatus-secondary-direct { margin-left: 30px; }
+  .tractatus-tertiary-direct { margin-left: 60px; }
   .comment { margin-left: 56px; }
   .truth-scheme { margin-right: -8px; }
 }
