@@ -16,7 +16,7 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          import json
+          import json, re
 
           # Proposition 4: preserve the established repair.
           p4 = Path('data/tractatus4.json')
@@ -32,56 +32,76 @@ jobs:
           assert data4['number'] == '4'
           p4.write_text(s4, encoding='utf-8')
 
-          # Proposition 5: load the valid JSON, then rebuild the hierarchy from
-          # proposition numbers. This prevents sibling branches such as 5.5 and
-          # 5.6 from being accidentally nested under 5.4 or one another.
+          def rebuild_valid_tree(path, root_number):
+              data = json.loads(path.read_text(encoding='utf-8'))
+              flat = []
+              def collect(node):
+                  flat.append({k: v for k, v in node.items() if k != 'children'})
+                  for child in node.get('children', []): collect(child)
+              collect(data)
+              return rebuild(flat, root_number)
+
+          def rebuild(flat, root_number):
+              by_number = {item['number']: item for item in flat}
+              assert len(by_number) == len(flat), f'Duplicate proposition numbers in {root_number}'
+              root = by_number[root_number]
+              for item in flat:
+                  item.pop('children', None)
+              for item in flat:
+                  number = item['number']
+                  if number == root_number: continue
+                  candidates = [n for n in by_number if n != number and number.startswith(n)]
+                  if not candidates: raise ValueError(f'No parent found for {number}')
+                  parent = max(candidates, key=len)
+                  by_number[parent].setdefault('children', []).append(item)
+              return root
+
+          # Proposition 5: normalize hierarchy from proposition numbers.
           p5 = Path('data/tractatus5.json')
-          data5 = json.loads(p5.read_text(encoding='utf-8'))
-          assert data5['number'] == '5'
+          root5 = rebuild_valid_tree(p5, '5')
+          p5.write_text(json.dumps(root5, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+          assert [x['number'] for x in root5['children'] if x['number'] in ('5.1','5.2','5.3','5.4','5.5','5.6')] == ['5.1','5.2','5.3','5.4','5.5','5.6']
 
-          flat = []
-          def collect(node):
-              item = {k: v for k, v in node.items() if k != 'children'}
-              flat.append(item)
-              for child in node.get('children', []):
-                  collect(child)
-          collect(data5)
+          # Proposition 6 was generated with several unclosed parent branches.
+          # If ordinary JSON parsing fails, recover every proposition's number,
+          # text and optional translator note, then rebuild the hierarchy solely
+          # from Wittgenstein's decimal proposition numbers.
+          p6 = Path('data/tractatus6.json')
+          s6 = p6.read_text(encoding='utf-8')
+          try:
+              root6 = rebuild_valid_tree(p6, '6')
+          except json.JSONDecodeError:
+              string = r'"((?:\\.|[^"\\])*)"'
+              pattern = re.compile(r'"number"\s*:\s*' + string + r'\s*,\s*"text"\s*:\s*' + string)
+              matches = list(pattern.finditer(s6))
+              flat6 = []
+              for i, m in enumerate(matches):
+                  item = {
+                      'number': json.loads('"' + m.group(1) + '"'),
+                      'text': json.loads('"' + m.group(2) + '"')
+                  }
+                  end = matches[i+1].start() if i + 1 < len(matches) else len(s6)
+                  segment = s6[m.end():end]
+                  note = re.search(r'"note"\s*:\s*' + string, segment)
+                  if note:
+                      item['note'] = json.loads('"' + note.group(1) + '"')
+                  flat6.append(item)
+              assert len(flat6) == 105, f'Expected 105 propositions in 6, found {len(flat6)}'
+              root6 = rebuild(flat6, '6')
 
-          by_number = {item['number']: item for item in flat}
-          assert len(by_number) == len(flat), 'Duplicate proposition numbers in Tractatus 5'
-          for item in flat:
-              item.pop('children', None)
-
-          root = by_number['5']
-          for item in flat:
-              number = item['number']
-              if number == '5':
-                  continue
-              candidates = [n for n in by_number if n != number and number.startswith(n)]
-              if not candidates:
-                  raise ValueError(f'No parent found for {number}')
-              parent_number = max(candidates, key=len)
-              by_number[parent_number].setdefault('children', []).append(item)
-
-          # Explicit structural assertions for the principal branches.
-          root_children = [x['number'] for x in root.get('children', [])]
-          for n in ('5.1', '5.2', '5.3', '5.4', '5.5', '5.6'):
-              assert n in root_children, f'{n} is not a direct child of 5'
-          assert '5.5' not in [x['number'] for x in by_number['5.4'].get('children', [])]
-          assert '5.6' not in [x['number'] for x in by_number['5.5'].get('children', [])]
-
-          p5.write_text(json.dumps(root, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-          check = json.loads(p5.read_text(encoding='utf-8'))
-          assert check['number'] == '5'
-          print('Tractatus 5 JSON: VALID')
-          print('Direct children of 5:', [x['number'] for x in check.get('children', [])])
+          p6.write_text(json.dumps(root6, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+          check6 = json.loads(p6.read_text(encoding='utf-8'))
+          direct6 = [x['number'] for x in check6.get('children', [])]
+          assert direct6 == ['6.001','6.002','6.01','6.02','6.03','6.1','6.2','6.3','6.4','6.5'], direct6
+          print('Tractatus 6 JSON: VALID')
+          print('Direct children of 6:', direct6)
           PY
       - name: Commit JSON repairs if needed
         run: |
-          if ! git diff --quiet -- data/tractatus4.json data/tractatus5.json; then
+          if ! git diff --quiet -- data/tractatus4.json data/tractatus5.json data/tractatus6.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/tractatus4.json data/tractatus5.json
+            git add data/tractatus4.json data/tractatus5.json data/tractatus6.json
             git commit -m "Fix Tractatus JSON hierarchy"
             git push
           fi
