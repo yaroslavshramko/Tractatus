@@ -23,7 +23,7 @@ function propositionElement(item) {
 
   function addInfoButton(kind, label, content) {
     const button = document.createElement("button");
-    button.className = kind === "note" ? "note-button" : "comment-button";
+    button.className = kind === "note" ? "comment-button note-button" : "comment-button";
     button.textContent = kind === "note" ? "i" : "К";
     button.title = label;
     button.setAttribute("aria-label", `${label} до положення ${item.number}`);
@@ -31,7 +31,7 @@ function propositionElement(item) {
     text.appendChild(button);
 
     const panel = document.createElement("div");
-    panel.className = kind === "note" ? "note" : "comment";
+    panel.className = kind === "note" ? "comment note" : "comment";
     panel.innerHTML = content;
     wrapper.appendChild(panel);
 
@@ -96,8 +96,8 @@ async function loadTractatus() {
     const tractatus = await mainResponse.json();
     const proposition3 = await proposition3Response.json();
     const proposition4 = await proposition4Response.json();
-
     const replacements = { "3": proposition3, "4": proposition4 };
+
     Object.entries(replacements).forEach(([number, proposition]) => {
       const index = tractatus.findIndex(item => item.number === number);
       if (index !== -1) tractatus[index] = proposition;
@@ -114,7 +114,6 @@ loadTractatus();
 
 const prefaceToggle = document.getElementById("preface-toggle");
 const prefaceText = document.getElementById("preface-text");
-
 prefaceToggle.addEventListener("click", () => {
   const open = prefaceToggle.getAttribute("aria-expanded") === "true";
   prefaceToggle.setAttribute("aria-expanded", String(!open));
@@ -124,19 +123,12 @@ prefaceToggle.addEventListener("click", () => {
 
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".page-section");
-
 function showSection(id) {
   sections.forEach(section => section.classList.toggle("active-section", section.id === id));
   navLinks.forEach(link => link.classList.toggle("active", link.dataset.section === id));
   history.replaceState(null, "", `#${id}`);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
-
-navLinks.forEach(link => {
-  link.addEventListener("click", () => showSection(link.dataset.section));
-});
-
+navLinks.forEach(link => link.addEventListener("click", () => showSection(link.dataset.section)));
 const initialSection = location.hash.replace("#", "");
-if ([...sections].some(section => section.id === initialSection)) {
-  showSection(initialSection);
-}
+if ([...sections].some(section => section.id === initialSection)) showSection(initialSection);
