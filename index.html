@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Логіко-філософський трактат</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Український переклад Логіко-філософського трактату Людвіга Вітгенштайна">
+  <title>Логіко-філософський трактат</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Логіко-філософський трактат</h1>
-    <p>Український переклад</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="#tractatus">Логіко-філософський трактат</a>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <button class="nav-link active" data-section="tractatus">Трактат</button>
+        <button class="nav-link" data-section="translation">Про переклад</button>
+        <button class="nav-link" data-section="glossary">Глосарій</button>
+        <button class="nav-link" data-section="discussion">Обговорення</button>
+        <button class="nav-link" data-section="project">Про проєкт</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="tractatus" class="page-section active-section">
+      <div class="intro">
+        <p class="author">Людвіг Вітгенштайн</p>
+        <h1>Логіко-філософський трактат</h1>
+        <p class="subtitle">Український переклад</p>
+      </div>
+      <div id="tractatus-tree" class="tractatus-tree" aria-live="polite"></div>
+    </section>
+
+    <section id="translation" class="page-section">
+      <h1>Про переклад</h1>
+      <p>Тут буде представлено відомості про український переклад, його принципи, використані видання та основні перекладацькі рішення.</p>
+    </section>
+
+    <section id="glossary" class="page-section">
+      <h1>Глосарій</h1>
+      <p class="section-note">Робоча структура глосарію. Точні відповідники та назви англійських перекладів буде внесено окремо.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Німецький термін</th>
+              <th>Український переклад</th>
+              <th>Англійський переклад 1</th>
+              <th>Англійський переклад 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><i>Satz</i></td><td>речення</td><td>—</td><td>—</td></tr>
+            <tr><td><i>Sinn</i></td><td>смисл</td><td>—</td><td>—</td></tr>
+            <tr><td><i>Bedeutung</i></td><td>предметне значення</td><td>—</td><td>—</td></tr>
+            <tr><td><i>Sachverhalt</i></td><td>стан справ</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="discussion" class="page-section">
+      <h1>Обговорення</h1>
+      <p>Цей розділ буде призначено для зауважень, пропозицій і фахового обговорення українського перекладу. Передбачимо можливість пов’язувати зауваження з конкретними положеннями Трактату.</p>
+    </section>
+
+    <section id="project" class="page-section">
+      <h1>Про проєкт</h1>
+      <p>Тут буде розміщено інформацію про проєкт, авторство перекладу, рекомендоване цитування та контакти.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Електронне видання українського перекладу</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
