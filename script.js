@@ -2,16 +2,8 @@ function propositionElement(item) {
   const wrapper = document.createElement("div");
   wrapper.className = "proposition";
 
-  // Wittgenstein's decimal numbering distinguishes logical parenthood from
-  // degree of remark. Direct subpropositions X.0Y receive one extra visual
-  // indent; X.00Y receive two. Thus X.01 aligns with X.11, while X.001
-  // aligns with third-degree remarks such as X.141.
-  if (/^\d+\.0[1-9]$/.test(item.number)) {
-    wrapper.classList.add("tractatus-secondary-direct");
-  }
-  if (/^\d+\.00[1-9]$/.test(item.number)) {
-    wrapper.classList.add("tractatus-tertiary-direct");
-  }
+  if (/^\d+\.0[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-secondary-direct");
+  if (/^\d+\.00[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-tertiary-direct");
 
   const row = document.createElement("div");
   row.className = "proposition-row";
@@ -31,6 +23,26 @@ function propositionElement(item) {
   const text = document.createElement("span");
   text.className = "text";
   text.innerHTML = String(item.text ?? "");
+
+  // The first diagram in 6.1203 is redrawn directly from the source document.
+  // Keep the remaining diagrams untouched until this one has been visually approved.
+  if (item.number === "6.1203") {
+    const firstFigure = text.querySelector(".tractatus-figure");
+    if (firstFigure) {
+      firstFigure.innerHTML = `<svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Перша схема до 6.1203">
+        <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M35 46 C38 31 54 25 78 25 L117 25 C128 25 131 19 136 16 C141 19 144 25 155 25 L218 25 C242 25 257 32 260 46"/>
+          <path d="M35 74 C38 89 54 95 78 95 L117 95 C128 95 131 101 136 104 C141 101 144 95 155 95 L218 95 C242 95 257 88 260 74"/>
+          <path d="M38 52 C42 43 52 40 66 40 L107 40 C119 40 124 46 129 51 C134 46 139 40 151 40 L226 40 C240 40 250 44 257 53"/>
+          <path d="M38 68 C42 77 52 80 66 80 L107 80 C119 80 124 74 129 69 C134 74 139 80 151 80 L226 80 C240 80 250 76 257 67"/>
+        </g>
+        <g fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic">
+          <text x="48" y="66">I p X</text>
+          <text x="205" y="66">I q X</text>
+        </g>
+      </svg>`;
+    }
+  }
 
   function addInfoButton(kind, label, content) {
     const button = document.createElement("button");
@@ -100,37 +112,27 @@ async function fetchBranch(path) {
   const response = await fetch(`${path}?v=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
   const source = await response.text();
-  try {
-    return JSON.parse(source);
-  } catch (jsonError) {
-    return Function(`"use strict"; return (${source});`)();
-  }
+  try { return JSON.parse(source); }
+  catch (jsonError) { return Function(`"use strict"; return (${source});`)(); }
 }
 
 async function loadTractatus() {
   const tree = document.getElementById("tractatus-tree");
-
   try {
     const tractatus = await fetchJson("data/tractatus.json");
     const branchFiles = [
-      ["3", "data/tractatus3.json"],
-      ["4", "data/tractatus4.json"],
-      ["5", "data/tractatus5.json"],
-      ["6", "data/tractatus6.json"],
+      ["3", "data/tractatus3.json"], ["4", "data/tractatus4.json"],
+      ["5", "data/tractatus5.json"], ["6", "data/tractatus6.json"],
       ["7", "data/tractatus7.json"]
     ];
-
     for (const [number, path] of branchFiles) {
       try {
         const branch = await fetchBranch(path);
         const branchIndex = tractatus.findIndex(item => item.number === number);
         if (branchIndex !== -1) tractatus[branchIndex] = branch;
         else tractatus.push(branch);
-      } catch (error) {
-        console.error(`Не вдалося завантажити ${path}:`, error);
-      }
+      } catch (error) { console.error(`Не вдалося завантажити ${path}:`, error); }
     }
-
     tractatus.sort((a, b) => Number(a.number) - Number(b.number));
     tree.replaceChildren();
     tractatus.forEach(item => tree.appendChild(propositionElement(item)));
