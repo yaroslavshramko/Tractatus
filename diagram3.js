@@ -7,9 +7,10 @@
     if (!propositionText) return false;
 
     const figures = propositionText.querySelectorAll('.tractatus-figure');
-    if (figures.length < 3) return false;
+    if (figures.length < 4) return false;
 
     figures[2].innerHTML = '<img src="assets/t6-61203-3.png" alt="Третя схема до положення 6.1203" style="display:block;width:60px;max-width:100%;height:auto;margin:0.65rem auto;">';
+    figures[3].innerHTML = '<img src="assets/t6-61203-4.svg" alt="Четверта схема до положення 6.1203" style="display:block;width:140px;max-width:100%;height:auto;margin:0.65rem auto;">';
     return true;
   };
 
