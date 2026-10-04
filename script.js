@@ -72,7 +72,9 @@ function propositionElement(item) {
   if (item.comment) {
     const commentButton = document.createElement("button");
     commentButton.className = "comment-button";
-    commentButton.textContent = "коментар";
+    commentButton.textContent = "К";
+    commentButton.title = "Коментар";
+    commentButton.setAttribute("aria-label", `Коментар до положення ${item.number}`);
     text.appendChild(document.createTextNode(" "));
     text.appendChild(commentButton);
 
