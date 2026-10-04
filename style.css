@@ -74,7 +74,7 @@ main {
 .page-section.active-section { display: block; }
 
 .intro {
-  margin-bottom: 52px;
+  margin-bottom: 42px;
   text-align: center;
 }
 
@@ -95,9 +95,86 @@ h1 {
 .subtitle,
 .section-note { color: var(--muted); }
 
+.front-matter {
+  max-width: 650px;
+  margin: 42px auto 0;
+}
+
+.dedication {
+  margin: 0 0 34px;
+  font-style: italic;
+}
+
+.motto {
+  margin: 0 auto;
+  max-width: 610px;
+  font-size: .96rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.motto-label {
+  font-style: normal;
+}
+
+.preface-block,
 .tractatus-tree {
   max-width: 820px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preface-block {
+  margin-bottom: 18px;
+}
+
+.preface-toggle {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: baseline;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.12rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.preface-toggle:hover {
+  background: var(--soft);
+}
+
+.preface-chevron {
+  color: var(--muted);
+  font-size: .8rem;
+  transition: transform .15s ease;
+}
+
+.preface-toggle.open .preface-chevron {
+  transform: rotate(90deg);
+}
+
+.preface-text {
+  margin: 8px 10px 26px;
+  padding: 20px 24px;
+  border-left: 1px solid var(--line);
+  font-size: 1.04rem;
+}
+
+.preface-placeholder {
+  margin: 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.tractatus-tree {
+  margin-top: 0;
 }
 
 .proposition {
@@ -220,6 +297,10 @@ footer {
   main { padding-top: 38px; }
   .site-title { display: none; }
   .main-nav { gap: 8px 16px; }
+  .front-matter { margin-top: 32px; }
+  .dedication { margin-bottom: 28px; }
+  .preface-toggle { padding-left: 4px; padding-right: 4px; }
+  .preface-text { margin-left: 4px; margin-right: 4px; padding-left: 16px; padding-right: 8px; }
   .proposition-row { grid-template-columns: 52px 1fr auto; gap: 8px; padding-left: 4px; padding-right: 4px; }
   .text { font-size: 1.04rem; }
   .children { margin-left: 18px; padding-left: 12px; }
