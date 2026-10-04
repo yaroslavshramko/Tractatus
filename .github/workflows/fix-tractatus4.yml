@@ -12,47 +12,71 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Repair Tractatus 4 and validate JSON data
+      - name: Repair and validate Tractatus JSON data
         run: |
           python - <<'PY'
           from pathlib import Path
           import json
 
-          # Keep the established repair for proposition 4.
-          p = Path('data/tractatus4.json')
-          s = p.read_text(encoding='utf-8')
+          # Proposition 4: preserve the established repair.
+          p4 = Path('data/tractatus4.json')
+          s4 = p4.read_text(encoding='utf-8')
           for marker in ('{"number":"4.05"', '{"number":"4.2"', '{"number":"4.5"'):
               try:
-                  json.loads(s)
+                  json.loads(s4)
                   break
               except json.JSONDecodeError:
-                  j = s.index(marker)
-                  comma = j - 1
-                  s = s[:comma] + ']}' + s[comma:]
-          data4 = json.loads(s)
+                  j = s4.index(marker)
+                  s4 = s4[:j-1] + ']}' + s4[j-1:]
+          data4 = json.loads(s4)
           assert data4['number'] == '4'
-          p.write_text(s, encoding='utf-8')
+          p4.write_text(s4, encoding='utf-8')
 
-          # Validate proposition 5 strictly as JSON and check its root.
+          # Proposition 5: repair only the proven end-of-tree structural defect.
           p5 = Path('data/tractatus5.json')
           s5 = p5.read_text(encoding='utf-8')
           try:
               data5 = json.loads(s5)
-          except json.JSONDecodeError as e:
-              print(f'Tractatus 5 JSON ERROR: line {e.lineno}, column {e.colno}, char {e.pos}: {e.msg}')
-              start = max(0, e.pos - 160)
-              end = min(len(s5), e.pos + 160)
-              print('Context:', repr(s5[start:end]))
-              raise
+          except json.JSONDecodeError as first:
+              print(f'Initial Tractatus 5 error: char {first.pos}: {first.msg}')
+              if first.pos < len(s5) - 20:
+                  raise
+
+              # At the end of 5.641 one or more ancestor objects may be unclosed.
+              # Try the minimal number of `]}` closures immediately before the
+              # final root children-array closure; accept a change ONLY if the
+              # complete document then parses and still has root number 5.
+              repaired = None
+              insert_at = s5.rfind(']}')
+              if insert_at < 0:
+                  raise
+              for n in range(1, 6):
+                  candidate = s5[:insert_at] + (']}' * n) + s5[insert_at:]
+                  try:
+                      obj = json.loads(candidate)
+                  except json.JSONDecodeError:
+                      continue
+                  if obj.get('number') == '5':
+                      repaired = candidate
+                      data5 = obj
+                      print(f'Repaired Tractatus 5 with {n} missing ancestor closure(s).')
+                      break
+              if repaired is None:
+                  raise first
+              s5 = repaired
+              p5.write_text(s5, encoding='utf-8')
+
           assert data5['number'] == '5'
+          # A second independent parse guarantees the bytes to be committed are valid.
+          json.loads(p5.read_text(encoding='utf-8'))
           print('Tractatus 5 JSON: VALID')
           PY
-      - name: Commit proposition 4 repair if needed
+      - name: Commit JSON repairs if needed
         run: |
-          if ! git diff --quiet -- data/tractatus4.json; then
+          if ! git diff --quiet -- data/tractatus4.json data/tractatus5.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/tractatus4.json
-            git commit -m "Fix Tractatus 4 JSON structure"
+            git add data/tractatus4.json data/tractatus5.json
+            git commit -m "Fix Tractatus JSON structure"
             git push
           fi
