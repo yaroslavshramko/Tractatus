@@ -30,10 +30,7 @@ function propositionElement(item) {
 
   const text = document.createElement("span");
   text.className = "text";
-  const renderedText = String(item.text ?? "");
-  text.innerHTML = item.number.startsWith("6")
-    ? renderedText.replace(/<div class="tractatus-figure[^>]*">[\s\S]*?<\/svg><\/div>/g, "<div class=\"scheme-placeholder\">[схема тимчасово прихована]</div>")
-    : renderedText;
+  text.innerHTML = String(item.text ?? "");
 
   function addInfoButton(kind, label, content) {
     const button = document.createElement("button");
