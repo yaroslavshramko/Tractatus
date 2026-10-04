@@ -30,8 +30,6 @@ function propositionElement(item) {
 
   const text = document.createElement("span");
   text.className = "text";
-  // Diagnostic for proposition 6: temporarily omit embedded SVG diagrams
-  // while preserving all surrounding text, italics and notes.
   const renderedText = String(item.text ?? "");
   text.innerHTML = item.number.startsWith("6")
     ? renderedText.replace(/<div class="tractatus-figure[^>]*">[\s\S]*?<\/svg><\/div>/g, "<div class=\"scheme-placeholder\">[схема тимчасово прихована]</div>")
@@ -121,7 +119,8 @@ async function loadTractatus() {
       ["3", "data/tractatus3.json"],
       ["4", "data/tractatus4.json"],
       ["5", "data/tractatus5.json"],
-      ["6", "data/tractatus6.json"]
+      ["6", "data/tractatus6.json"],
+      ["7", "data/tractatus7.json"]
     ];
 
     for (const [number, path] of branchFiles) {
