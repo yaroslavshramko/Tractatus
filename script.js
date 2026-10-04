@@ -79,10 +79,18 @@ function propositionElement(item) {
   return wrapper;
 }
 
-async function fetchJson(path) {
-  const response = await fetch(path);
-  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
-  return response.json();
+async function fetchJson(path, fallbackUrl = null) {
+  try {
+    const response = await fetch(path, { cache: "no-store" });
+    if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+    return await response.json();
+  } catch (error) {
+    if (!fallbackUrl) throw error;
+    console.warn(`Локальне завантаження ${path} не вдалося; використовую резервне джерело.`, error);
+    const fallbackResponse = await fetch(fallbackUrl, { cache: "no-store" });
+    if (!fallbackResponse.ok) throw new Error(`${fallbackUrl}: HTTP ${fallbackResponse.status}`);
+    return await fallbackResponse.json();
+  }
 }
 
 async function loadTractatus() {
@@ -92,19 +100,24 @@ async function loadTractatus() {
     const tractatus = await fetchJson("data/tractatus.json");
 
     const branchFiles = [
-      ["3", "data/tractatus3.json"],
-      ["4", "data/tractatus4.json"]
+      ["3", "data/tractatus3.json", "https://raw.githubusercontent.com/yaroslavshramko/Tractatus/main/data/tractatus3.json"],
+      ["4", "data/tractatus4.json", "https://raw.githubusercontent.com/yaroslavshramko/Tractatus/main/data/tractatus4.json"]
     ];
 
     const results = await Promise.allSettled(
-      branchFiles.map(([, path]) => fetchJson(path))
+      branchFiles.map(([, path, fallbackUrl]) => fetchJson(path, fallbackUrl))
     );
 
     results.forEach((result, index) => {
       const [number, path] = branchFiles[index];
       if (result.status === "fulfilled") {
         const branchIndex = tractatus.findIndex(item => item.number === number);
-        if (branchIndex !== -1) tractatus[branchIndex] = result.value;
+        if (branchIndex !== -1) {
+          tractatus[branchIndex] = result.value;
+        } else {
+          tractatus.push(result.value);
+          tractatus.sort((a, b) => Number(a.number) - Number(b.number));
+        }
       } else {
         console.error(`Не вдалося завантажити ${path}:`, result.reason);
       }
