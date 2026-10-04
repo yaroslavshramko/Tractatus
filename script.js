@@ -79,33 +79,41 @@ function propositionElement(item) {
   return wrapper;
 }
 
+async function fetchJson(path) {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+  return response.json();
+}
+
 async function loadTractatus() {
   const tree = document.getElementById("tractatus-tree");
 
   try {
-    const [mainResponse, proposition3Response, proposition4Response] = await Promise.all([
-      fetch("data/tractatus.json"),
-      fetch("data/tractatus3.json"),
-      fetch("data/tractatus4.json")
-    ]);
+    const tractatus = await fetchJson("data/tractatus.json");
 
-    if (!mainResponse.ok) throw new Error(`HTTP ${mainResponse.status}`);
-    if (!proposition3Response.ok) throw new Error(`HTTP ${proposition3Response.status}`);
-    if (!proposition4Response.ok) throw new Error(`HTTP ${proposition4Response.status}`);
+    const branchFiles = [
+      ["3", "data/tractatus3.json"],
+      ["4", "data/tractatus4.json"]
+    ];
 
-    const tractatus = await mainResponse.json();
-    const proposition3 = await proposition3Response.json();
-    const proposition4 = await proposition4Response.json();
-    const replacements = { "3": proposition3, "4": proposition4 };
+    const results = await Promise.allSettled(
+      branchFiles.map(([, path]) => fetchJson(path))
+    );
 
-    Object.entries(replacements).forEach(([number, proposition]) => {
-      const index = tractatus.findIndex(item => item.number === number);
-      if (index !== -1) tractatus[index] = proposition;
+    results.forEach((result, index) => {
+      const [number, path] = branchFiles[index];
+      if (result.status === "fulfilled") {
+        const branchIndex = tractatus.findIndex(item => item.number === number);
+        if (branchIndex !== -1) tractatus[branchIndex] = result.value;
+      } else {
+        console.error(`Не вдалося завантажити ${path}:`, result.reason);
+      }
     });
 
+    tree.replaceChildren();
     tractatus.forEach(item => tree.appendChild(propositionElement(item)));
   } catch (error) {
-    console.error("Не вдалося завантажити текст Трактату:", error);
+    console.error("Не вдалося завантажити основний текст Трактату:", error);
     tree.textContent = "Не вдалося завантажити текст. Будь ласка, оновіть сторінку.";
   }
 }
