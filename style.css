@@ -57,6 +57,16 @@ h1 { margin: 0 0 10px; font-weight: normal; font-size: clamp(1.8rem, 4vw, 2.7rem
 table { width: 100%; margin-top: 30px; border-collapse: collapse; }
 th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 th { font-weight: normal; color: var(--muted); }
+.glossary-search { max-width: 520px; margin-top: 28px; }
+.glossary-search label { display: block; margin-bottom: 7px; color: var(--muted); font-size: .9rem; }
+.glossary-search input { width: 100%; padding: 9px 11px; border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--text); font: inherit; }
+.glossary-search input:focus { border-color: var(--accent); outline: none; }
+.glossary-table { table-layout: fixed; }
+.glossary-table th:nth-child(1), .glossary-table td:nth-child(1) { width: 20%; }
+.glossary-table th:nth-child(2), .glossary-table td:nth-child(2) { width: 25%; }
+.glossary-table th:nth-child(3), .glossary-table td:nth-child(3) { width: 27.5%; }
+.glossary-table th:nth-child(4), .glossary-table td:nth-child(4) { width: 27.5%; }
+.glossary-term { cursor: default; }
 .truth-scheme { max-width: 100%; margin: 20px 0; overflow-x: auto; font-size: .86em; }
 .truth-scheme table { min-width: 620px; margin: 0; }
 .truth-scheme td { padding: 5px 9px; border-bottom: 1px solid var(--line); }
@@ -82,4 +92,5 @@ footer { max-width: 920px; margin: 0 auto; padding: 22px 28px 38px; border-top: 
   .tractatus-tertiary-direct { margin-left: 60px; }
   .comment { margin-left: 56px; }
   .truth-scheme { margin-right: -8px; }
+  .glossary-table { min-width: 700px; table-layout: auto; }
 }
