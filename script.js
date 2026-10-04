@@ -24,13 +24,14 @@ function propositionElement(item) {
   text.className = "text";
   text.innerHTML = String(item.text ?? "");
 
+  // 6.1203: use the actual diagrams supplied by the translator.
   if (item.number === "6.1203") {
     const figures = text.querySelectorAll(".tractatus-figure");
     if (figures[0]) {
       figures[0].innerHTML = `<img src="assets/t6-61203-1.svg" alt="Перша схема до положення 6.1203" style="display:block;width:280px;max-width:100%;height:auto;margin:0.65rem auto;">`;
     }
     if (figures[1]) {
-      figures[1].innerHTML = `<img src="assets/tractatus6/diagram-2-user.png" alt="Друга схема до положення 6.1203" style="display:block;width:280px;max-width:100%;height:auto;margin:0.65rem auto;">`;
+      figures[1].innerHTML = `<img src="assets/tractatus6/diagram-2-source.png" alt="Друга схема до положення 6.1203" style="display:block;width:280px;max-width:100%;height:auto;margin:0.65rem auto;">`;
     }
   }
 
@@ -52,6 +53,10 @@ function propositionElement(item) {
       event.stopPropagation();
       panel.classList.toggle("visible");
     });
+  }
+
+  if (item.number === "4.0031" && !item.note) {
+    item.note = "Фріц Маутнер (1849–1923) — філософ, письменник і журналіст, автор тритомної праці <em>Beiträge zu einer Kritik der Sprache</em> («Нариси до критики мови», 1901–1902), у якій розвинув скептичну концепцію критики мови (<em>Sprachkritik</em>). — Прим. перекл.";
   }
 
   if (item.note) addInfoButton("note", "Примітка перекладача", item.note);
