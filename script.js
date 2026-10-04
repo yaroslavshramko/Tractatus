@@ -3,10 +3,14 @@ function propositionElement(item) {
   wrapper.className = "proposition";
 
   // Wittgenstein's decimal numbering distinguishes logical parenthood from
-  // degree of remark. Direct subpropositions of the form X.0Y (e.g. 2.01 or
-  // 3.01) receive the same extra visual indentation as X.1Y remarks.
+  // degree of remark. Direct subpropositions X.0Y (e.g. 2.01, 3.01) receive
+  // one extra visual indent; X.00Y (e.g. 3.001) receive two, so 3.001 aligns
+  // visually with remarks of the same degree such as 3.141.
   if (/^[23]\.0[1-9]$/.test(item.number)) {
     wrapper.classList.add("tractatus-secondary-direct");
+  }
+  if (/^3\.00[1-9]$/.test(item.number)) {
+    wrapper.classList.add("tractatus-tertiary-direct");
   }
 
   const row = document.createElement("div");
