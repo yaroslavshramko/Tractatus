@@ -82,3 +82,11 @@ footer { max-width: 920px; margin: 0 auto; padding: 22px 28px 38px; border-top: 
   .comment { margin-left: 56px; }
   .truth-scheme { margin-right: -8px; }
 }
+.proposition .text p {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.proposition .text p:last-child {
+  margin-bottom: 0;
+}
