@@ -1,4 +1,4 @@
-name: Repair Tractatus 4 data
+name: Validate Tractatus data
 
 on:
   push:
@@ -8,52 +8,46 @@ permissions:
   contents: write
 
 jobs:
-  repair:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Repair and validate JSON
+      - name: Repair Tractatus 4 and validate JSON data
         run: |
           python - <<'PY'
           from pathlib import Path
           import json
 
+          # Keep the established repair for proposition 4.
           p = Path('data/tractatus4.json')
           s = p.read_text(encoding='utf-8')
-
-          # Close 4.04 before its sibling 4.05.
-          marker = '{"number":"4.05"'
-          j = s.index(marker)
-          if s[j-3:j] != ']},':
-              pass
-          # Insert only when 4.04 is still open.
-          try:
-              json.loads(s)
-          except json.JSONDecodeError:
-              comma = j - 1
-              s = s[:comma] + ']}' + s[comma:]
-
-          # Close 4.1 before its sibling 4.2 if needed.
-          try:
-              json.loads(s)
-          except json.JSONDecodeError:
-              j = s.index('{"number":"4.2"')
-              comma = j - 1
-              s = s[:comma] + ']}' + s[comma:]
-
-          # Close 4.4 before its sibling 4.5 if needed.
-          try:
-              json.loads(s)
-          except json.JSONDecodeError:
-              j = s.index('{"number":"4.5"')
-              comma = j - 1
-              s = s[:comma] + ']}' + s[comma:]
-
-          data = json.loads(s)
-          assert data['number'] == '4'
+          for marker in ('{"number":"4.05"', '{"number":"4.2"', '{"number":"4.5"'):
+              try:
+                  json.loads(s)
+                  break
+              except json.JSONDecodeError:
+                  j = s.index(marker)
+                  comma = j - 1
+                  s = s[:comma] + ']}' + s[comma:]
+          data4 = json.loads(s)
+          assert data4['number'] == '4'
           p.write_text(s, encoding='utf-8')
+
+          # Validate proposition 5 strictly as JSON and check its root.
+          p5 = Path('data/tractatus5.json')
+          s5 = p5.read_text(encoding='utf-8')
+          try:
+              data5 = json.loads(s5)
+          except json.JSONDecodeError as e:
+              print(f'Tractatus 5 JSON ERROR: line {e.lineno}, column {e.colno}, char {e.pos}: {e.msg}')
+              start = max(0, e.pos - 160)
+              end = min(len(s5), e.pos + 160)
+              print('Context:', repr(s5[start:end]))
+              raise
+          assert data5['number'] == '5'
+          print('Tractatus 5 JSON: VALID')
           PY
-      - name: Commit repair if needed
+      - name: Commit proposition 4 repair if needed
         run: |
           if ! git diff --quiet -- data/tractatus4.json; then
             git config user.name "github-actions[bot]"
