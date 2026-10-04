@@ -115,6 +115,16 @@ function propositionElement(item) {
 const tree = document.getElementById("tractatus-tree");
 tractatus.forEach(item => tree.appendChild(propositionElement(item)));
 
+const prefaceToggle = document.getElementById("preface-toggle");
+const prefaceText = document.getElementById("preface-text");
+
+prefaceToggle.addEventListener("click", () => {
+  const open = prefaceToggle.getAttribute("aria-expanded") === "true";
+  prefaceToggle.setAttribute("aria-expanded", String(!open));
+  prefaceText.hidden = open;
+  prefaceToggle.classList.toggle("open", !open);
+});
+
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".page-section");
 
