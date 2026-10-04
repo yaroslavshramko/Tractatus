@@ -80,10 +80,19 @@ async function loadTractatus() {
   const tree = document.getElementById("tractatus-tree");
 
   try {
-    const response = await fetch("data/tractatus.json");
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const [mainResponse, proposition3Response] = await Promise.all([
+      fetch("data/tractatus.json"),
+      fetch("data/tractatus3.json")
+    ]);
 
-    const tractatus = await response.json();
+    if (!mainResponse.ok) throw new Error(`HTTP ${mainResponse.status}`);
+    if (!proposition3Response.ok) throw new Error(`HTTP ${proposition3Response.status}`);
+
+    const tractatus = await mainResponse.json();
+    const proposition3 = await proposition3Response.json();
+    const index3 = tractatus.findIndex(item => item.number === "3");
+    if (index3 !== -1) tractatus[index3] = proposition3;
+
     tractatus.forEach(item => tree.appendChild(propositionElement(item)));
   } catch (error) {
     console.error("Не вдалося завантажити текст Трактату:", error);
