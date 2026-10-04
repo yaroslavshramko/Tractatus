@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Repair and validate Tractatus JSON data
+      - name: Repair, rebuild and validate Tractatus JSON data
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -32,44 +32,49 @@ jobs:
           assert data4['number'] == '4'
           p4.write_text(s4, encoding='utf-8')
 
-          # Proposition 5: repair only the proven end-of-tree structural defect.
+          # Proposition 5: load the valid JSON, then rebuild the hierarchy from
+          # proposition numbers. This prevents sibling branches such as 5.5 and
+          # 5.6 from being accidentally nested under 5.4 or one another.
           p5 = Path('data/tractatus5.json')
-          s5 = p5.read_text(encoding='utf-8')
-          try:
-              data5 = json.loads(s5)
-          except json.JSONDecodeError as first:
-              print(f'Initial Tractatus 5 error: char {first.pos}: {first.msg}')
-              if first.pos < len(s5) - 20:
-                  raise
-
-              # At the end of 5.641 one or more ancestor objects may be unclosed.
-              # Try the minimal number of `]}` closures immediately before the
-              # final root children-array closure; accept a change ONLY if the
-              # complete document then parses and still has root number 5.
-              repaired = None
-              insert_at = s5.rfind(']}')
-              if insert_at < 0:
-                  raise
-              for n in range(1, 6):
-                  candidate = s5[:insert_at] + (']}' * n) + s5[insert_at:]
-                  try:
-                      obj = json.loads(candidate)
-                  except json.JSONDecodeError:
-                      continue
-                  if obj.get('number') == '5':
-                      repaired = candidate
-                      data5 = obj
-                      print(f'Repaired Tractatus 5 with {n} missing ancestor closure(s).')
-                      break
-              if repaired is None:
-                  raise first
-              s5 = repaired
-              p5.write_text(s5, encoding='utf-8')
-
+          data5 = json.loads(p5.read_text(encoding='utf-8'))
           assert data5['number'] == '5'
-          # A second independent parse guarantees the bytes to be committed are valid.
-          json.loads(p5.read_text(encoding='utf-8'))
+
+          flat = []
+          def collect(node):
+              item = {k: v for k, v in node.items() if k != 'children'}
+              flat.append(item)
+              for child in node.get('children', []):
+                  collect(child)
+          collect(data5)
+
+          by_number = {item['number']: item for item in flat}
+          assert len(by_number) == len(flat), 'Duplicate proposition numbers in Tractatus 5'
+          for item in flat:
+              item.pop('children', None)
+
+          root = by_number['5']
+          for item in flat:
+              number = item['number']
+              if number == '5':
+                  continue
+              candidates = [n for n in by_number if n != number and number.startswith(n)]
+              if not candidates:
+                  raise ValueError(f'No parent found for {number}')
+              parent_number = max(candidates, key=len)
+              by_number[parent_number].setdefault('children', []).append(item)
+
+          # Explicit structural assertions for the principal branches.
+          root_children = [x['number'] for x in root.get('children', [])]
+          for n in ('5.1', '5.2', '5.3', '5.4', '5.5', '5.6'):
+              assert n in root_children, f'{n} is not a direct child of 5'
+          assert '5.5' not in [x['number'] for x in by_number['5.4'].get('children', [])]
+          assert '5.6' not in [x['number'] for x in by_number['5.5'].get('children', [])]
+
+          p5.write_text(json.dumps(root, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+          check = json.loads(p5.read_text(encoding='utf-8'))
+          assert check['number'] == '5'
           print('Tractatus 5 JSON: VALID')
+          print('Direct children of 5:', [x['number'] for x in check.get('children', [])])
           PY
       - name: Commit JSON repairs if needed
         run: |
@@ -77,6 +82,6 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/tractatus4.json data/tractatus5.json
-            git commit -m "Fix Tractatus JSON structure"
+            git commit -m "Fix Tractatus JSON hierarchy"
             git push
           fi
