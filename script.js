@@ -2,6 +2,13 @@ function propositionElement(item) {
   const wrapper = document.createElement("div");
   wrapper.className = "proposition";
 
+  // Wittgenstein's decimal numbering distinguishes logical parenthood from
+  // degree of remark. In proposition 2, 2.01–2.06 are direct dependants of 2,
+  // but visually belong to the same degree as 2.11, 2.12, etc.
+  if (/^2\.0[1-9]$/.test(item.number)) {
+    wrapper.classList.add("tractatus-secondary-direct");
+  }
+
   const row = document.createElement("div");
   row.className = "proposition-row";
 
