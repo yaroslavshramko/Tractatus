@@ -92,8 +92,6 @@ async function fetchBranch(path) {
   try {
     return JSON.parse(source);
   } catch (jsonError) {
-    // The data files are maintained by this project. This fallback tolerates
-    // JavaScript-object syntax that is slightly more permissive than JSON.
     return Function(`"use strict"; return (${source});`)();
   }
 }
@@ -105,7 +103,8 @@ async function loadTractatus() {
     const tractatus = await fetchJson("data/tractatus.json");
     const branchFiles = [
       ["3", "data/tractatus3.json"],
-      ["4", "data/tractatus4.json"]
+      ["4", "data/tractatus4.json"],
+      ["5", "data/tractatus5.json"]
     ];
 
     for (const [number, path] of branchFiles) {
