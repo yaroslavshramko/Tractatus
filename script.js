@@ -21,6 +21,29 @@ function propositionElement(item) {
   text.className = "text";
   text.innerHTML = item.text;
 
+  function addInfoButton(kind, label, content) {
+    const button = document.createElement("button");
+    button.className = kind === "note" ? "note-button" : "comment-button";
+    button.textContent = kind === "note" ? "i" : "К";
+    button.title = label;
+    button.setAttribute("aria-label", `${label} до положення ${item.number}`);
+    text.appendChild(document.createTextNode(" "));
+    text.appendChild(button);
+
+    const panel = document.createElement("div");
+    panel.className = kind === "note" ? "note" : "comment";
+    panel.innerHTML = content;
+    wrapper.appendChild(panel);
+
+    button.addEventListener("click", event => {
+      event.stopPropagation();
+      panel.classList.toggle("visible");
+    });
+  }
+
+  if (item.note) addInfoButton("note", "Примітка перекладача", item.note);
+  if (item.comment) addInfoButton("comment", "Коментар", item.comment);
+
   const controls = document.createElement("span");
   if (hasChildren) {
     const chevron = document.createElement("span");
@@ -31,27 +54,7 @@ function propositionElement(item) {
   }
 
   row.append(number, text, controls);
-  wrapper.appendChild(row);
-
-  if (item.comment) {
-    const commentButton = document.createElement("button");
-    commentButton.className = "comment-button";
-    commentButton.textContent = "К";
-    commentButton.title = "Коментар";
-    commentButton.setAttribute("aria-label", `Коментар до положення ${item.number}`);
-    text.appendChild(document.createTextNode(" "));
-    text.appendChild(commentButton);
-
-    const comment = document.createElement("div");
-    comment.className = "comment";
-    comment.textContent = item.comment;
-    wrapper.appendChild(comment);
-
-    commentButton.addEventListener("click", event => {
-      event.stopPropagation();
-      comment.classList.toggle("visible");
-    });
-  }
+  wrapper.insertBefore(row, wrapper.firstChild);
 
   if (hasChildren) {
     const children = document.createElement("div");
@@ -80,18 +83,25 @@ async function loadTractatus() {
   const tree = document.getElementById("tractatus-tree");
 
   try {
-    const [mainResponse, proposition3Response] = await Promise.all([
+    const [mainResponse, proposition3Response, proposition4Response] = await Promise.all([
       fetch("data/tractatus.json"),
-      fetch("data/tractatus3.json")
+      fetch("data/tractatus3.json"),
+      fetch("data/tractatus4.json")
     ]);
 
     if (!mainResponse.ok) throw new Error(`HTTP ${mainResponse.status}`);
     if (!proposition3Response.ok) throw new Error(`HTTP ${proposition3Response.status}`);
+    if (!proposition4Response.ok) throw new Error(`HTTP ${proposition4Response.status}`);
 
     const tractatus = await mainResponse.json();
     const proposition3 = await proposition3Response.json();
-    const index3 = tractatus.findIndex(item => item.number === "3");
-    if (index3 !== -1) tractatus[index3] = proposition3;
+    const proposition4 = await proposition4Response.json();
+
+    const replacements = { "3": proposition3, "4": proposition4 };
+    Object.entries(replacements).forEach(([number, proposition]) => {
+      const index = tractatus.findIndex(item => item.number === number);
+      if (index !== -1) tractatus[index] = proposition;
+    });
 
     tractatus.forEach(item => tree.appendChild(propositionElement(item)));
   } catch (error) {
