@@ -27,7 +27,23 @@
         <p class="author">Людвіг Вітгенштайн</p>
         <h1>Логіко-філософський трактат</h1>
         <p class="subtitle">Український переклад</p>
+
+        <div class="front-matter">
+          <p class="dedication">Присвячується памʼяті мого друга<br>Девіда Х. Пінсента</p>
+          <p class="motto"><span class="motto-label">Мотто:</span> «…і все, що знаєш, а не лише чув, як воно шумить і реве, можна сказати трьома словами». – Кюрнбергер.</p>
+        </div>
       </div>
+
+      <div class="preface-block">
+        <button id="preface-toggle" class="preface-toggle" type="button" aria-expanded="false" aria-controls="preface-text">
+          <span>Передмова</span>
+          <span class="preface-chevron" aria-hidden="true">▶</span>
+        </button>
+        <div id="preface-text" class="preface-text" hidden>
+          <p class="preface-placeholder">Текст передмови буде додано тут.</p>
+        </div>
+      </div>
+
       <div id="tractatus-tree" class="tractatus-tree" aria-live="polite"></div>
     </section>
 
