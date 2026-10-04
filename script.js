@@ -1,39 +1,3 @@
-const tractatus = [
-  {
-    number: "1",
-    text: "Світ є все, що має місце.",
-    children: [
-      {
-        number: "1.1",
-        text: "Світ – це сукупність фактів, а не речей.",
-        children: [
-          {
-            number: "1.11",
-            text: "Світ визначається фактами і тим, що це всі факти.",
-            comment: "Це - новий коментар, він дуже чудовий і розʼяснює читачу суть цього положення."
-          },
-          {
-            number: "1.12",
-            text: "Адже сукупність фактів визначає, що має місце, а також усе, що не має місця.",
-            comment: ""
-          },
-          {
-            number: "1.13",
-            text: "Факти в логічному просторі є світ.",
-            comment: ""
-          }
-        ]
-      }
-    ]
-  },
-  { number: "2", text: "[Друге основне положення]", children: [] },
-  { number: "3", text: "[Третє основне положення]", children: [] },
-  { number: "4", text: "[Четверте основне положення]", children: [] },
-  { number: "5", text: "[П’яте основне положення]", children: [] },
-  { number: "6", text: "[Шосте основне положення]", children: [] },
-  { number: "7", text: "[Сьоме основне положення]", children: [] }
-];
-
 function propositionElement(item) {
   const wrapper = document.createElement("div");
   wrapper.className = "proposition";
@@ -112,8 +76,22 @@ function propositionElement(item) {
   return wrapper;
 }
 
-const tree = document.getElementById("tractatus-tree");
-tractatus.forEach(item => tree.appendChild(propositionElement(item)));
+async function loadTractatus() {
+  const tree = document.getElementById("tractatus-tree");
+
+  try {
+    const response = await fetch("data/tractatus.json");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const tractatus = await response.json();
+    tractatus.forEach(item => tree.appendChild(propositionElement(item)));
+  } catch (error) {
+    console.error("Не вдалося завантажити текст Трактату:", error);
+    tree.textContent = "Не вдалося завантажити текст. Будь ласка, оновіть сторінку.";
+  }
+}
+
+loadTractatus();
 
 const prefaceToggle = document.getElementById("preface-toggle");
 const prefaceText = document.getElementById("preface-text");
