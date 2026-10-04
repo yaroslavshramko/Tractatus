@@ -1,0 +1,64 @@
+name: Repair Tractatus 4 data
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair and validate JSON
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+
+          p = Path('data/tractatus4.json')
+          s = p.read_text(encoding='utf-8')
+
+          # Close 4.04 before its sibling 4.05.
+          marker = '{"number":"4.05"'
+          j = s.index(marker)
+          if s[j-3:j] != ']},':
+              pass
+          # Insert only when 4.04 is still open.
+          try:
+              json.loads(s)
+          except json.JSONDecodeError:
+              comma = j - 1
+              s = s[:comma] + ']}' + s[comma:]
+
+          # Close 4.1 before its sibling 4.2 if needed.
+          try:
+              json.loads(s)
+          except json.JSONDecodeError:
+              j = s.index('{"number":"4.2"')
+              comma = j - 1
+              s = s[:comma] + ']}' + s[comma:]
+
+          # Close 4.4 before its sibling 4.5 if needed.
+          try:
+              json.loads(s)
+          except json.JSONDecodeError:
+              j = s.index('{"number":"4.5"')
+              comma = j - 1
+              s = s[:comma] + ']}' + s[comma:]
+
+          data = json.loads(s)
+          assert data['number'] == '4'
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit repair if needed
+        run: |
+          if ! git diff --quiet -- data/tractatus4.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/tractatus4.json
+            git commit -m "Fix Tractatus 4 JSON structure"
+            git push
+          fi
