@@ -24,17 +24,22 @@ function propositionElement(item) {
   text.className = "text";
   text.innerHTML = String(item.text ?? "");
 
-  // The first diagram in 6.1203 is redrawn directly from the source document.
-  // Keep the remaining diagrams untouched until this one has been visually approved.
+  // First diagram in 6.1203, redrawn from the source document.
   if (item.number === "6.1203") {
     const firstFigure = text.querySelector(".tractatus-figure");
     if (firstFigure) {
       firstFigure.innerHTML = `<svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Перша схема до 6.1203">
         <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <!-- upper outer brace -->
           <path d="M35 46 C38 31 54 25 78 25 L117 25 C128 25 131 19 136 16 C141 19 144 25 155 25 L218 25 C242 25 257 32 260 46"/>
+          <!-- lower outer brace -->
           <path d="M35 74 C38 89 54 95 78 95 L117 95 C128 95 131 101 136 104 C141 101 144 95 155 95 L218 95 C242 95 257 88 260 74"/>
-          <path d="M38 52 C42 43 52 40 66 40 L107 40 C119 40 124 46 129 51 C134 46 139 40 151 40 L226 40 C240 40 250 44 257 53"/>
-          <path d="M38 68 C42 77 52 80 66 80 L107 80 C119 80 124 74 129 69 C134 74 139 80 151 80 L226 80 C240 80 250 76 257 67"/>
+          <!-- inner upper braces: both point outwards -->
+          <path d="M99 53 C91 49 86 44 86 40 C86 36 91 33 99 31"/>
+          <path d="M201 53 C209 49 214 44 214 40 C214 36 209 33 201 31"/>
+          <!-- inner lower braces: both point outwards; left begins at X -->
+          <path d="M99 67 C91 71 86 76 86 80 C86 84 91 87 99 89"/>
+          <path d="M201 67 C209 71 214 76 214 80 C214 84 209 87 201 89"/>
         </g>
         <g fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic">
           <text x="48" y="66">I p X</text>
