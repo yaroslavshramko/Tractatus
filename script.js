@@ -19,7 +19,7 @@ function propositionElement(item) {
 
   const text = document.createElement("span");
   text.className = "text";
-  text.textContent = item.text;
+  text.innerHTML = item.text;
 
   const controls = document.createElement("span");
   if (hasChildren) {
