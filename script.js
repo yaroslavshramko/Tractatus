@@ -85,28 +85,16 @@ async function fetchJson(path) {
   return response.json();
 }
 
-async function fetchJsonFromGitHub(path) {
-  const apiUrl = `https://api.github.com/repos/yaroslavshramko/Tractatus/contents/${path}?ref=main`;
-  const response = await fetch(apiUrl, {
-    cache: "no-store",
-    headers: { "Accept": "application/vnd.github+json" }
-  });
-  if (!response.ok) throw new Error(`${apiUrl}: HTTP ${response.status}`);
-  const file = await response.json();
-  if (!file.content || file.encoding !== "base64") throw new Error(`Немає base64-вмісту для ${path}`);
-
-  const binary = atob(file.content.replace(/\s/g, ""));
-  const bytes = Uint8Array.from(binary, ch => ch.charCodeAt(0));
-  const jsonText = new TextDecoder("utf-8").decode(bytes);
-  return JSON.parse(jsonText);
-}
-
-async function loadBranch(path) {
+async function fetchBranch(path) {
+  const response = await fetch(`${path}?v=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+  const source = await response.text();
   try {
-    return await fetchJson(path);
-  } catch (localError) {
-    console.warn(`Не вдалося завантажити ${path} з GitHub Pages. Пробую GitHub API.`, localError);
-    return fetchJsonFromGitHub(path);
+    return JSON.parse(source);
+  } catch (jsonError) {
+    // The data files are maintained by this project. This fallback tolerates
+    // JavaScript-object syntax that is slightly more permissive than JSON.
+    return Function(`"use strict"; return (${source});`)();
   }
 }
 
@@ -120,20 +108,16 @@ async function loadTractatus() {
       ["4", "data/tractatus4.json"]
     ];
 
-    const results = await Promise.allSettled(
-      branchFiles.map(([, path]) => loadBranch(path))
-    );
-
-    results.forEach((result, index) => {
-      const [number, path] = branchFiles[index];
-      if (result.status === "fulfilled") {
+    for (const [number, path] of branchFiles) {
+      try {
+        const branch = await fetchBranch(path);
         const branchIndex = tractatus.findIndex(item => item.number === number);
-        if (branchIndex !== -1) tractatus[branchIndex] = result.value;
-        else tractatus.push(result.value);
-      } else {
-        console.error(`Не вдалося завантажити ${path}:`, result.reason);
+        if (branchIndex !== -1) tractatus[branchIndex] = branch;
+        else tractatus.push(branch);
+      } catch (error) {
+        console.error(`Не вдалося завантажити ${path}:`, error);
       }
-    });
+    }
 
     tractatus.sort((a, b) => Number(a.number) - Number(b.number));
     tree.replaceChildren();
