@@ -24,29 +24,84 @@ function propositionElement(item) {
   text.className = "text";
   text.innerHTML = String(item.text ?? "");
 
-  // First diagram in 6.1203, redrawn from the source document.
+  // 6.1203: faithful, responsive redrawings of the five diagrams in the
+  // published Tractatus. Only the truth-value letters are localized: T/F -> І/Х.
   if (item.number === "6.1203") {
-    const firstFigure = text.querySelector(".tractatus-figure");
-    if (firstFigure) {
-      firstFigure.innerHTML = `<svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Перша схема до 6.1203">
-        <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
-          <!-- upper outer brace -->
-          <path d="M35 46 C38 31 54 25 78 25 L117 25 C128 25 131 19 136 16 C141 19 144 25 155 25 L218 25 C242 25 257 32 260 46"/>
-          <!-- lower outer brace -->
-          <path d="M35 74 C38 89 54 95 78 95 L117 95 C128 95 131 101 136 104 C141 101 144 95 155 95 L218 95 C242 95 257 88 260 74"/>
-          <!-- inner upper braces: both point outwards -->
-          <path d="M99 53 C91 49 86 44 86 40 C86 36 91 33 99 31"/>
-          <path d="M201 53 C209 49 214 44 214 40 C214 36 209 33 201 31"/>
-          <!-- inner lower braces: both point outwards; left begins at X -->
-          <path d="M99 67 C91 71 86 76 86 80 C86 84 91 87 99 89"/>
-          <path d="M201 67 C209 71 214 76 214 80 C214 84 209 87 201 89"/>
+    const figures = [...text.querySelectorAll(".tractatus-figure")];
+    const common = `style="display:block;width:min(100%,430px);height:auto;margin:0.6rem auto;overflow:visible" xmlns="http://www.w3.org/2000/svg"`;
+    const ink = `fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"`;
+    const font = `fill="currentColor" font-family="Georgia,'Times New Roman',serif" font-size="18"`;
+
+    const svgs = [
+      `<svg viewBox="0 0 360 130" ${common} role="img" aria-label="Істиннісні комбінації p та q">
+        <g ${font}><text x="55" y="69">І</text><text x="91" y="69" font-style="italic">p</text><text x="126" y="69">Х</text><text x="218" y="69">І</text><text x="254" y="69" font-style="italic">q</text><text x="289" y="69">Х</text></g>
+        <g ${ink}>
+          <!-- upper braces: each inner brace points outward -->
+          <path d="M126 53 C126 43 118 39 109 39 L92 39 C82 39 76 34 76 25 C76 34 70 39 60 39 L55 39"/>
+          <path d="M289 53 C289 43 281 39 272 39 L255 39 C245 39 239 34 239 25 C239 34 233 39 223 39 L218 39"/>
+          <!-- lower braces: begin at the X poles and open outward -->
+          <path d="M126 76 C126 87 118 92 109 92 L92 92 C82 92 76 97 76 106 C76 97 70 92 60 92 L55 92"/>
+          <path d="M289 76 C289 87 281 92 272 92 L255 92 C245 92 239 97 239 106 C239 97 233 92 223 92 L218 92"/>
+          <!-- outer braces join the two argument-braces -->
+          <path d="M55 39 C43 39 37 45 37 55 C37 61 32 65 24 65 C32 65 37 69 37 75 C37 85 43 92 55 92"/>
+          <path d="M289 39 C301 39 307 45 307 55 C307 61 312 65 320 65 C312 65 307 69 307 75 C307 85 301 92 289 92"/>
         </g>
-        <g fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic">
-          <text x="48" y="66">I p X</text>
-          <text x="205" y="66">I q X</text>
+      </svg>`,
+
+      `<svg viewBox="0 0 360 190" ${common} role="img" aria-label="Схема для p імплікує q">
+        <g ${font}><text x="55" y="96">І</text><text x="91" y="96" font-style="italic">p</text><text x="126" y="96">Х</text><text x="218" y="96">І</text><text x="254" y="96" font-style="italic">q</text><text x="289" y="96">Х</text><text x="170" y="24">Х</text><text x="170" y="178">І</text></g>
+        <g ${ink}>
+          <path d="M126 80 C126 70 118 66 109 66 L92 66 C82 66 76 61 76 52 C76 61 70 66 60 66 L55 66"/>
+          <path d="M289 80 C289 70 281 66 272 66 L255 66 C245 66 239 61 239 52 C239 61 233 66 223 66 L218 66"/>
+          <path d="M126 103 C126 114 118 119 109 119 L92 119 C82 119 76 124 76 133 C76 124 70 119 60 119 L55 119"/>
+          <path d="M289 103 C289 114 281 119 272 119 L255 119 C245 119 239 124 239 133 C239 124 233 119 223 119 L218 119"/>
+          <path d="M55 66 C43 66 37 72 37 82 C37 88 32 92 24 92 C32 92 37 96 37 102 C37 112 43 119 55 119"/>
+          <path d="M289 66 C301 66 307 72 307 82 C307 88 312 92 320 92 C312 92 307 96 307 102 C307 112 301 119 289 119"/>
+          <!-- published correlation: the sole false case p=I,q=X goes to X; the other three to I -->
+          <path d="M175 31 L126 80"/><path d="M175 31 L289 80"/>
+          <path d="M175 163 L55 119"/><path d="M175 163 L218 119"/><path d="M175 163 L289 119"/>
         </g>
-      </svg>`;
-    }
+      </svg>`,
+
+      `<svg viewBox="0 0 180 170" ${common} role="img" aria-label="Схема заперечення">
+        <g ${font}><text x="84" y="24">І</text><text x="45" y="89">І</text><text x="84" y="89" font-style="italic">ξ</text><text x="122" y="89">Х</text><text x="84" y="158">Х</text></g>
+        <g ${ink}><path d="M91 31 L122 72"/><path d="M91 143 L45 96"/></g>
+      </svg>`,
+
+      `<svg viewBox="0 0 360 190" ${common} role="img" aria-label="Схема кон'юнкції ξ та η">
+        <g ${font}><text x="55" y="96">І</text><text x="91" y="96" font-style="italic">ξ</text><text x="126" y="96">Х</text><text x="218" y="96">І</text><text x="254" y="96" font-style="italic">η</text><text x="289" y="96">Х</text><text x="170" y="24">І</text><text x="170" y="178">Х</text></g>
+        <g ${ink}>
+          <path d="M126 80 C126 70 118 66 109 66 L92 66 C82 66 76 61 76 52 C76 61 70 66 60 66 L55 66"/>
+          <path d="M289 80 C289 70 281 66 272 66 L255 66 C245 66 239 61 239 52 C239 61 233 66 223 66 L218 66"/>
+          <path d="M126 103 C126 114 118 119 109 119 L92 119 C82 119 76 124 76 133 C76 124 70 119 60 119 L55 119"/>
+          <path d="M289 103 C289 114 281 119 272 119 L255 119 C245 119 239 124 239 133 C239 124 233 119 223 119 L218 119"/>
+          <path d="M55 66 C43 66 37 72 37 82 C37 88 32 92 24 92 C32 92 37 96 37 102 C37 112 43 119 55 119"/>
+          <path d="M289 66 C301 66 307 72 307 82 C307 88 312 92 320 92 C312 92 307 96 307 102 C307 112 301 119 289 119"/>
+          <!-- conjunction: only I/I goes to I; the other combinations go to X -->
+          <path d="M175 31 L55 66"/><path d="M175 163 L126 119"/><path d="M175 163 L218 119"/><path d="M175 163 L289 119"/>
+        </g>
+      </svg>`,
+
+      `<svg viewBox="0 0 390 300" ${common} role="img" aria-label="Схема для заперечення p і не-q">
+        <g ${font}><text x="57" y="139">І</text><text x="91" y="139" font-style="italic">q</text><text x="125" y="139">Х</text><text x="238" y="139">І</text><text x="272" y="139" font-style="italic">p</text><text x="306" y="139">Х</text><text x="191" y="25">І</text><text x="191" y="286">Х</text><text x="147" y="77">Х</text><text x="147" y="211">І</text></g>
+        <g ${ink}>
+          <path d="M125 123 C125 113 117 109 108 109 L92 109 C82 109 76 104 76 95 C76 104 70 109 60 109 L57 109"/>
+          <path d="M306 123 C306 113 298 109 289 109 L273 109 C263 109 257 104 257 95 C257 104 251 109 241 109 L238 109"/>
+          <path d="M125 146 C125 157 117 162 108 162 L92 162 C82 162 76 167 76 176 C76 167 70 162 60 162 L57 162"/>
+          <path d="M306 146 C306 157 298 162 289 162 L273 162 C263 162 257 167 257 176 C257 167 251 162 241 162 L238 162"/>
+          <path d="M57 109 C45 109 39 115 39 125 C39 131 34 135 26 135 C34 135 39 139 39 145 C39 155 45 162 57 162"/>
+          <path d="M306 109 C318 109 324 115 324 125 C324 131 329 135 337 135 C329 135 324 139 324 145 C324 155 318 162 306 162"/>
+          <!-- inner negation of q -->
+          <path d="M153 84 L125 123"/><path d="M153 196 L57 162"/>
+          <!-- conjunction of p with ~q -->
+          <path d="M153 84 C177 92 204 100 238 109"/><path d="M153 196 C184 183 218 171 306 162"/>
+          <!-- outer negation -->
+          <path d="M197 32 C188 48 174 61 153 70"/><path d="M197 271 C187 248 171 228 153 217"/>
+        </g>
+      </svg>`
+    ];
+
+    figures.slice(0, 5).forEach((figure, i) => { figure.innerHTML = svgs[i]; });
   }
 
   function addInfoButton(kind, label, content) {
