@@ -41,6 +41,7 @@ h1 { margin: 0 0 10px; font-weight: normal; font-size: clamp(1.8rem, 4vw, 2.7rem
 .proposition-row.expandable:hover { background: var(--soft); }
 .number { font-weight: bold; font-variant-numeric: tabular-nums; }
 .text { font-size: 1.12rem; min-width: 0; }
+.paragraph-gap { display: block; height: 0.45rem; }
 .chevron { color: var(--muted); font-size: .8rem; transition: transform .15s ease; }
 .proposition.open > .proposition-row .chevron { transform: rotate(90deg); }
 .children { display: none; margin: 8px 0 4px 38px; padding-left: 22px; border-left: 1px solid var(--line); }
@@ -81,12 +82,4 @@ footer { max-width: 920px; margin: 0 auto; padding: 22px 28px 38px; border-top: 
   .tractatus-tertiary-direct { margin-left: 60px; }
   .comment { margin-left: 56px; }
   .truth-scheme { margin-right: -8px; }
-}
-.proposition .text p {
-  margin-top: 0;
-  margin-bottom: 0.4rem;
-}
-
-.proposition .text p:last-child {
-  margin-bottom: 0;
 }
