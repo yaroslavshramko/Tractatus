@@ -14,12 +14,13 @@
     const figures = text.querySelectorAll('.tractatus-figure');
     if (figures.length < 2) return false;
 
-    const figure = figures[1];
-    figure.style.width = '100%';
-    figure.style.maxWidth = '100%';
-    figure.style.height = 'auto';
-    figure.style.overflow = 'visible';
-    figure.innerHTML = '<img src="assets/tractatus6/diagram-2-user.png?v=20261005-6" alt="Друга схема до положення 6.1203" style="display:block;width:auto;max-width:100%;height:auto;max-height:none;object-fit:contain;margin:0.65rem auto;">';
+    const oldFigure = figures[1];
+    const img = document.createElement('img');
+    img.src = 'assets/tractatus6/diagram-2-user.png?v=20261005-7';
+    img.alt = 'Друга схема до положення 6.1203';
+    img.style.cssText = 'display:block;width:auto;max-width:100%;height:auto;max-height:none;margin:20px auto 8px;object-fit:contain;overflow:visible;';
+
+    oldFigure.replaceWith(img);
     return true;
   };
 
