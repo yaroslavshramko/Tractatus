@@ -2,7 +2,7 @@
   const install = () => {
     const img = document.querySelector('img[alt="Перша схема до положення 6.1203"]');
     if (!img) return false;
-    img.style.width = '228px';
+    img.style.width = '200px';
     img.style.maxWidth = '100%';
     img.style.height = 'auto';
     img.style.display = 'block';
