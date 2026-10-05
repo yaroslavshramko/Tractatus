@@ -47,7 +47,7 @@
   {"de":"Sache","uk":"річ","ogden":"entity","pears":"thing","occurrences":[]},
   {"de":"Sachlage","uk":"стан речей","ogden":"state of affairs","pears":"situation","occurrences":[]},
   {"de":"Sachverhalt","uk":"стан справ","ogden":"atomic fact","pears":"state of affair","occurrences":[]},
-  {"de":"Satz","uk":"речення, положення","ogden":"proposition","pears":"proposition","occurrences":[]},
+  {"de":"Satz","uk":[{"term":"речення","occurrences":["3.1","4.001"]},{"term":"положення","occurrences":["1","2"]}],"ogden":"proposition","pears":"proposition"},
   {"de":"Scheinsatz","uk":"псевдоречення","ogden":"pseudoproposition","pears":"pseudo-proposition","occurrences":[]},
   {"de":"sinnlos","uk":"безсмислений","ogden":"without sense","pears":"lack sense","occurrences":[]},
   {"de":"Tatsache","uk":"факт","ogden":"fact","pears":"fact","occurrences":[]},
