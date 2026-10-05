@@ -10,7 +10,7 @@
   {"de":"bestehen","uk":[{"term":"існувати","occurrences":[]}],"ogden":"exist","pears":"exist"},
   {"de":"bestimmen","uk":[{"term":"визначати","occurrences":[]}],"ogden":"determine","pears":"determine"},
   {"de":"bestimmt (Adj.)","uk":[{"term":"визначений","occurrences":[]}],"ogden":"definite","pears":"particular"},
-  {"de":"Bestimmtheit","uk":[{"term":"визначеність","occurrences":[]}],"ogden":"determinateness","pears":""},
+  {"de":"Bestimmtheit","uk":[{"term":"визначеність","occurrences":[]}],"ogden":"determinateness","pears":"be determinate"},
   {"de":"Bestimmung","uk":[{"term":"визначення","occurrences":[]}],"ogden":"determination","pears":"determination"},
   {"de":"bezeichnen","uk":[{"term":"позначати","occurrences":[]}],"ogden":"signify","pears":"signify"},
   {"de":"Beziehung","uk":[{"term":"стосунок","occurrences":[]}],"ogden":"relation","pears":"relation, relationship"},
