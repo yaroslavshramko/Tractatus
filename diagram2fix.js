@@ -5,7 +5,7 @@
     const figures = root.querySelectorAll('.tractatus-figure');
     if (figures.length < 2) return false;
 
-    figures[1].innerHTML = '<img src="assets/t6-61203-2.png?v=20261005-2" alt="Друга схема до положення 6.1203" style="display:block;width:228px;max-width:100%;height:auto;margin:0.65rem auto;">';
+    figures[1].innerHTML = '<img src="assets/t6-61203-2-new.svg?v=20261005-1" alt="Друга схема до положення 6.1203" style="display:block;width:140px;max-width:100%;height:auto;margin:0.65rem auto;">';
     return true;
   };
 
