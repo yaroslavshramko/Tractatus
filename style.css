@@ -67,6 +67,11 @@ th { font-weight: normal; color: var(--muted); }
 .glossary-table th:nth-child(3), .glossary-table td:nth-child(3) { width: 27.5%; }
 .glossary-table th:nth-child(4), .glossary-table td:nth-child(4) { width: 27.5%; }
 .glossary-term { cursor: default; }
+.glossary-uk-term { padding: 0; border: 0; border-bottom: 1px dotted currentColor; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.glossary-uk-term:hover, .glossary-uk-term:focus-visible { color: var(--accent); outline: none; }
+.glossary-occurrences { margin-top: 6px; color: var(--muted); font-size: .9rem; }
+.glossary-occurrence { font-variant-numeric: tabular-nums; }
+.glossary-no-occurrences { font-style: italic; }
 .truth-scheme { max-width: 100%; margin: 20px 0; overflow-x: auto; font-size: .86em; }
 .truth-scheme table { min-width: 620px; margin: 0; }
 .truth-scheme td { padding: 5px 9px; border-bottom: 1px solid var(--line); }
