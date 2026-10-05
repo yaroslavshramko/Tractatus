@@ -73,11 +73,13 @@ th { font-weight: normal; color: var(--muted); }
 .glossary-occurrence { font-variant-numeric: tabular-nums; }
 .glossary-no-occurrences { font-style: italic; }
 .truth-scheme { max-width: 100%; margin: 20px 0; overflow-x: auto; font-size: .86em; }
-.truth-scheme table { min-width: 620px; margin: 0; }
+.truth-scheme table { width: 100%; min-width: 620px; margin: 0; table-layout: fixed; }
 .truth-scheme td { padding: 5px 9px; border-bottom: 1px solid var(--line); }
-.truth-scheme td:first-child { white-space: nowrap; font-variant-numeric: tabular-nums; }
-.truth-scheme td:nth-child(3) { white-space: nowrap; }
+.truth-scheme td:nth-child(1) { width: 22%; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.truth-scheme td:nth-child(2) { width: 35%; white-space: nowrap; }
+.truth-scheme td:nth-child(3) { width: 43%; white-space: nowrap; }
 .truth-scheme tr:first-child td:nth-child(3) { white-space: normal; }
+.truth-scheme tr:first-child td:nth-child(3) > div { display: block; white-space: nowrap; }
 .tractatus-figure { width: min(260px, 100%); margin: 20px auto 8px; color: var(--text); }
 .tractatus-figure svg { display: block; width: 100%; height: auto; }
 .tractatus-figure.visual-field { width: min(330px, 100%); }
