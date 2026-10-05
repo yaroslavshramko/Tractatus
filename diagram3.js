@@ -8,7 +8,7 @@
     if (figures.length < 3) return false;
 
     figures[2].style.width = '';
-    figures[2].innerHTML = '<img src="assets/tractatus6/diagram-3-final.png?v=20261005-final-150b" alt="Третя схема до положення 6.1203" style="display:block;width:90px;max-width:100%;height:auto;margin:0.65rem auto;">';
+    figures[2].innerHTML = '<img src="assets/tractatus6/diagram-3-final.png?v=20261005-final-75" alt="Третя схема до положення 6.1203" style="display:block;width:75px;max-width:100%;height:auto;margin:0.65rem auto;">';
     return true;
   };
 
