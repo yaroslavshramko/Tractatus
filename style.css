@@ -72,7 +72,7 @@ th { font-weight: normal; color: var(--muted); }
 .glossary-occurrences { margin-top: 6px; color: var(--muted); font-size: .9rem; }
 .glossary-occurrence { font-variant-numeric: tabular-nums; }
 .glossary-no-occurrences { font-style: italic; }
-.truth-scheme { width: 100%; margin: 20px 0; overflow-x: auto; font-size: .86em; }
+.truth-scheme { width: 100%; margin: 20px 0; overflow-x: hidden; font-size: .86em; }
 .truth-scheme table { width: 100%; min-width: 700px; margin: 0; table-layout: fixed; }
 .truth-scheme td { padding: 5px 9px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .truth-scheme td:nth-child(1) { width: 19%; white-space: nowrap; font-variant-numeric: tabular-nums; }
