@@ -1,0 +1,56 @@
+name: Install inline comment mechanism
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/install-inline-comments.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove old end-of-proposition comment and load inline comments
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path('data/tractatus4.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+
+          def walk(node):
+              if isinstance(node, dict):
+                  if node.get('number') == '4.1252':
+                      node.pop('comment', None)
+                      return True
+                  for child in node.get('children', []):
+                      if walk(child):
+                          return True
+              return False
+
+          if not walk(data):
+              raise SystemExit('4.1252 not found')
+          p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          h = Path('index.html')
+          s = h.read_text(encoding='utf-8')
+          tag = '<script src="inline-comments.js?v=20261006-1"></script>'
+          if tag not in s:
+              marker = '<script src="script.js?v=20261004-12"></script>'
+              if marker not in s:
+                  raise SystemExit('script.js marker not found in index.html')
+              s = s.replace(marker, marker + tag, 1)
+              h.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tractatus4.json index.html
+          git diff --cached --quiet || git commit -m "Place translator comment inline in 4.1252"
+          git push
