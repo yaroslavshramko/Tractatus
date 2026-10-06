@@ -2,7 +2,13 @@
   const SUPABASE_URL = "https://yyscgdoaplbtdjgeopzl.supabase.co";
   const SUPABASE_KEY = "sb_publishable_WemnUl62SnJlwpwH6FQb2A_nw3vB3Oc";
   const SITE_URL = "https://yaroslavshramko.github.io/Tractatus/";
-  const client = window.supabase?.createClient(SUPABASE_URL, SUPABASE_KEY);
+  const client = window.supabase?.createClient(SUPABASE_URL, SUPABASE_KEY, {
+    auth: {
+      persistSession: true,
+      autoRefreshToken: true,
+      detectSessionInUrl: true
+    }
+  });
 
   const tabs = Array.from(document.querySelectorAll(".discussion-tab"));
   const propositionPanel = document.getElementById("discussion-propositions");
@@ -32,9 +38,41 @@
     return localStorage.getItem("tractatus-discussion-name")?.trim() || "";
   }
 
+  function showDiscussionSection() {
+    const discussionButton = document.querySelector('.nav-link[data-section="discussion"]');
+    if (discussionButton) discussionButton.click();
+  }
+
+  async function finishAuthRedirect() {
+    const url = new URL(window.location.href);
+    const code = url.searchParams.get("code");
+    if (code) {
+      const { error } = await client.auth.exchangeCodeForSession(code);
+      if (error) console.error("Supabase code exchange failed", error);
+      url.searchParams.delete("code");
+      history.replaceState({}, document.title, `${url.pathname}${url.search}#discussion`);
+      showDiscussionSection();
+      return;
+    }
+
+    const hash = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+    if (hash.has("access_token") || hash.has("refresh_token") || hash.has("error")) {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      history.replaceState({}, document.title, `${window.location.pathname}${window.location.search}#discussion`);
+      showDiscussionSection();
+      return;
+    }
+
+    if (window.location.hash === "#discussion") showDiscussionSection();
+  }
+
   async function renderAuth() {
-    const { data } = await client.auth.getUser();
-    currentUser = data.user || null;
+    const { data: sessionData } = await client.auth.getSession();
+    currentUser = sessionData.session?.user || null;
+    if (!currentUser) {
+      const { data } = await client.auth.getUser();
+      currentUser = data.user || null;
+    }
     if (currentUser) {
       authBox.innerHTML = `<div class="discussion-auth-status"><span>Ви увійшли як <strong>${escapeHtml(currentUser.email)}</strong>.</span><button id="discussion-signout" type="button">Вийти</button></div>`;
       document.getElementById("discussion-signout").addEventListener("click", async () => {
@@ -51,7 +89,13 @@
       const email = document.getElementById("discussion-email").value.trim();
       const message = document.getElementById("discussion-login-message");
       message.textContent = "Надсилаю лист…";
-      const { error } = await client.auth.signInWithOtp({ email, options: { emailRedirectTo: `${SITE_URL}#discussion`, shouldCreateUser: true } });
+      const { error } = await client.auth.signInWithOtp({
+        email,
+        options: {
+          emailRedirectTo: `${SITE_URL}#discussion`,
+          shouldCreateUser: true
+        }
+      });
       message.textContent = error ? `Не вдалося надіслати лист: ${error.message}` : "Лист надіслано. Відкрийте посилання в ньому, щоб увійти.";
     });
   }
@@ -181,12 +225,16 @@
     }
   }
 
-  client.auth.onAuthStateChange(async (_event, session) => {
+  client.auth.onAuthStateChange((_event, session) => {
     currentUser = session?.user || null;
-    await renderAuth();
+    setTimeout(async () => {
+      await renderAuth();
+      if (currentNumber) await openProposition(currentNumber, false);
+    }, 0);
   });
 
   (async () => {
+    await finishAuthRedirect();
     await renderAuth();
     await renderRecent();
   })();
