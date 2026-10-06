@@ -45,6 +45,33 @@
     return map;
   }
 
+  function demoDiscussion() {
+    return `<div class="discussion-demo-note">Демонстраційне обговорення</div>
+      <div class="discussion-thread">
+        <article class="discussion-post">
+          <div class="discussion-post-meta"><strong>Олександр К.</strong><span>6 жовтня 2026</span></div>
+          <p>Чи не варто тут додатково пояснити, в якому порядку читаються чотири істиннісні можливості в першому стовпчику таблиці?</p>
+          <button class="discussion-reply-action" type="button">Відповісти</button>
+          <article class="discussion-post discussion-reply">
+            <div class="discussion-post-meta"><strong>Редактор</strong><span>6 жовтня 2026</span></div>
+            <p>Це слушне питання. Таке пояснення, ймовірно, краще подати в коментарі до положення, не втручаючись у текст самого перекладу.</p>
+            <button class="discussion-reply-action" type="button">Відповісти</button>
+          </article>
+        </article>
+        <article class="discussion-post">
+          <div class="discussion-post-meta"><strong>Марія П.</strong><span>6 жовтня 2026</span></div>
+          <p>Мені здається вдалим, що формули в першому й останньому рядках таблиці винесені на окремий рядок: так схема читається значно легше.</p>
+          <button class="discussion-reply-action" type="button">Відповісти</button>
+        </article>
+      </div>
+      <form class="discussion-comment-form" onsubmit="return false;">
+        <label for="discussion-demo-comment">Додати коментар</label>
+        <textarea id="discussion-demo-comment" rows="5" placeholder="Ваш коментар"></textarea>
+        <button type="submit" disabled>Надіслати</button>
+        <p class="discussion-form-note">Демонстраційна форма: надсилання коментарів буде підключено на наступному етапі.</p>
+      </form>`;
+  }
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const number = input.value.trim().replace(",", ".");
@@ -62,7 +89,10 @@
         result.innerHTML = `<p class="discussion-placeholder">Положення ${number} не знайдено.</p>`;
         return;
       }
-      result.innerHTML = `<div class="discussion-proposition-card"><p class="discussion-proposition-number">${item.number}</p><div class="discussion-proposition-text">${String(item.text ?? "")}</div></div><div class="discussion-thread-placeholder"><p class="discussion-placeholder">Обговорення цього положення ще не розпочато.</p><button class="discussion-disabled-action" type="button" disabled>Додати коментар</button></div>`;
+      const thread = number === "5.101"
+        ? demoDiscussion()
+        : '<div class="discussion-thread-placeholder"><p class="discussion-placeholder">Обговорення цього положення ще не розпочато.</p><button class="discussion-disabled-action" type="button" disabled>Додати коментар</button></div>';
+      result.innerHTML = `<div class="discussion-proposition-card"><p class="discussion-proposition-number">${item.number}</p><div class="discussion-proposition-text">${String(item.text ?? "")}</div></div>${thread}`;
     } catch (error) {
       result.innerHTML = '<p class="discussion-placeholder">Не вдалося відкрити положення. Спробуйте ще раз.</p>';
     }
