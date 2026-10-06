@@ -57,7 +57,7 @@
 
     const hash = new URLSearchParams(window.location.hash.replace(/^#/, ""));
     if (hash.has("access_token") || hash.has("refresh_token") || hash.has("error")) {
-      await new Promise((resolve) => setTimeout(resolve, 100));
+      await new Promise((resolve) => setTimeout(resolve, 150));
       history.replaceState({}, document.title, `${window.location.pathname}${window.location.search}#discussion`);
       showDiscussionSection();
       return;
@@ -92,7 +92,7 @@
       const { error } = await client.auth.signInWithOtp({
         email,
         options: {
-          emailRedirectTo: `${SITE_URL}#discussion`,
+          emailRedirectTo: SITE_URL,
           shouldCreateUser: true
         }
       });
