@@ -50,7 +50,7 @@
     button.title = "Коментар";
     button.setAttribute("aria-label", `Коментар до положення ${spec.proposition}`);
     button.dataset.inlineComment = spec.proposition;
-    tail.parentNode.insertBefore(document.createTextNode(" "), tail);
+    button.style.marginLeft = "0.12em";
     tail.parentNode.insertBefore(button, tail);
 
     const panel = document.createElement("div");
