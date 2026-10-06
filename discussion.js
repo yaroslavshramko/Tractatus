@@ -5,6 +5,7 @@
   const form = document.getElementById("discussion-proposition-form");
   const input = document.getElementById("discussion-proposition-number");
   const result = document.getElementById("discussion-proposition-result");
+  const recentList = document.getElementById("discussion-recent-list");
 
   if (!tabs.length || !form || !input || !result) return;
 
@@ -72,16 +73,8 @@
       </form>`;
   }
 
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const number = input.value.trim().replace(",", ".");
-    if (!number) {
-      result.innerHTML = '<p class="discussion-placeholder">Введіть номер положення.</p>';
-      return;
-    }
-
-    result.innerHTML = '<p class="discussion-placeholder">Шукаю положення…</p>';
-
+  async function openProposition(number) {
+    result.innerHTML = '<p class="discussion-placeholder">Відкриваю положення…</p>';
     try {
       const index = await loadIndex();
       const item = index.get(number);
@@ -93,8 +86,40 @@
         ? demoDiscussion()
         : '<div class="discussion-thread-placeholder"><p class="discussion-placeholder">Обговорення цього положення ще не розпочато.</p><button class="discussion-disabled-action" type="button" disabled>Додати коментар</button></div>';
       result.innerHTML = `<div class="discussion-proposition-card"><p class="discussion-proposition-number">${item.number}</p><div class="discussion-proposition-text">${String(item.text ?? "")}</div></div>${thread}`;
+      result.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (error) {
       result.innerHTML = '<p class="discussion-placeholder">Не вдалося відкрити положення. Спробуйте ще раз.</p>';
     }
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const number = input.value.trim().replace(",", ".");
+    if (!number) {
+      result.innerHTML = '<p class="discussion-placeholder">Введіть номер положення.</p>';
+      return;
+    }
+    openProposition(number);
   });
+
+  async function renderRecent() {
+    if (!recentList) return;
+    try {
+      const index = await loadIndex();
+      const item = index.get("5.101");
+      if (!item) throw new Error("not found");
+      const plainText = String(item.text ?? "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+      const excerpt = plainText.length > 105 ? `${plainText.slice(0, 105).trim()}…` : plainText;
+      recentList.innerHTML = `<button class="discussion-recent-item" type="button" data-proposition="5.101"><span class="discussion-recent-title"><strong>5.101</strong> — ${excerpt}</span><span class="discussion-recent-meta">3 дописи · останній 6 жовтня 2026</span></button>`;
+      recentList.querySelector(".discussion-recent-item").addEventListener("click", () => {
+        input.value = "5.101";
+        tabs[0].click();
+        openProposition("5.101");
+      });
+    } catch (error) {
+      recentList.innerHTML = '<p class="discussion-placeholder">Не вдалося завантажити останні обговорення.</p>';
+    }
+  }
+
+  renderRecent();
 })();
