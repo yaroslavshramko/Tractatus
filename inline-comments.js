@@ -75,8 +75,8 @@
     if (!node) return;
     const pos = node.nodeValue.indexOf(spec.after) + spec.after.length;
     const tail = node.splitText(pos);
-    tail.parentNode.insertBefore(document.createTextNode(" "), tail);
     tail.parentNode.insertBefore(button, tail);
+    button.style.marginLeft = "0.12em";
     button.dataset.inlinePlaced = "true";
   }
 
