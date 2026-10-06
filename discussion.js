@@ -37,7 +37,14 @@
   async function loadIndex() {
     if (propositionIndex) return propositionIndex;
     const map = new Map();
-    const files = Array.from({ length: 7 }, (_, index) => `data/tractatus${index + 1}.json`);
+    const files = [
+      "data/tractatus.json",
+      "data/tractatus3.json",
+      "data/tractatus4.json",
+      "data/tractatus5.json",
+      "data/tractatus6.json",
+      "data/tractatus7.json"
+    ];
     const responses = await Promise.all(files.map((file) => fetch(file)));
     if (responses.some((response) => !response.ok)) throw new Error("Не вдалося завантажити текст Трактату.");
     const data = await Promise.all(responses.map((response) => response.json()));
