@@ -72,6 +72,27 @@ th { font-weight: normal; color: var(--muted); }
 .glossary-occurrences { margin-top: 6px; color: var(--muted); font-size: .9rem; }
 .glossary-occurrence { font-variant-numeric: tabular-nums; }
 .glossary-no-occurrences { font-style: italic; }
+.discussion-intro { max-width: 760px; margin-top: 20px; }
+.discussion-tabs { display: flex; gap: 22px; margin-top: 34px; border-bottom: 1px solid var(--line); }
+.discussion-tab { margin: 0 0 -1px; padding: 8px 0 9px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); font: inherit; cursor: pointer; }
+.discussion-tab:hover, .discussion-tab.active { color: var(--text); border-bottom-color: var(--accent); }
+.discussion-panel { padding-top: 26px; }
+.discussion-proposition-search { max-width: 520px; }
+.discussion-proposition-search label { display: block; margin-bottom: 7px; color: var(--muted); font-size: .9rem; }
+.discussion-search-row { display: flex; gap: 10px; }
+.discussion-search-row input { flex: 1; min-width: 0; padding: 9px 11px; border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--text); font: inherit; }
+.discussion-search-row input:focus { border-color: var(--accent); outline: none; }
+.discussion-search-row button, .discussion-disabled-action { padding: 9px 15px; border: 1px solid var(--accent); border-radius: 4px; background: transparent; color: var(--accent); font: inherit; cursor: pointer; }
+.discussion-search-row button:hover { background: var(--soft); }
+.discussion-disabled-action { margin-top: 8px; border-color: var(--line); color: var(--muted); cursor: default; }
+.discussion-proposition-result { margin-top: 28px; }
+.discussion-proposition-card { padding: 18px 20px; border-left: 2px solid var(--accent); background: var(--soft); }
+.discussion-proposition-number { margin: 0 0 8px; font-weight: bold; }
+.discussion-proposition-text { margin: 0; font-size: 1.05rem; }
+.discussion-thread-placeholder { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+.discussion-placeholder { color: var(--muted); }
+.discussion-recent { margin-top: 46px; padding-top: 26px; border-top: 1px solid var(--line); }
+.discussion-recent h2 { margin: 0 0 12px; font-size: 1.2rem; font-weight: normal; }
 .truth-scheme { width: 100%; margin: 20px 0; overflow-x: hidden; font-size: .86em; }
 .truth-scheme table { width: 100%; min-width: 700px; margin: 0; table-layout: fixed; }
 .truth-scheme td { padding: 5px 9px; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -99,6 +120,7 @@ footer { max-width: 920px; margin: 0 auto; padding: 22px 28px 38px; border-top: 
   .tractatus-secondary-direct { margin-left: 30px; }
   .tractatus-tertiary-direct { margin-left: 60px; }
   .comment { margin-left: 56px; }
+  .discussion-search-row { align-items: stretch; }
   .truth-scheme { margin-right: -8px; }
   .glossary-table { min-width: 700px; table-layout: auto; }
 }
