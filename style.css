@@ -85,7 +85,7 @@ th { font-weight: normal; color: var(--muted); }
 .discussion-search-row button, .discussion-disabled-action { padding: 9px 15px; border: 1px solid var(--accent); border-radius: 4px; background: transparent; color: var(--accent); font: inherit; cursor: pointer; }
 .discussion-search-row button:hover { background: var(--soft); }
 .discussion-disabled-action { margin-top: 8px; border-color: var(--line); color: var(--muted); cursor: default; }
-.discussion-proposition-result { margin-top: 28px; }
+.discussion-proposition-result { margin-top: 28px; scroll-margin-top: 120px; }
 .discussion-proposition-card { padding: 18px 20px; border-left: 2px solid var(--accent); background: var(--soft); }
 .discussion-proposition-number { margin: 0 0 8px; font-weight: bold; }
 .discussion-proposition-text { margin: 0; font-size: 1.05rem; }
@@ -108,6 +108,10 @@ th { font-weight: normal; color: var(--muted); }
 .discussion-form-note { margin-top: 8px; color: var(--muted); font-size: .86rem; }
 .discussion-recent { margin-top: 46px; padding-top: 26px; border-top: 1px solid var(--line); }
 .discussion-recent h2 { margin: 0 0 12px; font-size: 1.2rem; font-weight: normal; }
+.discussion-recent-item { display: block; width: 100%; padding: 14px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--text); text-align: left; font: inherit; cursor: pointer; }
+.discussion-recent-item:hover .discussion-recent-title { color: var(--accent); }
+.discussion-recent-title, .discussion-recent-meta { display: block; }
+.discussion-recent-meta { margin-top: 4px; color: var(--muted); font-size: .88rem; }
 .truth-scheme { width: 100%; margin: 20px 0; overflow-x: hidden; font-size: .86em; }
 .truth-scheme table { width: 100%; min-width: 700px; margin: 0; table-layout: fixed; }
 .truth-scheme td { padding: 5px 9px; border-bottom: 1px solid var(--line); vertical-align: top; }
