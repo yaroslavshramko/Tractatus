@@ -86,11 +86,12 @@
       {
         "term": "вираження",
         "occurrences": []
-      }
-       {
+      },
+      {
         "term": "вираз",
         "occurrences": []
-      }    ],
+      }
+    ],
     "ogden": "expression",
     "pears": "expression"
   },
