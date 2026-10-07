@@ -1273,10 +1273,13 @@
     "de": "Naturwissenschaft",
     "uk": [
       {
-        "term": "природознавство, природнича наука",
+        "term": "природознавство",
         "occurrences": []
-      }
-    ],
+      },
+       {
+        "term": "природнича наука",
+        "occurrences": []
+      }    ],
     "ogden": "natural science",
     "pears": "natural science"
   },
@@ -1721,10 +1724,13 @@
     "de": "verneinte Satz",
     "uk": [
       {
-        "term": "заперечуване речення, речення, яке заперечують",
+        "term": "заперечуване речення",
         "occurrences": []
-      }
-    ],
+      },
+      {
+        "term": "речення, яке заперечують",
+        "occurrences": []
+      }    ],
     "ogden": "proposition that is denied",
     "pears": "negated proposition"
   },
