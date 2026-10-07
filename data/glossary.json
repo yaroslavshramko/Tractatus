@@ -84,10 +84,13 @@
     "de": "Ausdruck",
     "uk": [
       {
-        "term": "вираження, вираз",
+        "term": "вираження",
         "occurrences": []
       }
-    ],
+       {
+        "term": "вираз",
+        "occurrences": []
+      }    ],
     "ogden": "expression",
     "pears": "expression"
   },
@@ -1868,7 +1871,7 @@
     "pears": "probability"
   },
   {
-    "de": "Wahrscheinlichkeitslehre",
+    "de": "Wahrscheinlichkeits-lehre",
     "uk": [
       {
         "term": "теорія ймовірностей",
@@ -1879,7 +1882,7 @@
     "pears": "theory of probability"
   },
   {
-    "de": "Wahrscheinlichkeitssatz",
+    "de": "Wahrscheinlichkeits-satz",
     "uk": [
       {
         "term": "речення ймовірності",
