@@ -68,7 +68,7 @@
     ].some(value => String(value || '').toLocaleLowerCase('uk').includes(q))));
   });
 
-  fetch('data/glossary.json?v=20261005-1')
+  fetch('data/glossary.json?v=20261007-2')
     .then(response => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
