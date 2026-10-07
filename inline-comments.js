@@ -8,7 +8,7 @@
   ];
 
   const notes = [
-    { proposition: "4.032", after: "ambulo" },
+    { proposition: "4.032", after: "ambulo»" },
     { proposition: "4.123", after: "eo ipso" },
     { proposition: "4.1273", after: "circulus vitiosus" },
     { proposition: "5.451", after: "mutatis mutandis" },
