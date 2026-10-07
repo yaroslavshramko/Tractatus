@@ -9,6 +9,10 @@
 
   const notes = [
     {
+      proposition: "4.032",
+      after: "ambulo"
+    },
+    {
       proposition: "4.123",
       after: "eo ipso"
     }
