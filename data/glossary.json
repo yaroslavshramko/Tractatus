@@ -180,6 +180,17 @@
     "pears": "exist"
   },
   {
+    "de": "Bestehen",
+    "uk": [
+      {
+        "term": "існування",
+        "occurrences": []
+      }
+    ],
+    "ogden": "existence",
+    "pears": "existence"
+  },
+  {
     "de": "bestimmen",
     "uk": [
       {
