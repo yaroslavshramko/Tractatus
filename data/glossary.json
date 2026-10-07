@@ -1,76 +1,2094 @@
 [
-  {"de":"abbilden","uk":[{"term":"відображати","occurrences":[]}],"ogden":"depict","pears":"depict"},
-  {"de":"Anschauung","uk":[{"term":"інтуїція","occurrences":[]},{"term":"споглядання","occurrences":[]}],"ogden":"intuition, contemplation","pears":"intuition, view"},
-  {"de":"Anzeichen","uk":[{"term":"прикмета","occurrences":[]}],"ogden":"indication, symptom, mark","pears":"indication, sign, mark"},
-  {"de":"Aussage","uk":[{"term":"висловлювання","occurrences":[]}],"ogden":"statement, assertion","pears":"statement"},
-  {"de":"Basis (Basen)","uk":[{"term":"база (бази)","occurrences":[]}],"ogden":"basis (bases)","pears":"base (bases)"},
-  {"de":"Bedeutung","uk":[{"term":"предметне значення","occurrences":[]}],"ogden":"meaning, significant","pears":"meaning"},
-  {"de":"Begriffsschrift","uk":[{"term":"поняттєпис","occurrences":[]}],"ogden":"logical symbolism","pears":"conceptual notation"},
-  {"de":"Bestandteil","uk":[{"term":"складник","occurrences":[]}],"ogden":"constituent part","pears":"constituent"},
-  {"de":"bestehen","uk":[{"term":"існувати","occurrences":[]}],"ogden":"exist","pears":"exist"},
-  {"de":"bestimmen","uk":[{"term":"визначати","occurrences":[]}],"ogden":"determine","pears":"determine"},
-  {"de":"bestimmt (Adj.)","uk":[{"term":"визначений","occurrences":[]}],"ogden":"definite","pears":"particular"},
-  {"de":"Bestimmtheit","uk":[{"term":"визначеність","occurrences":[]}],"ogden":"determinateness","pears":"be determinate"},
-  {"de":"Bestimmung","uk":[{"term":"визначення","occurrences":[]}],"ogden":"determination","pears":"determination"},
-  {"de":"bezeichnen","uk":[{"term":"позначати","occurrences":[]}],"ogden":"signify","pears":"signify"},
-  {"de":"Beziehung","uk":[{"term":"стосунок","occurrences":[]}],"ogden":"relation","pears":"relation, relationship"},
-  {"de":"Bild","uk":[{"term":"образ","occurrences":[]},{"term":"картина","occurrences":[]}],"ogden":"picture","pears":"picture"},
-  {"de":"bilden","uk":[{"term":"утворювати","occurrences":[]}],"ogden":"form","pears":"make up, produce"},
-  {"de":"darstellen","uk":[{"term":"репрезентувати","occurrences":[]}],"ogden":"represent, present","pears":"represent"},
-  {"de":"Definition","uk":[{"term":"означення","occurrences":[]}],"ogden":"definition","pears":"defintion"},
-  {"de":"Ding","uk":[{"term":"річ","occurrences":[]}],"ogden":"thing","pears":"thing"},
-  {"de":"Eigenschaft","uk":[{"term":"властивість","occurrences":[]}],"ogden":"quality","pears":"property"},
-  {"de":"Einsicht","uk":[{"term":"прозріння","occurrences":[]}],"ogden":"result, intuition","pears":"insight"},
-  {"de":"ergeben","uk":[{"term":"давати (продукувати)","occurrences":[]}],"ogden":"give","pears":"yield"},
-  {"de":"ergeben, sich","uk":[{"term":"виходити","occurrences":[]}],"ogden":"follow","pears":"prove to be"},
-  {"de":"Erläuterung","uk":[{"term":"розʼяснення","occurrences":[]}],"ogden":"elucidation","pears":"elucidation"},
-  {"de":"erzeugen","uk":[{"term":"генерувати","occurrences":[]}],"ogden":"generate","pears":"generate"},
-  {"de":"der Fall sein","uk":[{"term":"мати місце","occurrences":[]}],"ogden":"to be the case","pears":"to be the case"},
-  {"de":"Formenreihe","uk":[{"term":"формальний ряд","occurrences":[]}],"ogden":"formal series","pears":"series of forms"},
-  {"de":"Gebilde","uk":[{"term":"утворення","occurrences":[]}],"ogden":"thing","pears":"thing"},
-  {"de":"Gerüst","uk":[{"term":"риштування","occurrences":[]}],"ogden":"scaffolding","pears":"scaffolding"},
-  {"de":"gesamt","uk":[{"term":"увесь","occurrences":[]}],"ogden":"total","pears":"sum-total"},
-  {"de":"Gesamtheit","uk":[{"term":"сукупність","occurrences":[]}],"ogden":"totality","pears":"totality"},
-  {"de":"Gleichheit","uk":[{"term":"рівність","occurrences":[]}],"ogden":"identity, equality","pears":"identity, equivalence"},
-  {"de":"Gleichheitszeichen","uk":[{"term":"знак рівності","occurrences":[]}],"ogden":"sign of equality, sign of identity","pears":"sign for identity, identity-sign"},
-  {"de":"Gleichung","uk":[{"term":"рівняння","occurrences":[]}],"ogden":"equation","pears":"eguation"},
-  {"de":"Grund","uk":[{"term":"причина","occurrences":[]},{"term":"підстава","occurrences":[]}],"ogden":"reason","pears":"reason, source"},
-  {"de":"Grundbegriff","uk":[{"term":"основне поняття","occurrences":[]}],"ogden":"primitive idea","pears":"primitive idea"},
-  {"de":"Grundgedanke","uk":[{"term":"основна думка","occurrences":[]}],"ogden":"fundamental thought","pears":"fundamental idea"},
-  {"de":"Grundgesetz","uk":[{"term":"основний закон","occurrences":[]}],"ogden":"primitive proposition","pears":"primitive proposition"},
-  {"de":"Grundlage","uk":[{"term":"основа","occurrences":[]}],"ogden":"foundation","pears":"foundation"},
-  {"de":"Grundoperation","uk":[{"term":"основна операція","occurrences":[]}],"ogden":"fundamental operation","pears":"fundamental operation"},
-  {"de":"Grundsatz","uk":[{"term":"основний принцип","occurrences":[]}],"ogden":"fundamental principle","pears":"fundamental principle"},
-  {"de":"logischer Raum","uk":[{"term":"логічний простір","occurrences":[]}],"ogden":"logical space","pears":"logical space"},
-  {"de":"Mannigfaltigkeit","uk":[{"term":"розмаїтість","occurrences":[]}],"ogden":"multiplicity","pears":"multiplicity"},
-  {"de":"Merkmal","uk":[{"term":"ознака","occurrences":[]}],"ogden":"characteristic mark","pears":"characteristic mark"},
-  {"de":"Relation","uk":[{"term":"відношення","occurrences":[]}],"ogden":"relation","pears":"relation"},
-  {"de":"Sache","uk":[{"term":"обʼєкт","occurrences":[]}],"ogden":"entity, thing","pears":"thing"},
-  {"de":"Sachlage","uk":[{"term":"стан речей","occurrences":[]}],"ogden":"state of affairs","pears":"situation"},
-  {"de":"Sachverhalt","uk":[{"term":"стан справ","occurrences":[]}],"ogden":"atomic fact","pears":"state of affair"},
-  {"de":"Satz","uk":[{"term":"речення","occurrences":[]},{"term":"положення","occurrences":[]}],"ogden":"proposition","pears":"proposition"},
-  {"de":"Scheinsatz","uk":[{"term":"псевдоречення","occurrences":[]}],"ogden":"pseudoproposition","pears":"pseudo-proposition"},
-  {"de":"sinnlos","uk":[{"term":"безсмислений","occurrences":[]}],"ogden":"without sense","pears":"lack sense"},
-  {"de":"Tatsache","uk":[{"term":"факт","occurrences":[]}],"ogden":"fact","pears":"fact"},
-  {"de":"unsinnig","uk":[{"term":"безглуздий","occurrences":[]}],"ogden":"nonsensical","pears":"nonsensical"},
-  {"de":"Urbild","uk":[{"term":"прообраз","occurrences":[]}],"ogden":"prototype","pears":"prototype"},
-  {"de":"Urzeichen","uk":[{"term":"первинний знак","occurrences":[]}],"ogden":"primitive sign","pears":"primitive sign"},
-  {"de":"Verband","uk":[{"term":"склад","occurrences":[]}],"ogden":"context","pears":"combination"},
-  {"de":"Verbindung","uk":[{"term":"сполучення","occurrences":[]}],"ogden":"combination","pears":"combination"},
-  {"de":"Verhältnis","uk":[{"term":"співвідношення","occurrences":[]}],"ogden":"ratio","pears":"ratio"},
-  {"de":"verhalten, sich","uk":[{"term":"складатися","occurrences":[]},{"term":"так само","occurrences":[]}],"ogden":"work, happen, things stand, be the case","pears":"behave, be, things stand"},
-  {"de":"verhalten, sich zu einander","uk":[{"term":"співвідноситись між собою","occurrences":[]}],"ogden":"are combined","pears":"stand to one another"},
-  {"de":"vertreten","uk":[{"term":"представляти","occurrences":[]}],"ogden":"stand for","pears":"be the representatives"},
-  {"de":"vorkommen","uk":[{"term":"входити","occurrences":[]}],"ogden":"occur","pears":"occur"},
-  {"de":"Vorkommen","uk":[{"term":"входження","occurrences":[]}],"ogden":"occurrence","pears":"occurrence"},
-  {"de":"Welt","uk":[{"term":"світ","occurrences":[]}],"ogden":"world","pears":"world"},
-  {"de":"Wert","uk":[{"term":"значення","occurrences":[]}],"ogden":"value","pears":"value"},
-  {"de":"Wirklichkeit","uk":[{"term":"дійсність","occurrences":[]}],"ogden":"reality","pears":"reality"},
-  {"de":"Wirkung","uk":[{"term":"дія","occurrences":[]}],"ogden":"effect","pears":"effect"},
-  {"de":"zeigen, sich","uk":[{"term":"показувати себе","occurrences":[]}],"ogden":"show itself","pears":"make itself manifest"},
-  {"de":"zerfallen","uk":[{"term":"розпадатись","occurrences":[]}],"ogden":"divide","pears":"divide"},
-  {"de":"Zuordnung","uk":[{"term":"співвіднесення","occurrences":[]}],"ogden":"coordination","pears":"correlation"},
-  {"de":"zusammengesetzt","uk":[{"term":"складений","occurrences":[]}],"ogden":"compound","pears":"composite"},
-  {"de":"Zusammenhang","uk":[{"term":"звʼязок","occurrences":[]},{"term":"контекст","occurrences":[]}],"ogden":"connexion","pears":"connexion"},
-  {"de":"zusammenhängen","uk":[{"term":"бути повʼязаним","occurrences":[]}],"ogden":"hang together","pears":"be connected"}
+  {
+    "de": "abbilden",
+    "uk": [
+      {
+        "term": "відображати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "depict",
+    "pears": "depict"
+  },
+  {
+    "de": "abbildende Beziehung",
+    "uk": [
+      {
+        "term": "відображувальний стосунок",
+        "occurrences": []
+      }
+    ],
+    "ogden": "representing relation",
+    "pears": "picturial relationship"
+  },
+  {
+    "de": "allgemeine Form",
+    "uk": [
+      {
+        "term": "загальна форма",
+        "occurrences": []
+      }
+    ],
+    "ogden": "general form",
+    "pears": "general form"
+  },
+  {
+    "de": "Allgemeinheitsbezeichnung",
+    "uk": [
+      {
+        "term": "позначення загальності",
+        "occurrences": []
+      }
+    ],
+    "ogden": "notation of generality",
+    "pears": "notation of generality"
+  },
+  {
+    "de": "analytischer Satz",
+    "uk": [
+      {
+        "term": "аналітичне речення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "analytical proposition",
+    "pears": "analytic proposition"
+  },
+  {
+    "de": "Anschauung",
+    "uk": [
+      {
+        "term": "інтуїція",
+        "occurrences": []
+      },
+      {
+        "term": "споглядання",
+        "occurrences": []
+      }
+    ],
+    "ogden": "intuition, contemplation",
+    "pears": "intuition, view"
+  },
+  {
+    "de": "Anzeichen",
+    "uk": [
+      {
+        "term": "прикмета",
+        "occurrences": []
+      }
+    ],
+    "ogden": "indication, symptom, mark",
+    "pears": "indication, sign, mark"
+  },
+  {
+    "de": "Ausdruck",
+    "uk": [
+      {
+        "term": "вираження, вираз",
+        "occurrences": []
+      }
+    ],
+    "ogden": "expression",
+    "pears": "expression"
+  },
+  {
+    "de": "Aussage",
+    "uk": [
+      {
+        "term": "висловлювання",
+        "occurrences": []
+      }
+    ],
+    "ogden": "statement, assertion",
+    "pears": "statement"
+  },
+  {
+    "de": "Basis (Basen)",
+    "uk": [
+      {
+        "term": "база (бази)",
+        "occurrences": []
+      }
+    ],
+    "ogden": "basis (bases)",
+    "pears": "base (bases)"
+  },
+  {
+    "de": "Bedeutung",
+    "uk": [
+      {
+        "term": "предметне значення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "meaning, significant",
+    "pears": "meaning"
+  },
+  {
+    "de": "Begriff",
+    "uk": [
+      {
+        "term": "поняття",
+        "occurrences": []
+      }
+    ],
+    "ogden": "concept",
+    "pears": "concept"
+  },
+  {
+    "de": "Begriffsschrift",
+    "uk": [
+      {
+        "term": "поняттєпис",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical symbolism",
+    "pears": "conceptual notation"
+  },
+  {
+    "de": "Beschreibung",
+    "uk": [
+      {
+        "term": "опис",
+        "occurrences": []
+      }
+    ],
+    "ogden": "description",
+    "pears": "description"
+  },
+  {
+    "de": "Bestandteil",
+    "uk": [
+      {
+        "term": "складник",
+        "occurrences": []
+      }
+    ],
+    "ogden": "constituent part",
+    "pears": "constituent"
+  },
+  {
+    "de": "bestehen",
+    "uk": [
+      {
+        "term": "існувати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "exist",
+    "pears": "exist"
+  },
+  {
+    "de": "bestimmen",
+    "uk": [
+      {
+        "term": "визначати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "determine",
+    "pears": "determine"
+  },
+  {
+    "de": "bestimmt (Adj.)",
+    "uk": [
+      {
+        "term": "визначений",
+        "occurrences": []
+      }
+    ],
+    "ogden": "definite",
+    "pears": "particular"
+  },
+  {
+    "de": "Bestimmtheit",
+    "uk": [
+      {
+        "term": "визначеність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "determinateness",
+    "pears": "be determinate"
+  },
+  {
+    "de": "Bestimmung",
+    "uk": [
+      {
+        "term": "визначення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "determination",
+    "pears": "determination"
+  },
+  {
+    "de": "bezeichnen",
+    "uk": [
+      {
+        "term": "позначати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "signify",
+    "pears": "signify"
+  },
+  {
+    "de": "Bezeichnung",
+    "uk": [
+      {
+        "term": "позначення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "symbolization",
+    "pears": "signifying"
+  },
+  {
+    "de": "Bezeichnungsweise",
+    "uk": [
+      {
+        "term": "спосіб позначення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "method of symbilizing",
+    "pears": "mode of signification, mode of signifying"
+  },
+  {
+    "de": "Beziehung",
+    "uk": [
+      {
+        "term": "стосунок",
+        "occurrences": []
+      }
+    ],
+    "ogden": "relation",
+    "pears": "relation, relationship"
+  },
+  {
+    "de": "Bild",
+    "uk": [
+      {
+        "term": "образ",
+        "occurrences": []
+      },
+      {
+        "term": "картина",
+        "occurrences": []
+      }
+    ],
+    "ogden": "picture",
+    "pears": "picture"
+  },
+  {
+    "de": "bilden",
+    "uk": [
+      {
+        "term": "утворювати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form",
+    "pears": "make up, produce"
+  },
+  {
+    "de": "darstellen",
+    "uk": [
+      {
+        "term": "репрезентувати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "represent, present",
+    "pears": "represent"
+  },
+  {
+    "de": "Definition",
+    "uk": [
+      {
+        "term": "означення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "definition",
+    "pears": "defintion"
+  },
+  {
+    "de": "der Fall sein",
+    "uk": [
+      {
+        "term": "мати місце",
+        "occurrences": []
+      }
+    ],
+    "ogden": "to be the case",
+    "pears": "to be the case"
+  },
+  {
+    "de": "Ding",
+    "uk": [
+      {
+        "term": "річ",
+        "occurrences": []
+      }
+    ],
+    "ogden": "thing",
+    "pears": "thing"
+  },
+  {
+    "de": "Eigenschaft",
+    "uk": [
+      {
+        "term": "властивість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "quality",
+    "pears": "property"
+  },
+  {
+    "de": "Eigenschaftswort",
+    "uk": [
+      {
+        "term": "прикметник",
+        "occurrences": []
+      }
+    ],
+    "ogden": "adjective",
+    "pears": "adjective"
+  },
+  {
+    "de": "einfaches Zeichen",
+    "uk": [
+      {
+        "term": "простий знак",
+        "occurrences": []
+      }
+    ],
+    "ogden": "simple sign",
+    "pears": "simple singn"
+  },
+  {
+    "de": "Einsicht",
+    "uk": [
+      {
+        "term": "прозріння",
+        "occurrences": []
+      }
+    ],
+    "ogden": "result, intuition",
+    "pears": "insight"
+  },
+  {
+    "de": "Elementarsatz",
+    "uk": [
+      {
+        "term": "елементарне речення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "elementary proposition",
+    "pears": "elementary proposition"
+  },
+  {
+    "de": "Elemente des Bildes",
+    "uk": [
+      {
+        "term": "елементи образу",
+        "occurrences": []
+      }
+    ],
+    "ogden": "elements of the picture",
+    "pears": "elements of the picture"
+  },
+  {
+    "de": "Ereignis",
+    "uk": [
+      {
+        "term": "подія",
+        "occurrences": []
+      }
+    ],
+    "ogden": "event",
+    "pears": "event"
+  },
+  {
+    "de": "Erfahrung",
+    "uk": [
+      {
+        "term": "досвід",
+        "occurrences": []
+      }
+    ],
+    "ogden": "experience",
+    "pears": "experience"
+  },
+  {
+    "de": "ergeben",
+    "uk": [
+      {
+        "term": "давати (продукувати)",
+        "occurrences": []
+      }
+    ],
+    "ogden": "give",
+    "pears": "yield"
+  },
+  {
+    "de": "ergeben, sich",
+    "uk": [
+      {
+        "term": "виходити",
+        "occurrences": []
+      }
+    ],
+    "ogden": "follow",
+    "pears": "prove to be"
+  },
+  {
+    "de": "Erläuterung",
+    "uk": [
+      {
+        "term": "розʼяснення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "elucidation",
+    "pears": "elucidation"
+  },
+  {
+    "de": "erzeugen",
+    "uk": [
+      {
+        "term": "генерувати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "generate",
+    "pears": "generate"
+  },
+  {
+    "de": "Ethik",
+    "uk": [
+      {
+        "term": "етика",
+        "occurrences": []
+      }
+    ],
+    "ogden": "ethics",
+    "pears": "ethics"
+  },
+  {
+    "de": "Existenz",
+    "uk": [
+      {
+        "term": "існування",
+        "occurrences": []
+      }
+    ],
+    "ogden": "existence",
+    "pears": "existence"
+  },
+  {
+    "de": "externe Eigenschaft",
+    "uk": [
+      {
+        "term": "зовнішня властивість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "external property",
+    "pears": "external property"
+  },
+  {
+    "de": "externe Relation",
+    "uk": [
+      {
+        "term": "зовнішнє відношення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "external relation",
+    "pears": "external relation"
+  },
+  {
+    "de": "Falschheit",
+    "uk": [
+      {
+        "term": "хиба",
+        "occurrences": []
+      }
+    ],
+    "ogden": "falsehood, falsity",
+    "pears": "falsity"
+  },
+  {
+    "de": "Farbe",
+    "uk": [
+      {
+        "term": "колір",
+        "occurrences": []
+      }
+    ],
+    "ogden": "colour",
+    "pears": "colour"
+  },
+  {
+    "de": "Form",
+    "uk": [
+      {
+        "term": "форма",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form",
+    "pears": "form"
+  },
+  {
+    "de": "Form der Abbildung",
+    "uk": [
+      {
+        "term": "форма відображення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form of representation",
+    "pears": "pictorial form"
+  },
+  {
+    "de": "Form der Darstellung",
+    "uk": [
+      {
+        "term": "форма репрезентації",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form of representation",
+    "pears": "representational form"
+  },
+  {
+    "de": "Form der Welt",
+    "uk": [
+      {
+        "term": "форма світу",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form of the world",
+    "pears": "form of the world"
+  },
+  {
+    "de": "Form der Wirklichkeit",
+    "uk": [
+      {
+        "term": "форма дійсності",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form of reality",
+    "pears": "form of reality"
+  },
+  {
+    "de": "Form des Gegenstandes",
+    "uk": [
+      {
+        "term": "форма предмета",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form of the object",
+    "pears": "form of an object"
+  },
+  {
+    "de": "formale Eigenschaft",
+    "uk": [
+      {
+        "term": "формальна властивість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "formal property",
+    "pears": "formal property"
+  },
+  {
+    "de": "formale Relation",
+    "uk": [
+      {
+        "term": "формальне відношення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "formal relation",
+    "pears": "formal relation"
+  },
+  {
+    "de": "formaler Begriff",
+    "uk": [
+      {
+        "term": "формальне поняття",
+        "occurrences": []
+      }
+    ],
+    "ogden": "formal concept",
+    "pears": "formal concept"
+  },
+  {
+    "de": "Formenreihe",
+    "uk": [
+      {
+        "term": "формальний ряд",
+        "occurrences": []
+      }
+    ],
+    "ogden": "formal series",
+    "pears": "series of forms"
+  },
+  {
+    "de": "Funktion",
+    "uk": [
+      {
+        "term": "функція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "function",
+    "pears": "function"
+  },
+  {
+    "de": "Gebilde",
+    "uk": [
+      {
+        "term": "утворення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "thing",
+    "pears": "thing"
+  },
+  {
+    "de": "Gedanke",
+    "uk": [
+      {
+        "term": "думка",
+        "occurrences": []
+      }
+    ],
+    "ogden": "thought",
+    "pears": "thought"
+  },
+  {
+    "de": "Gegenstand",
+    "uk": [
+      {
+        "term": "предмет",
+        "occurrences": []
+      }
+    ],
+    "ogden": "object",
+    "pears": "object"
+  },
+  {
+    "de": "Gerüst",
+    "uk": [
+      {
+        "term": "риштування",
+        "occurrences": []
+      }
+    ],
+    "ogden": "scaffolding",
+    "pears": "scaffolding"
+  },
+  {
+    "de": "gesamt",
+    "uk": [
+      {
+        "term": "увесь",
+        "occurrences": []
+      }
+    ],
+    "ogden": "total",
+    "pears": "sum-total"
+  },
+  {
+    "de": "Gesamtheit",
+    "uk": [
+      {
+        "term": "сукупність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "totality",
+    "pears": "totality"
+  },
+  {
+    "de": "Gewissheit",
+    "uk": [
+      {
+        "term": "певність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "certainty",
+    "pears": "certainty"
+  },
+  {
+    "de": "Gleichheit",
+    "uk": [
+      {
+        "term": "рівність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "identity, equality",
+    "pears": "identity, equivalence"
+  },
+  {
+    "de": "Gleichheitszeichen",
+    "uk": [
+      {
+        "term": "знак рівності",
+        "occurrences": []
+      }
+    ],
+    "ogden": "sign of equality, sign of identity",
+    "pears": "sign for identity, identity-sign"
+  },
+  {
+    "de": "Gleichung",
+    "uk": [
+      {
+        "term": "рівняння",
+        "occurrences": []
+      }
+    ],
+    "ogden": "equation",
+    "pears": "eguation"
+  },
+  {
+    "de": "Grund",
+    "uk": [
+      {
+        "term": "причина",
+        "occurrences": []
+      },
+      {
+        "term": "підстава",
+        "occurrences": []
+      }
+    ],
+    "ogden": "reason",
+    "pears": "reason, source"
+  },
+  {
+    "de": "Grundbegriff",
+    "uk": [
+      {
+        "term": "основне поняття",
+        "occurrences": []
+      }
+    ],
+    "ogden": "primitive idea",
+    "pears": "primitive idea"
+  },
+  {
+    "de": "Grundgedanke",
+    "uk": [
+      {
+        "term": "основна думка",
+        "occurrences": []
+      }
+    ],
+    "ogden": "fundamental thought",
+    "pears": "fundamental idea"
+  },
+  {
+    "de": "Grundgesetz",
+    "uk": [
+      {
+        "term": "основний закон",
+        "occurrences": []
+      }
+    ],
+    "ogden": "primitive proposition",
+    "pears": "primitive proposition"
+  },
+  {
+    "de": "Grundlage",
+    "uk": [
+      {
+        "term": "основа",
+        "occurrences": []
+      }
+    ],
+    "ogden": "foundation",
+    "pears": "foundation"
+  },
+  {
+    "de": "Grundoperation",
+    "uk": [
+      {
+        "term": "основна операція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "fundamental operation",
+    "pears": "fundamental operation"
+  },
+  {
+    "de": "Grundsatz",
+    "uk": [
+      {
+        "term": "основний принцип",
+        "occurrences": []
+      }
+    ],
+    "ogden": "fundamental principle",
+    "pears": "fundamental principle"
+  },
+  {
+    "de": "Identität",
+    "uk": [
+      {
+        "term": "тотожність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "identity",
+    "pears": "identity"
+  },
+  {
+    "de": "Index",
+    "uk": [
+      {
+        "term": "індекс",
+        "occurrences": []
+      }
+    ],
+    "ogden": "index",
+    "pears": "affix"
+  },
+  {
+    "de": "Induktion",
+    "uk": [
+      {
+        "term": "індукція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "induction",
+    "pears": "induction"
+  },
+  {
+    "de": "Inhalt",
+    "uk": [
+      {
+        "term": "зміст",
+        "occurrences": []
+      }
+    ],
+    "ogden": "content",
+    "pears": "content"
+  },
+  {
+    "de": "interne Eigenschaft",
+    "uk": [
+      {
+        "term": "внутрішня властивість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "internal quality",
+    "pears": "internal property"
+  },
+  {
+    "de": "interne Relation",
+    "uk": [
+      {
+        "term": "внутрішнє відношення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "internal relation",
+    "pears": "internal relation"
+  },
+  {
+    "de": "Kardinalzahl",
+    "uk": [
+      {
+        "term": "кардинальне число",
+        "occurrences": []
+      }
+    ],
+    "ogden": "cardinal number",
+    "pears": "cardinal number"
+  },
+  {
+    "de": "Kausalität",
+    "uk": [
+      {
+        "term": "причиновість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "causality",
+    "pears": "causality"
+  },
+  {
+    "de": "Kausalitätsgesetz",
+    "uk": [
+      {
+        "term": "закон причиновості",
+        "occurrences": []
+      }
+    ],
+    "ogden": "law of causality",
+    "pears": "law of causality"
+  },
+  {
+    "de": "Kausalnexus",
+    "uk": [
+      {
+        "term": "причиновий звʼязок",
+        "occurrences": []
+      }
+    ],
+    "ogden": "causal nexus",
+    "pears": "causal nexus"
+  },
+  {
+    "de": "Klasse",
+    "uk": [
+      {
+        "term": "клас",
+        "occurrences": []
+      }
+    ],
+    "ogden": "class",
+    "pears": "set, class"
+  },
+  {
+    "de": "Komplex",
+    "uk": [
+      {
+        "term": "комплекс",
+        "occurrences": []
+      }
+    ],
+    "ogden": "complex",
+    "pears": "complex"
+  },
+  {
+    "de": "Konfiguration",
+    "uk": [
+      {
+        "term": "конфігурація",
+        "occurrences": []
+      }
+    ],
+    "ogden": "configuration",
+    "pears": "configuration"
+  },
+  {
+    "de": "Konfiguration von Gegenständen",
+    "uk": [
+      {
+        "term": "конфігурація предметів",
+        "occurrences": []
+      }
+    ],
+    "ogden": "configuration of the objects",
+    "pears": "configuration of objects"
+  },
+  {
+    "de": "Konstante",
+    "uk": [
+      {
+        "term": "константа",
+        "occurrences": []
+      }
+    ],
+    "ogden": "constant",
+    "pears": "constant"
+  },
+  {
+    "de": "konstante Form",
+    "uk": [
+      {
+        "term": "стала форма",
+        "occurrences": []
+      }
+    ],
+    "ogden": "constant form",
+    "pears": "constant form"
+  },
+  {
+    "de": "Kontradiktion",
+    "uk": [
+      {
+        "term": "суперечність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "contradiction",
+    "pears": "contradiction"
+  },
+  {
+    "de": "Logik",
+    "uk": [
+      {
+        "term": "логіка",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logic",
+    "pears": "logic"
+  },
+  {
+    "de": "logische Form",
+    "uk": [
+      {
+        "term": "логічна форма",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical form",
+    "pears": "logical form"
+  },
+  {
+    "de": "logische Konstante",
+    "uk": [
+      {
+        "term": "логічна константа",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical constant",
+    "pears": "logical constant"
+  },
+  {
+    "de": "logische Möglichkeit",
+    "uk": [
+      {
+        "term": "логічна можливість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical possibility",
+    "pears": "logical possibility"
+  },
+  {
+    "de": "logische Notwendigkeit",
+    "uk": [
+      {
+        "term": "логічна необхідність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical necessity",
+    "pears": "logical necessity"
+  },
+  {
+    "de": "logische Produkt",
+    "uk": [
+      {
+        "term": "логічний добуток",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical product",
+    "pears": "logical product"
+  },
+  {
+    "de": "logische Summe",
+    "uk": [
+      {
+        "term": "логічна сума",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical sum",
+    "pears": "logical sum"
+  },
+  {
+    "de": "logische Syntax",
+    "uk": [
+      {
+        "term": "логічний синтаксис",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical syntax",
+    "pears": "logical syntax"
+  },
+  {
+    "de": "logische Unmöglichkeit",
+    "uk": [
+      {
+        "term": "логічна неможливість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical impossibility",
+    "pears": "logical impossibility"
+  },
+  {
+    "de": "logischer Ort",
+    "uk": [
+      {
+        "term": "логічне місце",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical place",
+    "pears": "logical place"
+  },
+  {
+    "de": "logischer Raum",
+    "uk": [
+      {
+        "term": "логічний простір",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical space",
+    "pears": "logical space"
+  },
+  {
+    "de": "logisches Bild",
+    "uk": [
+      {
+        "term": "логічний образ",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical picture",
+    "pears": "logical picture"
+  },
+  {
+    "de": "logisches Operationszeichen",
+    "uk": [
+      {
+        "term": "знак логічної операції",
+        "occurrences": []
+      }
+    ],
+    "ogden": "logical operation sign",
+    "pears": "sign for logical operation"
+  },
+  {
+    "de": "Mannigfaltigkeit",
+    "uk": [
+      {
+        "term": "розмаїтість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "multiplicity",
+    "pears": "multiplicity"
+  },
+  {
+    "de": "materielle Eigenschaft",
+    "uk": [
+      {
+        "term": "матеріальна властивість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "material property",
+    "pears": "material property"
+  },
+  {
+    "de": "Merkmal",
+    "uk": [
+      {
+        "term": "ознака",
+        "occurrences": []
+      }
+    ],
+    "ogden": "characteristic mark",
+    "pears": "characteristic mark"
+  },
+  {
+    "de": "Modell",
+    "uk": [
+      {
+        "term": "модель",
+        "occurrences": []
+      }
+    ],
+    "ogden": "model",
+    "pears": "model"
+  },
+  {
+    "de": "Möglichkeit",
+    "uk": [
+      {
+        "term": "можливість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "possibility",
+    "pears": "possibility"
+  },
+  {
+    "de": "Name",
+    "uk": [
+      {
+        "term": "імʼя",
+        "occurrences": []
+      }
+    ],
+    "ogden": "name",
+    "pears": "name"
+  },
+  {
+    "de": "Naturgesetz",
+    "uk": [
+      {
+        "term": "закон природи",
+        "occurrences": []
+      }
+    ],
+    "ogden": "natural law",
+    "pears": "law of nature"
+  },
+  {
+    "de": "Naturwissenschaft",
+    "uk": [
+      {
+        "term": "природознавство, природнича наука",
+        "occurrences": []
+      }
+    ],
+    "ogden": "natural science",
+    "pears": "natural science"
+  },
+  {
+    "de": "Negation",
+    "uk": [
+      {
+        "term": "заперечення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "negation",
+    "pears": "negation"
+  },
+  {
+    "de": "Notwendigkeit",
+    "uk": [
+      {
+        "term": "необхідність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "necessity",
+    "pears": "necessity"
+  },
+  {
+    "de": "Operation",
+    "uk": [
+      {
+        "term": "операція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "operation",
+    "pears": "operation"
+  },
+  {
+    "de": "Raum",
+    "uk": [
+      {
+        "term": "простір",
+        "occurrences": []
+      }
+    ],
+    "ogden": "space",
+    "pears": "space"
+  },
+  {
+    "de": "Regel",
+    "uk": [
+      {
+        "term": "правило",
+        "occurrences": []
+      }
+    ],
+    "ogden": "rule",
+    "pears": "rule"
+  },
+  {
+    "de": "Reihe",
+    "uk": [
+      {
+        "term": "ряд",
+        "occurrences": []
+      }
+    ],
+    "ogden": "series",
+    "pears": "series"
+  },
+  {
+    "de": "Relation",
+    "uk": [
+      {
+        "term": "відношення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "relation",
+    "pears": "relation"
+  },
+  {
+    "de": "Sache",
+    "uk": [
+      {
+        "term": "обʼєкт",
+        "occurrences": []
+      }
+    ],
+    "ogden": "entity, thing",
+    "pears": "thing"
+  },
+  {
+    "de": "Sachlage",
+    "uk": [
+      {
+        "term": "стан речей",
+        "occurrences": []
+      }
+    ],
+    "ogden": "state of affairs",
+    "pears": "situation"
+  },
+  {
+    "de": "Sachverhalt",
+    "uk": [
+      {
+        "term": "стан справ",
+        "occurrences": []
+      }
+    ],
+    "ogden": "atomic fact",
+    "pears": "state of affair"
+  },
+  {
+    "de": "Satz",
+    "uk": [
+      {
+        "term": "речення",
+        "occurrences": []
+      },
+      {
+        "term": "положення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "proposition",
+    "pears": "proposition"
+  },
+  {
+    "de": "Satzform",
+    "uk": [
+      {
+        "term": "форма речення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "form of proporition",
+    "pears": "propositional form"
+  },
+  {
+    "de": "Satzvariable",
+    "uk": [
+      {
+        "term": "реченнєва змінна",
+        "occurrences": []
+      }
+    ],
+    "ogden": "propositional variable",
+    "pears": "propositional variable"
+  },
+  {
+    "de": "Satzzeichen",
+    "uk": [
+      {
+        "term": "реченнєвий знак",
+        "occurrences": []
+      }
+    ],
+    "ogden": "propositional sign",
+    "pears": "propositional sign"
+  },
+  {
+    "de": "Scheinsatz",
+    "uk": [
+      {
+        "term": "псевдоречення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "pseudoproposition",
+    "pears": "pseudo-proposition"
+  },
+  {
+    "de": "Sinn",
+    "uk": [
+      {
+        "term": "смисл, сенс",
+        "occurrences": []
+      }
+    ],
+    "ogden": "sense",
+    "pears": "sense"
+  },
+  {
+    "de": "sinnlos",
+    "uk": [
+      {
+        "term": "безсмислений",
+        "occurrences": []
+      }
+    ],
+    "ogden": "without sense",
+    "pears": "lack sense"
+  },
+  {
+    "de": "Sprache",
+    "uk": [
+      {
+        "term": "мова",
+        "occurrences": []
+      }
+    ],
+    "ogden": "language",
+    "pears": "language"
+  },
+  {
+    "de": "Struktur",
+    "uk": [
+      {
+        "term": "структура",
+        "occurrences": []
+      }
+    ],
+    "ogden": "structure",
+    "pears": "structure"
+  },
+  {
+    "de": "Struktur der Sätze",
+    "uk": [
+      {
+        "term": "структура речень",
+        "occurrences": []
+      }
+    ],
+    "ogden": "structure of the propositions",
+    "pears": "structure of the proposition"
+  },
+  {
+    "de": "Struktur der Tatsache",
+    "uk": [
+      {
+        "term": "структура факту",
+        "occurrences": []
+      }
+    ],
+    "ogden": "structure of the fact",
+    "pears": "structure of a fact"
+  },
+  {
+    "de": "Struktur des Sachverhaltes",
+    "uk": [
+      {
+        "term": "структура стану справ",
+        "occurrences": []
+      }
+    ],
+    "ogden": "structure of the atomic fact",
+    "pears": "structure of state of affairs"
+  },
+  {
+    "de": "Substanz",
+    "uk": [
+      {
+        "term": "субстанція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "substance",
+    "pears": "substance"
+  },
+  {
+    "de": "Symbol",
+    "uk": [
+      {
+        "term": "символ",
+        "occurrences": []
+      }
+    ],
+    "ogden": "symbol",
+    "pears": "symbol"
+  },
+  {
+    "de": "Syntax",
+    "uk": [
+      {
+        "term": "синтаксис",
+        "occurrences": []
+      }
+    ],
+    "ogden": "syntax",
+    "pears": "syntax"
+  },
+  {
+    "de": "Tatsache",
+    "uk": [
+      {
+        "term": "факт",
+        "occurrences": []
+      }
+    ],
+    "ogden": "fact",
+    "pears": "fact"
+  },
+  {
+    "de": "Tautologie",
+    "uk": [
+      {
+        "term": "тавтологія",
+        "occurrences": []
+      }
+    ],
+    "ogden": "tautology",
+    "pears": "tautology"
+  },
+  {
+    "de": "Umgangssprache",
+    "uk": [
+      {
+        "term": "буденна мова",
+        "occurrences": []
+      }
+    ],
+    "ogden": "language of everyday life, colloquial language",
+    "pears": "everyday language"
+  },
+  {
+    "de": "Unmöglichkeit",
+    "uk": [
+      {
+        "term": "неможливість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "impossibility",
+    "pears": "impossibility"
+  },
+  {
+    "de": "unsinnig",
+    "uk": [
+      {
+        "term": "безглуздий",
+        "occurrences": []
+      }
+    ],
+    "ogden": "nonsensical",
+    "pears": "nonsensical"
+  },
+  {
+    "de": "Urbild",
+    "uk": [
+      {
+        "term": "прообраз",
+        "occurrences": []
+      }
+    ],
+    "ogden": "prototype",
+    "pears": "prototype"
+  },
+  {
+    "de": "Urzeichen",
+    "uk": [
+      {
+        "term": "первинний знак",
+        "occurrences": []
+      }
+    ],
+    "ogden": "primitive sign",
+    "pears": "primitive sign"
+  },
+  {
+    "de": "Variable",
+    "uk": [
+      {
+        "term": "змінна",
+        "occurrences": []
+      }
+    ],
+    "ogden": "variable",
+    "pears": "variable"
+  },
+  {
+    "de": "Verband",
+    "uk": [
+      {
+        "term": "склад",
+        "occurrences": []
+      }
+    ],
+    "ogden": "context",
+    "pears": "combination"
+  },
+  {
+    "de": "Verbindung",
+    "uk": [
+      {
+        "term": "сполучення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "combination",
+    "pears": "combination"
+  },
+  {
+    "de": "verhalten, sich",
+    "uk": [
+      {
+        "term": "складатися",
+        "occurrences": []
+      },
+      {
+        "term": "так само",
+        "occurrences": []
+      }
+    ],
+    "ogden": "work, happen, things stand, be the case",
+    "pears": "behave, be, things stand"
+  },
+  {
+    "de": "verhalten, sich zu einander",
+    "uk": [
+      {
+        "term": "співвідноситись між собою",
+        "occurrences": []
+      }
+    ],
+    "ogden": "are combined",
+    "pears": "stand to one another"
+  },
+  {
+    "de": "Verhältnis",
+    "uk": [
+      {
+        "term": "співвідношення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "ratio",
+    "pears": "ratio"
+  },
+  {
+    "de": "verneinende Satz",
+    "uk": [
+      {
+        "term": "речення, яке заперечує",
+        "occurrences": []
+      }
+    ],
+    "ogden": "denying proposition",
+    "pears": "negating proposition"
+  },
+  {
+    "de": "verneinte Satz",
+    "uk": [
+      {
+        "term": "заперечуване речення, речення, яке заперечують",
+        "occurrences": []
+      }
+    ],
+    "ogden": "proposition that is denied",
+    "pears": "negated proposition"
+  },
+  {
+    "de": "Verneinung",
+    "uk": [
+      {
+        "term": "заперечення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "denial",
+    "pears": "negation"
+  },
+  {
+    "de": "vertreten",
+    "uk": [
+      {
+        "term": "представляти",
+        "occurrences": []
+      }
+    ],
+    "ogden": "stand for",
+    "pears": "be the representatives"
+  },
+  {
+    "de": "vorkommen",
+    "uk": [
+      {
+        "term": "входити",
+        "occurrences": []
+      }
+    ],
+    "ogden": "occur",
+    "pears": "occur"
+  },
+  {
+    "de": "Vorkommen",
+    "uk": [
+      {
+        "term": "входження",
+        "occurrences": []
+      }
+    ],
+    "ogden": "occurrence",
+    "pears": "occurrence"
+  },
+  {
+    "de": "Wahrheit",
+    "uk": [
+      {
+        "term": "істина",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth",
+    "pears": "truth"
+  },
+  {
+    "de": "Wahrheitsargument",
+    "uk": [
+      {
+        "term": "істиннісний аргумент",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth-argument",
+    "pears": "truth-argument"
+  },
+  {
+    "de": "Wahrheitsbedingung",
+    "uk": [
+      {
+        "term": "істиннісна умова",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth-condition",
+    "pears": "truth-condition"
+  },
+  {
+    "de": "Wahrheitsfunktion",
+    "uk": [
+      {
+        "term": "істиннісна функція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth-function",
+    "pears": "truth-function"
+  },
+  {
+    "de": "Wahrheitsgründe",
+    "uk": [
+      {
+        "term": "підстави істинності",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth-grounds",
+    "pears": "truth-grounds"
+  },
+  {
+    "de": "Wahrheitskombination",
+    "uk": [
+      {
+        "term": "істиннісна комбінація",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth-combination",
+    "pears": "truth-combination"
+  },
+  {
+    "de": "Wahrheitsmöglichkeit",
+    "uk": [
+      {
+        "term": "істиннісна можливість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth-possibility",
+    "pears": "truth-possibility"
+  },
+  {
+    "de": "Wahrheitsoperation",
+    "uk": [
+      {
+        "term": "істиннісна операція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "truth-operation",
+    "pears": "truth-operation"
+  },
+  {
+    "de": "Wahrscheinlichkeit",
+    "uk": [
+      {
+        "term": "імовірність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "probability",
+    "pears": "probability"
+  },
+  {
+    "de": "Wahrscheinlichkeitslehre",
+    "uk": [
+      {
+        "term": "теорія ймовірностей",
+        "occurrences": []
+      }
+    ],
+    "ogden": "theory of probability",
+    "pears": "theory of probability"
+  },
+  {
+    "de": "Wahrscheinlichkeitssatz",
+    "uk": [
+      {
+        "term": "речення ймовірності",
+        "occurrences": []
+      }
+    ],
+    "ogden": "probability proposition",
+    "pears": "probability proposition"
+  },
+  {
+    "de": "Welt",
+    "uk": [
+      {
+        "term": "світ",
+        "occurrences": []
+      }
+    ],
+    "ogden": "world",
+    "pears": "world"
+  },
+  {
+    "de": "Weltbeschreibung",
+    "uk": [
+      {
+        "term": "опис світу",
+        "occurrences": []
+      }
+    ],
+    "ogden": "description of the world",
+    "pears": "description of the world"
+  },
+  {
+    "de": "Wert",
+    "uk": [
+      {
+        "term": "значення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "value",
+    "pears": "value"
+  },
+  {
+    "de": "Wirklichkeit",
+    "uk": [
+      {
+        "term": "дійсність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "reality",
+    "pears": "reality"
+  },
+  {
+    "de": "Wirkung",
+    "uk": [
+      {
+        "term": "дія",
+        "occurrences": []
+      }
+    ],
+    "ogden": "effect",
+    "pears": "effect"
+  },
+  {
+    "de": "Wissenschaft",
+    "uk": [
+      {
+        "term": "наука",
+        "occurrences": []
+      }
+    ],
+    "ogden": "science",
+    "pears": "science"
+  },
+  {
+    "de": "Zahl",
+    "uk": [
+      {
+        "term": "число",
+        "occurrences": []
+      }
+    ],
+    "ogden": "number",
+    "pears": "number"
+  },
+  {
+    "de": "Zahlbegriff",
+    "uk": [
+      {
+        "term": "поняття числа",
+        "occurrences": []
+      }
+    ],
+    "ogden": "concept number",
+    "pears": "concept of number"
+  },
+  {
+    "de": "Zahlenreihe",
+    "uk": [
+      {
+        "term": "числовий ряд",
+        "occurrences": []
+      }
+    ],
+    "ogden": "series of numbers",
+    "pears": "number-series"
+  },
+  {
+    "de": "Zahlenzeichen",
+    "uk": [
+      {
+        "term": "числовий знак",
+        "occurrences": []
+      }
+    ],
+    "ogden": "numerical sign",
+    "pears": "sign for a number"
+  },
+  {
+    "de": "Zeichen",
+    "uk": [
+      {
+        "term": "знак",
+        "occurrences": []
+      }
+    ],
+    "ogden": "sign",
+    "pears": "sign"
+  },
+  {
+    "de": "Zeichenregel",
+    "uk": [
+      {
+        "term": "правило для знаків",
+        "occurrences": []
+      }
+    ],
+    "ogden": "symbolic rule",
+    "pears": "rule for signs, rule dealing with signs, rule which deal with signs, rule that deal with signs"
+  },
+  {
+    "de": "Zeichensprache",
+    "uk": [
+      {
+        "term": "знакова мова",
+        "occurrences": []
+      }
+    ],
+    "ogden": "symbolism",
+    "pears": "sign-language"
+  },
+  {
+    "de": "zeigen, sich",
+    "uk": [
+      {
+        "term": "показувати себе",
+        "occurrences": []
+      }
+    ],
+    "ogden": "show itself",
+    "pears": "make itself manifest"
+  },
+  {
+    "de": "zerfallen",
+    "uk": [
+      {
+        "term": "розпадатись",
+        "occurrences": []
+      }
+    ],
+    "ogden": "divide",
+    "pears": "divide"
+  },
+  {
+    "de": "Zuordnung",
+    "uk": [
+      {
+        "term": "співвіднесення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "coordination",
+    "pears": "correlation"
+  },
+  {
+    "de": "zusammengesetzt",
+    "uk": [
+      {
+        "term": "складений",
+        "occurrences": []
+      }
+    ],
+    "ogden": "compound",
+    "pears": "composite"
+  },
+  {
+    "de": "Zusammenhang",
+    "uk": [
+      {
+        "term": "звʼязок",
+        "occurrences": []
+      },
+      {
+        "term": "контекст",
+        "occurrences": []
+      }
+    ],
+    "ogden": "connexion",
+    "pears": "connexion"
+  },
+  {
+    "de": "zusammenhängen",
+    "uk": [
+      {
+        "term": "бути повʼязаним",
+        "occurrences": []
+      }
+    ],
+    "ogden": "hang together",
+    "pears": "be connected"
+  }
 ]
