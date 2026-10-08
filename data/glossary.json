@@ -1649,7 +1649,9 @@
     "uk": [
       {
         "term": "основна операція",
-        "occurrences": []
+        "occurrences": [
+          "5.474"
+        ]
       }
     ],
     "ogden": "fundamental operation",
@@ -2043,17 +2045,6 @@
     ],
     "ogden": "logical constant",
     "pears": "logical constant"
-  },
-  {
-    "de": "logische Möglichkeit",
-    "uk": [
-      {
-        "term": "логічна можливість",
-        "occurrences": []
-      }
-    ],
-    "ogden": "logical possibility",
-    "pears": "logical possibility"
   },
   {
     "de": "logische Notwendigkeit",
