@@ -3579,6 +3579,21 @@
     "pears": "multiplicity"
   },
   {
+    "de": "materiell",
+    "uk": [
+      {
+        "term": "матеріальний",
+        "occurrences": [
+          "2.0231",
+          "5.44",
+          "6.3432"
+        ]
+      }
+    ],
+    "ogden": "material",
+    "pears": "material; point-mass"
+  },
+  {
     "de": "materielle Eigenschaft",
     "uk": [
       {
