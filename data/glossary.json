@@ -2764,6 +2764,21 @@
     "pears": "limit"
   },
   {
+    "de": "Grenzfall",
+    "uk": [
+      {
+        "term": "граничний випадок",
+        "occurrences": [
+          "3.313",
+          "4.466",
+          "5.152"
+        ]
+      }
+    ],
+    "ogden": "limiting case",
+    "pears": "limiting case"
+  },
+  {
     "de": "Grund",
     "uk": [
       {
@@ -3360,6 +3375,19 @@
     "pears": "logical picture"
   },
   {
+    "de": "logisches Operationszeichen",
+    "uk": [
+      {
+        "term": "знак логічної операції",
+        "occurrences": [
+          "5.4611"
+        ]
+      }
+    ],
+    "ogden": "logical operation sign",
+    "pears": "sign for logical operation"
+  },
+  {
     "de": "logisches Produkt",
     "uk": [
       {
@@ -3375,19 +3403,6 @@
     ],
     "ogden": "logical product",
     "pears": "logical product"
-  },
-  {
-    "de": "logisches Operationszeichen",
-    "uk": [
-      {
-        "term": "знак логічної операції",
-        "occurrences": [
-          "5.4611"
-        ]
-      }
-    ],
-    "ogden": "logical operation sign",
-    "pears": "sign for logical operation"
   },
   {
     "de": "Mannigfaltigkeit",
