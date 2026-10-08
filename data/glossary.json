@@ -2457,6 +2457,26 @@
     "pears": "common"
   },
   {
+    "de": "Gemeinsame",
+    "uk": [
+      {
+        "term": "спільне",
+        "occurrences": [
+          "3.322",
+          "3.344",
+          "3.3441",
+          "5.143",
+          "5.24",
+          "5.512",
+          "5.513",
+          "6.022"
+        ]
+      }
+    ],
+    "ogden": "what is common; that which is common",
+    "pears": "what is common; common factor"
+  },
+  {
     "de": "Gerüst",
     "uk": [
       {
