@@ -1754,6 +1754,21 @@
     "pears": "existence"
   },
   {
+    "de": "existieren",
+    "uk": [
+      {
+        "term": "існувати",
+        "occurrences": [
+          "3.032",
+          "3.24",
+          "3.323"
+        ]
+      }
+    ],
+    "ogden": "exist",
+    "pears": "exist"
+  },
+  {
     "de": "externe Eigenschaft",
     "uk": [
       {
