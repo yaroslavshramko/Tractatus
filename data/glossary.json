@@ -2492,6 +2492,20 @@
     "pears": "geometry"
   },
   {
+    "de": "geometrisch",
+    "uk": [
+      {
+        "term": "геометричний",
+        "occurrences": [
+          "3.411",
+          "6.35"
+        ]
+      }
+    ],
+    "ogden": "geometrical",
+    "pears": "geometrical"
+  },
+  {
     "de": "Gerüst",
     "uk": [
       {
