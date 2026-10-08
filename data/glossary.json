@@ -4261,6 +4261,19 @@
     "pears": "spatial; spatially"
   },
   {
+    "de": "Räumliche",
+    "uk": [
+      {
+        "term": "просторове",
+        "occurrences": [
+          "2.171"
+        ]
+      }
+    ],
+    "ogden": "spatial",
+    "pears": "spatial"
+  },
+  {
     "de": "Regel",
     "uk": [
       {
