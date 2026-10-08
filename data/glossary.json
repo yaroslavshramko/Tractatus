@@ -823,6 +823,20 @@
     "pears": "existence"
   },
   {
+    "de": "Bestehende",
+    "uk": [
+      {
+        "term": "існуюче",
+        "occurrences": [
+          "2.027",
+          "2.0271"
+        ]
+      }
+    ],
+    "ogden": "the existent",
+    "pears": "the subsistent"
+  },
+  {
     "de": "bestimmen",
     "uk": [
       {
