@@ -4274,6 +4274,20 @@
     "pears": "spatial"
   },
   {
+    "de": "Realität",
+    "uk": [
+      {
+        "term": "реальність",
+        "occurrences": [
+          "5.5561",
+          "5.64"
+        ]
+      }
+    ],
+    "ogden": "reality",
+    "pears": "reality"
+  },
+  {
     "de": "Regel",
     "uk": [
       {
