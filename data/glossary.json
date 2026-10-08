@@ -4141,6 +4141,22 @@
     "pears": "philosophy"
   },
   {
+    "de": "Physik",
+    "uk": [
+      {
+        "term": "фізика",
+        "occurrences": [
+          "3.0321",
+          "6.321",
+          "6.341",
+          "6.3751"
+        ]
+      }
+    ],
+    "ogden": "physics",
+    "pears": "physics"
+  },
+  {
     "de": "Projektion",
     "uk": [
       {
