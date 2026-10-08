@@ -4104,6 +4104,19 @@
     "pears": "operation"
   },
   {
+    "de": "Operationszeichen",
+    "uk": [
+      {
+        "term": "знак операції",
+        "occurrences": [
+          "5.4611"
+        ]
+      }
+    ],
+    "ogden": "operation sign",
+    "pears": "sign for operation"
+  },
+  {
     "de": "Philosophie",
     "uk": [
       {
