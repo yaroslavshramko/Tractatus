@@ -3265,23 +3265,6 @@
     "pears": "logical necessity"
   },
   {
-    "de": "logische Produkt",
-    "uk": [
-      {
-        "term": "логічний добуток",
-        "occurrences": [
-          "3.42",
-          "4.465",
-          "5.521",
-          "6.1271",
-          "6.3751"
-        ]
-      }
-    ],
-    "ogden": "logical product",
-    "pears": "logical product"
-  },
-  {
     "de": "logische Summe",
     "uk": [
       {
@@ -3375,6 +3358,23 @@
     ],
     "ogden": "logical picture",
     "pears": "logical picture"
+  },
+  {
+    "de": "logisches Produkt",
+    "uk": [
+      {
+        "term": "логічний добуток",
+        "occurrences": [
+          "3.42",
+          "4.465",
+          "5.521",
+          "6.1271",
+          "6.3751"
+        ]
+      }
+    ],
+    "ogden": "logical product",
+    "pears": "logical product"
   },
   {
     "de": "logisches Operationszeichen",
