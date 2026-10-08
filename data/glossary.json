@@ -505,6 +505,22 @@
     "pears": "meaning"
   },
   {
+    "de": "bedeutungslos",
+    "uk": [
+      {
+        "term": "позбавлений предметного значення",
+        "occurrences": [
+          "3.328",
+          "4.442",
+          "4.4661",
+          "5.47321"
+        ]
+      }
+    ],
+    "ogden": "meaningless",
+    "pears": "meaningless"
+  },
+  {
     "de": "Begriff",
     "uk": [
       {
