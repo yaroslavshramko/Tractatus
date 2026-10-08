@@ -1368,6 +1368,36 @@
     "pears": "proper concept-word"
   },
   {
+    "de": "einfach",
+    "uk": [
+      {
+        "term": "простий",
+        "occurrences": [
+          "2.02",
+          "3.24",
+          "4.21",
+          "4.24",
+          "5.4541",
+          "5.553"
+        ]
+      },
+      {
+        "term": "просто",
+        "occurrences": [
+          "3.24",
+          "3.323",
+          "4.51",
+          "5.501",
+          "5.526",
+          "5.5301",
+          "6.1271"
+        ]
+      }
+    ],
+    "ogden": "simple; simply",
+    "pears": "simple; simply"
+  },
+  {
     "de": "einfaches Zeichen",
     "uk": [
       {
