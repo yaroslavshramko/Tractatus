@@ -3935,6 +3935,21 @@
     "pears": "negation"
   },
   {
+    "de": "negative Tatsache",
+    "uk": [
+      {
+        "term": "негативний факт",
+        "occurrences": [
+          "2.06",
+          "4.063",
+          "5.5151"
+        ]
+      }
+    ],
+    "ogden": "negative fact",
+    "pears": "negative fact"
+  },
+  {
     "de": "Notwendigkeit",
     "uk": [
       {
