@@ -692,6 +692,20 @@
     "pears": "conceptual notation"
   },
   {
+    "de": "benennen",
+    "uk": [
+      {
+        "term": "називати",
+        "occurrences": [
+          "3.144",
+          "3.221"
+        ]
+      }
+    ],
+    "ogden": "name",
+    "pears": "name"
+  },
+  {
     "de": "Beschreibung",
     "uk": [
       {
