@@ -4242,6 +4242,25 @@
     "pears": "space"
   },
   {
+    "de": "räumlich",
+    "uk": [
+      {
+        "term": "просторовий",
+        "occurrences": [
+          "2.0121",
+          "2.0131",
+          "2.171",
+          "2.182",
+          "3.0321",
+          "3.1431",
+          "4.0412"
+        ]
+      }
+    ],
+    "ogden": "spatial; spatially",
+    "pears": "spatial; spatially"
+  },
+  {
     "de": "Regel",
     "uk": [
       {
