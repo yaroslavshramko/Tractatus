@@ -3665,6 +3665,33 @@
     "pears": "characteristic mark"
   },
   {
+    "de": "metaphysisch",
+    "uk": [
+      {
+        "term": "метафізичний",
+        "occurrences": [
+          "5.633",
+          "5.641"
+        ]
+      }
+    ],
+    "ogden": "metaphysical",
+    "pears": "metaphysical"
+  },
+  {
+    "de": "Metaphysisches",
+    "uk": [
+      {
+        "term": "метафізичне",
+        "occurrences": [
+          "6.53"
+        ]
+      }
+    ],
+    "ogden": "something metaphysical",
+    "pears": "something metaphysical"
+  },
+  {
     "de": "Methode",
     "uk": [
       {
