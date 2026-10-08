@@ -702,7 +702,9 @@
     "uk": [
       {
         "term": "невимовне",
-        "occurrences": []
+        "occurrences": [
+          "4.115"
+        ]
       }
     ],
     "ogden": "the unspeakable",
@@ -1041,7 +1043,9 @@
     "uk": [
       {
         "term": "вічність",
-        "occurrences": []
+        "occurrences": [
+          "6.4311"
+        ]
       }
     ],
     "ogden": "eternity",
@@ -1620,7 +1624,12 @@
     "uk": [
       {
         "term": "Бог",
-        "occurrences": []
+        "occurrences": [
+          "3.031",
+          "5.123",
+          "6.372",
+          "6.432"
+        ]
       }
     ],
     "ogden": "God",
@@ -2604,7 +2613,9 @@
     "uk": [
       {
         "term": "метод проєкції",
-        "occurrences": []
+        "occurrences": [
+          "3.11"
+        ]
       }
     ],
     "ogden": "method of projection",
@@ -3115,11 +3126,18 @@
     "uk": [
       {
         "term": "вивід",
-        "occurrences": []
+        "occurrences": [
+          "5.132",
+          "5.136",
+          "5.1362",
+          "5.152"
+        ]
       },
       {
         "term": "висновок",
-        "occurrences": []
+        "occurrences": [
+          "4.023"
+        ]
       }
     ],
     "ogden": "inference; conclusion",
@@ -3527,7 +3545,11 @@
     "uk": [
       {
         "term": "смерть",
-        "occurrences": []
+        "occurrences": [
+          "6.431",
+          "6.4311",
+          "6.4312"
+        ]
       }
     ],
     "ogden": "death",
@@ -4428,11 +4450,16 @@
     "uk": [
       {
         "term": "випадок",
-        "occurrences": []
+        "occurrences": [
+          "6.1232",
+          "6.3"
+        ]
       },
       {
         "term": "випадковість",
-        "occurrences": []
+        "occurrences": [
+          "2.0121"
+        ]
       }
     ],
     "ogden": "chance; accident",
