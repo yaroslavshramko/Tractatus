@@ -2629,6 +2629,19 @@
     "pears": "certain"
   },
   {
+    "de": "Gewisse",
+    "uk": [
+      {
+        "term": "певне",
+        "occurrences": [
+          "6.3211"
+        ]
+      }
+    ],
+    "ogden": "what is certain",
+    "pears": "what is certain"
+  },
+  {
     "de": "Gewissheit",
     "uk": [
       {
