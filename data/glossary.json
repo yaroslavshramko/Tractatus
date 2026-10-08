@@ -3237,6 +3237,23 @@
     "pears": "contradiction"
   },
   {
+    "de": "Leben",
+    "uk": [
+      {
+        "term": "життя",
+        "occurrences": [
+          "5.621",
+          "6.211",
+          "6.4311",
+          "6.4312",
+          "6.521"
+        ]
+      }
+    ],
+    "ogden": "life",
+    "pears": "life"
+  },
+  {
     "de": "Logik",
     "uk": [
       {
