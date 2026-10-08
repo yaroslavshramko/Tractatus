@@ -1964,6 +1964,19 @@
     "pears": "follow"
   },
   {
+    "de": "Folgern",
+    "uk": [
+      {
+        "term": "висновування",
+        "occurrences": [
+          "5.133"
+        ]
+      }
+    ],
+    "ogden": "inference",
+    "pears": "inference"
+  },
+  {
     "de": "Form",
     "uk": [
       {
