@@ -105,6 +105,21 @@
     "pears": "superstition"
   },
   {
+    "de": "Abgebildetes",
+    "uk": [
+      {
+        "term": "відображуване",
+        "occurrences": [
+          "2.16",
+          "2.161",
+          "2.2"
+        ]
+      }
+    ],
+    "ogden": "what it pictures; the pictured",
+    "pears": "what it depicts"
+  },
+  {
     "de": "abgrenzen",
     "uk": [
       {
