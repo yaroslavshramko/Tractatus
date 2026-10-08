@@ -34,6 +34,27 @@
     "pears": "picturial relationship"
   },
   {
+    "de": "Abbildung",
+    "uk": [
+      {
+        "term": "відображення",
+        "occurrences": [
+          "2.15",
+          "2.151",
+          "2.17",
+          "2.172",
+          "2.181",
+          "2.2",
+          "2.22",
+          "4.015",
+          "4.016"
+        ]
+      }
+    ],
+    "ogden": "representation",
+    "pears": "depiction"
+  },
+  {
     "de": "allgemeine Form",
     "uk": [
       {
