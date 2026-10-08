@@ -4015,6 +4015,20 @@
     "pears": "notation"
   },
   {
+    "de": "notwendig",
+    "uk": [
+      {
+        "term": "необхідний",
+        "occurrences": [
+          "4.0411",
+          "6.232"
+        ]
+      }
+    ],
+    "ogden": "necessary",
+    "pears": "necessary"
+  },
+  {
     "de": "Notwendigkeit",
     "uk": [
       {
