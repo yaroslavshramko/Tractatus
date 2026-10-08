@@ -991,6 +991,20 @@
     "pears": "signify"
   },
   {
+    "de": "bezeichnende Beziehung",
+    "uk": [
+      {
+        "term": "позначальний стосунок",
+        "occurrences": [
+          "5.4733",
+          "5.5261"
+        ]
+      }
+    ],
+    "ogden": "symbolizing relation",
+    "pears": "signifying relation"
+  },
+  {
     "de": "Bezeichnung",
     "uk": [
       {
