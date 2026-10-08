@@ -3431,6 +3431,20 @@
     "pears": "logical impossibility"
   },
   {
+    "de": "logischer Gegenstand",
+    "uk": [
+      {
+        "term": "логічний предмет",
+        "occurrences": [
+          "4.441",
+          "5.4"
+        ]
+      }
+    ],
+    "ogden": "logical object",
+    "pears": "logical object"
+  },
+  {
     "de": "logischer Ort",
     "uk": [
       {
