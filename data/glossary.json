@@ -1355,6 +1355,19 @@
     "pears": "adjective"
   },
   {
+    "de": "eigentliches Begriffswort",
+    "uk": [
+      {
+        "term": "справжнє поняттєве слово",
+        "occurrences": [
+          "4.1272"
+        ]
+      }
+    ],
+    "ogden": "proper concept word",
+    "pears": "proper concept-word"
+  },
+  {
     "de": "einfaches Zeichen",
     "uk": [
       {
