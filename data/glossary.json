@@ -196,6 +196,20 @@
     "pears": "general primitive sign"
   },
   {
+    "de": "Allgemeingültigkeit",
+    "uk": [
+      {
+        "term": "загальнозначущість",
+        "occurrences": [
+          "6.1231",
+          "6.1232"
+        ]
+      }
+    ],
+    "ogden": "general validity",
+    "pears": "general validity"
+  },
+  {
     "de": "Allgemeinheits­bezeichnung",
     "uk": [
       {
