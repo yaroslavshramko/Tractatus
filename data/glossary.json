@@ -210,6 +210,21 @@
     "pears": "general validity"
   },
   {
+    "de": "Allgemeinheit",
+    "uk": [
+      {
+        "term": "загальність",
+        "occurrences": [
+          "5.1311",
+          "5.521",
+          "6.031"
+        ]
+      }
+    ],
+    "ogden": "generality",
+    "pears": "generality"
+  },
+  {
     "de": "Allgemeinheits­bezeichnung",
     "uk": [
       {
