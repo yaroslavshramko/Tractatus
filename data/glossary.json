@@ -1374,9 +1374,7 @@
         "term": "простий",
         "occurrences": [
           "2.02",
-          "3.24",
           "4.21",
-          "4.24",
           "5.4541",
           "5.553"
         ]
@@ -1396,6 +1394,20 @@
     ],
     "ogden": "simple; simply",
     "pears": "simple; simply"
+  },
+  {
+    "de": "einfaches Symbol",
+    "uk": [
+      {
+        "term": "простий символ",
+        "occurrences": [
+          "3.24",
+          "4.24"
+        ]
+      }
+    ],
+    "ogden": "simple symbol",
+    "pears": "simple symbol"
   },
   {
     "de": "einfaches Zeichen",
