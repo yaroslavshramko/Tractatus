@@ -3050,6 +3050,26 @@
     "pears": "causal nexus"
   },
   {
+    "de": "Klammer",
+    "uk": [
+      {
+        "term": "дужка",
+        "occurrences": [
+          "4.441",
+          "4.442",
+          "5.452",
+          "5.46",
+          "5.461",
+          "5.5",
+          "5.501",
+          "6.1203"
+        ]
+      }
+    ],
+    "ogden": "bracket",
+    "pears": "bracket"
+  },
+  {
     "de": "Klasse",
     "uk": [
       {
