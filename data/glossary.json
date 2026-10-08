@@ -454,6 +454,17 @@
     "pears": "determination"
   },
   {
+    "de": "Beweis",
+    "uk": [
+      {
+        "term": "доведення",
+        "occurrences": []
+      }
+    ],
+    "ogden": "proof",
+    "pears": "proof"
+  },
+  {
     "de": "bezeichnen",
     "uk": [
       {
@@ -663,6 +674,17 @@
     ],
     "ogden": "represent, present",
     "pears": "represent"
+  },
+  {
+    "de": "das Mystische",
+    "uk": [
+      {
+        "term": "містичне",
+        "occurrences": []
+      }
+    ],
+    "ogden": "the mystical",
+    "pears": "what is mystical, the mystical"
   },
   {
     "de": "Definition",
@@ -1561,6 +1583,17 @@
     "pears": "eguation"
   },
   {
+    "de": "Grenze",
+    "uk": [
+      {
+        "term": "межа",
+        "occurrences": []
+      }
+    ],
+    "ogden": "limit",
+    "pears": "limit"
+  },
+  {
     "de": "Grund",
     "uk": [
       {
@@ -2217,6 +2250,17 @@
     "pears": "material property"
   },
   {
+    "de": "Mathematik",
+    "uk": [
+      {
+        "term": "математика",
+        "occurrences": []
+      }
+    ],
+    "ogden": "mathematics",
+    "pears": "mathematics"
+  },
+  {
     "de": "Merkmal",
     "uk": [
       {
@@ -2233,6 +2277,17 @@
     ],
     "ogden": "characteristic mark",
     "pears": "characteristic mark"
+  },
+  {
+    "de": "Methode",
+    "uk": [
+      {
+        "term": "метод",
+        "occurrences": []
+      }
+    ],
+    "ogden": "method",
+    "pears": "method"
   },
   {
     "de": "Modell",
@@ -2430,6 +2485,28 @@
     ],
     "ogden": "operation",
     "pears": "operation"
+  },
+  {
+    "de": "Philosophie",
+    "uk": [
+      {
+        "term": "філософія",
+        "occurrences": []
+      }
+    ],
+    "ogden": "philosophy",
+    "pears": "philosophy"
+  },
+  {
+    "de": "Projektion",
+    "uk": [
+      {
+        "term": "проєкція",
+        "occurrences": []
+      }
+    ],
+    "ogden": "projection",
+    "pears": "projection"
   },
   {
     "de": "Raum",
@@ -3026,6 +3103,17 @@
     "pears": "that has sense, with a sense"
   },
   {
+    "de": "Solipsismus",
+    "uk": [
+      {
+        "term": "соліпсизм",
+        "occurrences": []
+      }
+    ],
+    "ogden": "solipsism",
+    "pears": "solipsism"
+  },
+  {
     "de": "Sprache",
     "uk": [
       {
@@ -3117,6 +3205,17 @@
     ],
     "ogden": "structure of the atomic fact",
     "pears": "structure of state of affairs"
+  },
+  {
+    "de": "Subjekt",
+    "uk": [
+      {
+        "term": "суб’єкт",
+        "occurrences": []
+      }
+    ],
+    "ogden": "subject",
+    "pears": "subject"
   },
   {
     "de": "Substanz",
@@ -3881,6 +3980,17 @@
     ],
     "ogden": "value",
     "pears": "value"
+  },
+  {
+    "de": "Wille",
+    "uk": [
+      {
+        "term": "воля",
+        "occurrences": []
+      }
+    ],
+    "ogden": "will",
+    "pears": "will"
   },
   {
     "de": "Wirklichkeit",
