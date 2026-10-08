@@ -3478,6 +3478,27 @@
     "pears": "logical space"
   },
   {
+    "de": "logischer Satz",
+    "uk": [
+      {
+        "term": "логічне речення",
+        "occurrences": [
+          "6.121",
+          "6.122",
+          "6.1231",
+          "6.1232",
+          "6.124",
+          "6.125",
+          "6.126",
+          "6.1263",
+          "6.1271"
+        ]
+      }
+    ],
+    "ogden": "logical proposition",
+    "pears": "logical proposition; proposition of logic"
+  },
+  {
     "de": "logisches Bild",
     "uk": [
       {
