@@ -246,6 +246,29 @@
     "pears": "indication, sign, mark"
   },
   {
+    "de": "Argument",
+    "uk": [
+      {
+        "term": "аргумент",
+        "occurrences": [
+          "3.333",
+          "4.431",
+          "5.01",
+          "5.02",
+          "5.101",
+          "5.152",
+          "5.251",
+          "5.47",
+          "5.523",
+          "5.5351",
+          "6.1203"
+        ]
+      }
+    ],
+    "ogden": "argument",
+    "pears": "argument"
+  },
+  {
     "de": "Ausdruck",
     "uk": [
       {
