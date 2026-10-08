@@ -2688,6 +2688,27 @@
     "pears": "sign for identity, identity-sign"
   },
   {
+    "de": "Gleichnis",
+    "uk": [
+      {
+        "term": "подоба",
+        "occurrences": [
+          "4.012",
+          "4.015",
+          "5.5563"
+        ]
+      },
+      {
+        "term": "порівняння",
+        "occurrences": [
+          "4.063"
+        ]
+      }
+    ],
+    "ogden": "likeness; simile; model",
+    "pears": "likeness; imagery; simile"
+  },
+  {
     "de": "Gleichung",
     "uk": [
       {
