@@ -269,6 +269,21 @@
     "pears": "argument"
   },
   {
+    "de": "Argumentstelle",
+    "uk": [
+      {
+        "term": "аргументне місце",
+        "occurrences": [
+          "2.0131",
+          "4.0411",
+          "5.5351"
+        ]
+      }
+    ],
+    "ogden": "argument place",
+    "pears": "argument-place"
+  },
+  {
     "de": "Ausdruck",
     "uk": [
       {
