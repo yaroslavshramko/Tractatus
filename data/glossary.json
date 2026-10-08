@@ -3970,6 +3970,24 @@
     "pears": "non-existence"
   },
   {
+    "de": "Nichtübereinstimmung",
+    "uk": [
+      {
+        "term": "неузгодженість",
+        "occurrences": [
+          "2.222",
+          "4.2",
+          "4.4",
+          "4.42",
+          "4.43",
+          "4.431"
+        ]
+      }
+    ],
+    "ogden": "disagreement",
+    "pears": "disagreement"
+  },
+  {
     "de": "Notwendigkeit",
     "uk": [
       {
