@@ -942,6 +942,22 @@
     "pears": "proof"
   },
   {
+    "de": "beweisen",
+    "uk": [
+      {
+        "term": "доводити",
+        "occurrences": [
+          "4.5",
+          "6.126",
+          "6.1263",
+          "6.2321"
+        ]
+      }
+    ],
+    "ogden": "prove",
+    "pears": "prove"
+  },
+  {
     "de": "bezeichnen",
     "uk": [
       {
