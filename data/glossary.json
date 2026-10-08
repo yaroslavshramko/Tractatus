@@ -3863,6 +3863,23 @@
     "pears": "name"
   },
   {
+    "de": "Natur",
+    "uk": [
+      {
+        "term": "природа",
+        "occurrences": [
+          "2.0123",
+          "3.315",
+          "5.47",
+          "6.124",
+          "6.34"
+        ]
+      }
+    ],
+    "ogden": "nature",
+    "pears": "nature"
+  },
+  {
     "de": "Naturgesetz",
     "uk": [
       {
