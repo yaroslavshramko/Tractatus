@@ -1913,6 +1913,20 @@
     "pears": "the unalterable"
   },
   {
+    "de": "feste Form",
+    "uk": [
+      {
+        "term": "стала форма",
+        "occurrences": [
+          "2.023",
+          "2.026"
+        ]
+      }
+    ],
+    "ogden": "fixed form",
+    "pears": "unalterable form"
+  },
+  {
     "de": "Form",
     "uk": [
       {
