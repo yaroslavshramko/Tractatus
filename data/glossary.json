@@ -1428,6 +1428,35 @@
     "pears": "simple singn"
   },
   {
+    "de": "einleuchten",
+    "uk": [
+      {
+        "term": "очевидний",
+        "occurrences": [
+          "5.1363",
+          "5.42",
+          "5.5301",
+          "6.1271"
+        ]
+      }
+    ],
+    "ogden": "obvious; self-evident",
+    "pears": "obvious; self-evident"
+  },
+  {
+    "de": "Einleuchten",
+    "uk": [
+      {
+        "term": "самоочевидність",
+        "occurrences": [
+          "5.4731"
+        ]
+      }
+    ],
+    "ogden": "self-evidence",
+    "pears": "self-evidence"
+  },
+  {
     "de": "Einsicht",
     "uk": [
       {
