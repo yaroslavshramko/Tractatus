@@ -138,6 +138,32 @@
     "pears": "intuition, view"
   },
   {
+    "de": "Anwendung",
+    "uk": [
+      {
+        "term": "застосування",
+        "occurrences": [
+          "5.152",
+          "5.2521",
+          "5.2523",
+          "5.32",
+          "5.5",
+          "5.557",
+          "6.001",
+          "6.126"
+        ]
+      },
+      {
+        "term": "уживання",
+        "occurrences": [
+          "3.262"
+        ]
+      }
+    ],
+    "ogden": "application",
+    "pears": "application"
+  },
+  {
     "de": "Anzeichen",
     "uk": [
       {
