@@ -2981,6 +2981,19 @@
     "pears": "internal relation"
   },
   {
+    "de": "Interpunktion",
+    "uk": [
+      {
+        "term": "розділовий знак",
+        "occurrences": [
+          "5.4611"
+        ]
+      }
+    ],
+    "ogden": "punctuation",
+    "pears": "punctuation-mark"
+  },
+  {
     "de": "Kardinalzahl",
     "uk": [
       {
