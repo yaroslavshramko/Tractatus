@@ -1183,6 +1183,19 @@
     "pears": "represent"
   },
   {
+    "de": "darstellende Beziehung",
+    "uk": [
+      {
+        "term": "репрезентативний стосунок",
+        "occurrences": [
+          "4.462"
+        ]
+      }
+    ],
+    "ogden": "presenting relation",
+    "pears": "representational relation"
+  },
+  {
     "de": "Definition",
     "uk": [
       {
