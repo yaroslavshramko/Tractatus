@@ -2587,6 +2587,19 @@
     "pears": "law; laws"
   },
   {
+    "de": "Gesetzmäßigkeit",
+    "uk": [
+      {
+        "term": "закономірність",
+        "occurrences": [
+          "6.3"
+        ]
+      }
+    ],
+    "ogden": "regularity",
+    "pears": "everything that is subject to law"
+  },
+  {
     "de": "Gewissheit",
     "uk": [
       {
