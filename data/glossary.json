@@ -698,6 +698,17 @@
     "pears": "what is mystical, the mystical"
   },
   {
+    "de": "das Unsagbare",
+    "uk": [
+      {
+        "term": "невимовне",
+        "occurrences": []
+      }
+    ],
+    "ogden": "the unspeakable",
+    "pears": "what cannot be said"
+  },
+  {
     "de": "Definition",
     "uk": [
       {
@@ -1024,6 +1035,17 @@
     ],
     "ogden": "ethics",
     "pears": "ethics"
+  },
+  {
+    "de": "Ewigkeit",
+    "uk": [
+      {
+        "term": "вічність",
+        "occurrences": []
+      }
+    ],
+    "ogden": "eternity",
+    "pears": "eternity"
   },
   {
     "de": "Existenz",
@@ -1592,6 +1614,17 @@
     ],
     "ogden": "equation",
     "pears": "eguation"
+  },
+  {
+    "de": "Gott",
+    "uk": [
+      {
+        "term": "Бог",
+        "occurrences": []
+      }
+    ],
+    "ogden": "God",
+    "pears": "God"
   },
   {
     "de": "Grenze",
@@ -2567,6 +2600,17 @@
     "pears": "projection"
   },
   {
+    "de": "Projektionsmethode",
+    "uk": [
+      {
+        "term": "метод проєкції",
+        "occurrences": []
+      }
+    ],
+    "ogden": "method of projection",
+    "pears": "method of projection"
+  },
+  {
     "de": "Raum",
     "uk": [
       {
@@ -2747,6 +2791,25 @@
     ],
     "ogden": "atomic fact",
     "pears": "state of affair"
+  },
+  {
+    "de": "sagen",
+    "uk": [
+      {
+        "term": "казати",
+        "occurrences": []
+      },
+      {
+        "term": "говорити",
+        "occurrences": []
+      },
+      {
+        "term": "сказати",
+        "occurrences": []
+      }
+    ],
+    "ogden": "say",
+    "pears": "say"
   },
   {
     "de": "Satz",
@@ -3046,6 +3109,21 @@
     ],
     "ogden": "pseudoproposition",
     "pears": "pseudo-proposition"
+  },
+  {
+    "de": "Schluss",
+    "uk": [
+      {
+        "term": "вивід",
+        "occurrences": []
+      },
+      {
+        "term": "висновок",
+        "occurrences": []
+      }
+    ],
+    "ogden": "inference; conclusion",
+    "pears": "inference"
   },
   {
     "de": "Sinn",
@@ -3443,6 +3521,17 @@
     ],
     "ogden": "tautology",
     "pears": "tautology"
+  },
+  {
+    "de": "Tod",
+    "uk": [
+      {
+        "term": "смерть",
+        "occurrences": []
+      }
+    ],
+    "ogden": "death",
+    "pears": "death"
   },
   {
     "de": "Umgangssprache",
@@ -4333,6 +4422,21 @@
     ],
     "ogden": "divide",
     "pears": "divide"
+  },
+  {
+    "de": "Zufall",
+    "uk": [
+      {
+        "term": "випадок",
+        "occurrences": []
+      },
+      {
+        "term": "випадковість",
+        "occurrences": []
+      }
+    ],
+    "ogden": "chance; accident",
+    "pears": "accident"
   },
   {
     "de": "Zuordnung",
