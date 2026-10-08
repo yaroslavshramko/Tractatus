@@ -1886,6 +1886,19 @@
     "pears": "colour-space"
   },
   {
+    "de": "farbig",
+    "uk": [
+      {
+        "term": "кольоровий",
+        "occurrences": [
+          "2.171"
+        ]
+      }
+    ],
+    "ogden": "coloured",
+    "pears": "coloured"
+  },
+  {
     "de": "Form",
     "uk": [
       {
