@@ -4157,6 +4157,20 @@
     "pears": "physics"
   },
   {
+    "de": "positive Tatsache",
+    "uk": [
+      {
+        "term": "позитивний факт",
+        "occurrences": [
+          "2.06",
+          "4.063"
+        ]
+      }
+    ],
+    "ogden": "positive fact",
+    "pears": "positive fact"
+  },
+  {
     "de": "Projektion",
     "uk": [
       {
