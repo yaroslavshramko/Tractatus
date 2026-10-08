@@ -3988,6 +3988,33 @@
     "pears": "disagreement"
   },
   {
+    "de": "Notation",
+    "uk": [
+      {
+        "term": "система запису",
+        "occurrences": [
+          "3.342",
+          "3.3441",
+          "5.474",
+          "5.512",
+          "5.513",
+          "5.514",
+          "6.1203",
+          "6.122",
+          "6.1223"
+        ]
+      },
+      {
+        "term": "запис",
+        "occurrences": [
+          "3.3441"
+        ]
+      }
+    ],
+    "ogden": "notation",
+    "pears": "notation"
+  },
+  {
     "de": "Notwendigkeit",
     "uk": [
       {
