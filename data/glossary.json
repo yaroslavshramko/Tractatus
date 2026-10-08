@@ -2839,6 +2839,12 @@
       {
         "term": "сказати",
         "occurrences": []
+      },
+      {
+        "term": "стверджувати",
+        "occurrences": [
+          "4.062"
+        ]
       }
     ],
     "ogden": "say",
