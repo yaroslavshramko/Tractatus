@@ -1471,6 +1471,25 @@
     "pears": "insight"
   },
   {
+    "de": "Element",
+    "uk": [
+      {
+        "term": "елемент",
+        "occurrences": [
+          "2.14",
+          "2.1515",
+          "3.14",
+          "3.2",
+          "3.201",
+          "3.24",
+          "3.42"
+        ]
+      }
+    ],
+    "ogden": "element",
+    "pears": "element"
+  },
+  {
     "de": "Elementarsatz",
     "uk": [
       {
