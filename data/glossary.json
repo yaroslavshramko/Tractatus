@@ -3088,6 +3088,19 @@
     "pears": "set, class"
   },
   {
+    "de": "Klassifikation",
+    "uk": [
+      {
+        "term": "класифікація",
+        "occurrences": [
+          "5.454"
+        ]
+      }
+    ],
+    "ogden": "classification",
+    "pears": "classification"
+  },
+  {
     "de": "Komplex",
     "uk": [
       {
