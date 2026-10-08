@@ -3101,6 +3101,21 @@
     "pears": "classification"
   },
   {
+    "de": "komplex",
+    "uk": [
+      {
+        "term": "складний",
+        "occurrences": [
+          "3.1432",
+          "4.2211",
+          "5.515"
+        ]
+      }
+    ],
+    "ogden": "complex",
+    "pears": "complex"
+  },
+  {
     "de": "Komplex",
     "uk": [
       {
