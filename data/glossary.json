@@ -1578,6 +1578,33 @@
     "pears": "opposite; opposed"
   },
   {
+    "de": "enthalten",
+    "uk": [
+      {
+        "term": "містити, міститися",
+        "occurrences": [
+          "2.014",
+          "2.203",
+          "3.02",
+          "3.13",
+          "3.24",
+          "3.263",
+          "3.313",
+          "3.332",
+          "3.333",
+          "4.063",
+          "4.1273",
+          "5.121",
+          "5.122",
+          "5.44",
+          "5.47"
+        ]
+      }
+    ],
+    "ogden": "contain; be contained",
+    "pears": "contain; be contained"
+  },
+  {
     "de": "Ereignis",
     "uk": [
       {
