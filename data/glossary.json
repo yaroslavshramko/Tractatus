@@ -3950,6 +3950,26 @@
     "pears": "negative fact"
   },
   {
+    "de": "Nichtbestehen",
+    "uk": [
+      {
+        "term": "неіснування",
+        "occurrences": [
+          "2.06",
+          "2.062",
+          "2.11",
+          "2.201",
+          "4.1",
+          "4.2",
+          "4.27",
+          "4.3"
+        ]
+      }
+    ],
+    "ogden": "non-existence",
+    "pears": "non-existence"
+  },
+  {
     "de": "Notwendigkeit",
     "uk": [
       {
