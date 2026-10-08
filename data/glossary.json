@@ -4044,6 +4044,33 @@
     "pears": "necessity"
   },
   {
+    "de": "offenbar",
+    "uk": [
+      {
+        "term": "очевидний",
+        "occurrences": [
+          "2.022",
+          "4.012",
+          "4.221",
+          "5.1311",
+          "5.42",
+          "5.503",
+          "5.5571",
+          "6.31"
+        ]
+      },
+      {
+        "term": "вочевидь",
+        "occurrences": [
+          "4.012",
+          "6.51"
+        ]
+      }
+    ],
+    "ogden": "clear; obvious; obviously; palpably",
+    "pears": "obvious; obviously"
+  },
+  {
     "de": "Operation",
     "uk": [
       {
