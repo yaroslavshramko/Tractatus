@@ -182,6 +182,20 @@
     "pears": "general term"
   },
   {
+    "de": "allgemeines Urzeichen",
+    "uk": [
+      {
+        "term": "загальний первинний знак",
+        "occurrences": [
+          "5.46",
+          "5.472"
+        ]
+      }
+    ],
+    "ogden": "general primitive sign",
+    "pears": "general primitive sign"
+  },
+  {
     "de": "Allgemeinheits­bezeichnung",
     "uk": [
       {
