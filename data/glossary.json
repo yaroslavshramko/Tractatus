@@ -3984,6 +3984,25 @@
     "pears": "be the representatives"
   },
   {
+    "de": "Verwendung",
+    "uk": [
+      {
+        "term": "застосування",
+        "occurrences": [
+          "3.327"
+        ]
+      },
+      {
+        "term": "уживання",
+        "occurrences": [
+          "4.013"
+        ]
+      }
+    ],
+    "ogden": "application, use",
+    "pears": "employment, use"
+  },
+  {
     "de": "vorkommen",
     "uk": [
       {
