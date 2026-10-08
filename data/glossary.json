@@ -3629,6 +3629,24 @@
     "pears": "mathematics"
   },
   {
+    "de": "Mechanik",
+    "uk": [
+      {
+        "term": "механіка",
+        "occurrences": [
+          "4.04",
+          "6.321",
+          "6.341",
+          "6.342",
+          "6.343",
+          "6.3432"
+        ]
+      }
+    ],
+    "ogden": "mechanics",
+    "pears": "mechanics"
+  },
+  {
     "de": "Merkmal",
     "uk": [
       {
