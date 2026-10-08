@@ -2477,6 +2477,21 @@
     "pears": "what is common; common factor"
   },
   {
+    "de": "Geometrie",
+    "uk": [
+      {
+        "term": "геометрія",
+        "occurrences": [
+          "3.032",
+          "3.0321",
+          "6.35"
+        ]
+      }
+    ],
+    "ogden": "geometry",
+    "pears": "geometry"
+  },
+  {
     "de": "Gerüst",
     "uk": [
       {
