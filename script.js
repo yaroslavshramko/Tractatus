@@ -81,7 +81,7 @@ async function fetchBranch(path) { const response = await fetch(`${path}?v=${Dat
 async function loadTractatus() {
   const tree = document.getElementById("tractatus-tree");
   try {
-    const tractatus = await fetchJson("data/tractatus.json");
+    const tractatus = await fetchJson("data/tractatus1-2.json");
     const branchFiles = [["3","data/tractatus3.json"],["4","data/tractatus4.json"],["5","data/tractatus5.json"],["6","data/tractatus6.json"],["7","data/tractatus7.json"]];
     for (const [number,path] of branchFiles) { try { const branch=await fetchBranch(path); const branchIndex=tractatus.findIndex(item=>item.number===number); if(branchIndex!==-1) tractatus[branchIndex]=branch; else tractatus.push(branch); } catch(error) { console.error(`Не вдалося завантажити ${path}:`,error); } }
     tractatus.sort((a,b)=>Number(a.number)-Number(b.number)); tree.replaceChildren(); tractatus.forEach(item=>tree.appendChild(propositionElement(item)));
