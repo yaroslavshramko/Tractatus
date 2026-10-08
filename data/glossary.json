@@ -3517,6 +3517,21 @@
     "pears": "logical picture"
   },
   {
+    "de": "logisches Gesetz",
+    "uk": [
+      {
+        "term": "логічний закон",
+        "occurrences": [
+          "3.031",
+          "6.123",
+          "6.31"
+        ]
+      }
+    ],
+    "ogden": "law of logic; logical law",
+    "pears": "law of logic; logical law"
+  },
+  {
     "de": "logisches Operationszeichen",
     "uk": [
       {
