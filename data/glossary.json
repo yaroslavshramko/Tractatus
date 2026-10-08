@@ -2250,6 +2250,23 @@
     "pears": "question"
   },
   {
+    "de": "fragen",
+    "uk": [
+      {
+        "term": "запитувати",
+        "occurrences": [
+          "4.1274",
+          "4.51",
+          "5.452",
+          "5.5542",
+          "6.51"
+        ]
+      }
+    ],
+    "ogden": "ask",
+    "pears": "ask"
+  },
+  {
     "de": "Funktion",
     "uk": [
       {
