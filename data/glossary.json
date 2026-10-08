@@ -1873,6 +1873,19 @@
     "pears": "colour"
   },
   {
+    "de": "Farbenraum",
+    "uk": [
+      {
+        "term": "простір кольорів",
+        "occurrences": [
+          "2.0131"
+        ]
+      }
+    ],
+    "ogden": "colour space",
+    "pears": "colour-space"
+  },
+  {
     "de": "Form",
     "uk": [
       {
