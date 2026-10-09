@@ -5131,6 +5131,26 @@
     "pears": "sense"
   },
   {
+    "de": "sinnlich wahrnehmbar",
+    "uk": [
+      {
+        "term": "сприйняти за допомогою відчуттів",
+        "occurrences": [
+          "3.1"
+        ]
+      },
+      {
+        "term": "чуттєво сприйманий",
+        "occurrences": [
+          "3.11",
+          "3.32"
+        ]
+      }
+    ],
+    "ogden": "perceptibly through the senses; sensibly perceptible; perceptible by the senses",
+    "pears": "perceived by the senses; perceptible; perceived"
+  },
+  {
     "de": "sinnlos",
     "uk": [
       {
