@@ -5261,6 +5261,20 @@
     "pears": "be mirrored; find its reflection"
   },
   {
+    "de": "Spielraum",
+    "uk": [
+      {
+        "term": "простір",
+        "occurrences": [
+          "4.463",
+          "5.5262"
+        ]
+      }
+    ],
+    "ogden": "range",
+    "pears": "range"
+  },
+  {
     "de": "Sprache",
     "uk": [
       {
