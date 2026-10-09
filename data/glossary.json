@@ -7086,6 +7086,27 @@
     "pears": "will"
   },
   {
+    "de": "willkürlich",
+    "uk": [
+      {
+        "term": "довільний",
+        "occurrences": [
+          "3.315",
+          "3.322",
+          "3.342",
+          "3.3442",
+          "5.02",
+          "5.473",
+          "5.554",
+          "6.124",
+          "6.1271"
+        ]
+      }
+    ],
+    "ogden": "arbitrary",
+    "pears": "arbitrary"
+  },
+  {
     "de": "Wirklichkeit",
     "uk": [
       {
