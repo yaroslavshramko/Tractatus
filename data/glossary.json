@@ -6119,6 +6119,19 @@
     "pears": "understand"
   },
   {
+    "de": "Vertretung",
+    "uk": [
+      {
+        "term": "представництво",
+        "occurrences": [
+          "4.0312"
+        ]
+      }
+    ],
+    "ogden": "representation",
+    "pears": "representatives"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
