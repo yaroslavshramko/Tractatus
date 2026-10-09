@@ -7503,6 +7503,23 @@
     "pears": "make itself manifest"
   },
   {
+    "de": "Zeit",
+    "uk": [
+      {
+        "term": "час",
+        "occurrences": [
+          "2.0121",
+          "2.0251",
+          "6.3611",
+          "6.3751",
+          "6.4312"
+        ]
+      }
+    ],
+    "ogden": "time",
+    "pears": "time"
+  },
+  {
     "de": "zerfallen",
     "uk": [
       {
