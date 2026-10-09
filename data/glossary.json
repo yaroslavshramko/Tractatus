@@ -535,6 +535,33 @@
     "pears": "state"
   },
   {
+    "de": "aussprechen",
+    "uk": [
+      {
+        "term": "вимовити",
+        "occurrences": [
+          "3.221"
+        ]
+      },
+      {
+        "term": "промовляти",
+        "occurrences": [
+          "3.262"
+        ]
+      },
+      {
+        "term": "виразити словами",
+        "occurrences": [
+          "4.116",
+          "6.421",
+          "6.5"
+        ]
+      }
+    ],
+    "ogden": "assert; declare; say; express",
+    "pears": "put into words; say clearly"
+  },
+  {
     "de": "Basis (Basen)",
     "uk": [
       {
