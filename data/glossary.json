@@ -7312,6 +7312,19 @@
     "pears": "sign for a number"
   },
   {
+    "de": "zahllos",
+    "uk": [
+      {
+        "term": "не мати числа",
+        "occurrences": [
+          "4.128"
+        ]
+      }
+    ],
+    "ogden": "anumerical",
+    "pears": "without number"
+  },
+  {
     "de": "Zeichen",
     "uk": [
       {
