@@ -6132,6 +6132,25 @@
     "pears": "representatives"
   },
   {
+    "de": "vollständig",
+    "uk": [
+      {
+        "term": "повний",
+        "occurrences": [
+          "2.0201",
+          "3.201",
+          "3.25",
+          "4.023",
+          "4.26",
+          "5.156",
+          "5.526"
+        ]
+      }
+    ],
+    "ogden": "complete; completely",
+    "pears": "complete; completely"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
