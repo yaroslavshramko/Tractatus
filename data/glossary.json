@@ -7553,6 +7553,24 @@
     "pears": "accident"
   },
   {
+    "de": "zufällig",
+    "uk": [
+      {
+        "term": "випадковий",
+        "occurrences": [
+          "2.012",
+          "3.34",
+          "5.4733",
+          "6.1231",
+          "6.1232",
+          "6.41"
+        ]
+      }
+    ],
+    "ogden": "accidental; accidentally; by accident",
+    "pears": "accidental; accidentally; an accident"
+  },
+  {
     "de": "Zuordnung",
     "uk": [
       {
