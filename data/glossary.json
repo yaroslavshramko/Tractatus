@@ -6224,6 +6224,19 @@
     "pears": "concept of truth"
   },
   {
+    "de": "Wahrheitswert",
+    "uk": [
+      {
+        "term": "істиннісне значення",
+        "occurrences": [
+          "4.063"
+        ]
+      }
+    ],
+    "ogden": "truth-value",
+    "pears": "truth-value"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
