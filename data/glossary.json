@@ -7054,6 +7054,27 @@
     "pears": "contradict"
   },
   {
+    "de": "Widerspruch",
+    "uk": [
+      {
+        "term": "суперечити",
+        "occurrences": [
+          "4.211"
+        ]
+      },
+      {
+        "term": "суперечність",
+        "occurrences": [
+          "6.1203",
+          "6.123",
+          "6.3751"
+        ]
+      }
+    ],
+    "ogden": "contradiction",
+    "pears": "contradiction"
+  },
+  {
     "de": "Wille",
     "uk": [
       {
