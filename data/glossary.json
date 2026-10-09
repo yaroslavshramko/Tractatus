@@ -6210,6 +6210,20 @@
     "pears": "true"
   },
   {
+    "de": "Wahrheitsbegriff",
+    "uk": [
+      {
+        "term": "поняття істини",
+        "occurrences": [
+          "4.063",
+          "4.431"
+        ]
+      }
+    ],
+    "ogden": "concept of truth; truth-concept",
+    "pears": "concept of truth"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
