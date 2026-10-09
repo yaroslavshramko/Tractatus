@@ -5317,6 +5317,27 @@
     "pears": "logic of language"
   },
   {
+    "de": "sprechen",
+    "uk": [
+      {
+        "term": "говорити",
+        "occurrences": [
+          "3.221",
+          "4.002",
+          "4.1221",
+          "4.126",
+          "4.1272",
+          "5.4731",
+          "6.3431",
+          "6.423",
+          "7"
+        ]
+      }
+    ],
+    "ogden": "speak; say",
+    "pears": "speak; talk about"
+  },
+  {
     "de": "Struktur",
     "uk": [
       {
