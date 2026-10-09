@@ -5697,6 +5697,38 @@
     "pears": "death"
   },
   {
+    "de": "unabhängig",
+    "uk": [
+      {
+        "term": "незалежний",
+        "occurrences": [
+          "2.061",
+          "4.061",
+          "5.152",
+          "5.451",
+          "5.5561",
+          "6.373"
+        ]
+      },
+      {
+        "term": "незалежно",
+        "occurrences": [
+          "2.024",
+          "2.22",
+          "5.5261"
+        ]
+      },
+      {
+        "term": "не залежить",
+        "occurrences": [
+          "5.154"
+        ]
+      }
+    ],
+    "ogden": "independent; independently",
+    "pears": "independent; independently"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
