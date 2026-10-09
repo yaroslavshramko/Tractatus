@@ -5956,6 +5956,20 @@
     "pears": "nonsense"
   },
   {
+    "de": "unverallgemeinert",
+    "uk": [
+      {
+        "term": "неузагальнений",
+        "occurrences": [
+          "5.5261",
+          "6.1231"
+        ]
+      }
+    ],
+    "ogden": "ungeneralized",
+    "pears": "ungeneralized"
+  },
+  {
     "de": "unwesentlich",
     "uk": [
       {
@@ -6037,6 +6051,22 @@
     ],
     "ogden": "variable proposition",
     "pears": "variable proposition"
+  },
+  {
+    "de": "verallgemeinern",
+    "uk": [
+      {
+        "term": "узагальнювати",
+        "occurrences": [
+          "4.0411",
+          "5.526",
+          "5.5261",
+          "6.1231"
+        ]
+      }
+    ],
+    "ogden": "generalize",
+    "pears": "generalize"
   },
   {
     "de": "Übereinstimmung",
