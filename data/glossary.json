@@ -6944,6 +6944,38 @@
     "pears": "essence; essential nature"
   },
   {
+    "de": "wesentlich",
+    "uk": [
+      {
+        "term": "суттєвий",
+        "occurrences": [
+          "2.011",
+          "3.143",
+          "3.31",
+          "3.317",
+          "3.34",
+          "3.3411",
+          "4.1121",
+          "6.1232"
+        ]
+      },
+      {
+        "term": "суттєво",
+        "occurrences": [
+          "6.124"
+        ]
+      },
+      {
+        "term": "по суті",
+        "occurrences": [
+          "6.127"
+        ]
+      }
+    ],
+    "ogden": "essential; essentially",
+    "pears": "essential; essentially; essence; unessential"
+  },
+  {
     "de": "widerspiegeln",
     "uk": [
       {
