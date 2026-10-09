@@ -1645,6 +1645,26 @@
     "pears": "contain; be contained"
   },
   {
+    "de": "entsprechend",
+    "uk": [
+      {
+        "term": "відповідний",
+        "occurrences": [
+          "4.5",
+          "6.122"
+        ]
+      },
+      {
+        "term": "відповідно до",
+        "occurrences": [
+          "6.24"
+        ]
+      }
+    ],
+    "ogden": "accordingly; adequate; in accordance with",
+    "pears": "suitably; suitable; in accordance with"
+  },
+  {
     "de": "Ereignis",
     "uk": [
       {
