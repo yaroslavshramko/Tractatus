@@ -7571,6 +7571,21 @@
     "pears": "accidental; accidentally; an accident"
   },
   {
+    "de": "Zug",
+    "uk": [
+      {
+        "term": "риса",
+        "occurrences": [
+          "3.34",
+          "4.1221",
+          "4.126"
+        ]
+      }
+    ],
+    "ogden": "feature",
+    "pears": "feature"
+  },
+  {
     "de": "Zuordnung",
     "uk": [
       {
