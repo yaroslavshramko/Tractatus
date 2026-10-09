@@ -5889,6 +5889,37 @@
     "pears": "illogical; illogically"
   },
   {
+    "de": "unmöglich",
+    "uk": [
+      {
+        "term": "неможливий",
+        "occurrences": [
+          "4.464",
+          "6.3751"
+        ]
+      },
+      {
+        "term": "неможливо",
+        "occurrences": [
+          "2.0122",
+          "2.0212",
+          "2.02331",
+          "4.243",
+          "4.464",
+          "5.5422"
+        ]
+      },
+      {
+        "term": "не може",
+        "occurrences": [
+          "4.442"
+        ]
+      }
+    ],
+    "ogden": "impossible; cannot possibly",
+    "pears": "impossible"
+  },
+  {
     "de": "Unsinn",
     "uk": [
       {
