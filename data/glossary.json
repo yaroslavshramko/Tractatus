@@ -4932,6 +4932,19 @@
     "pears": "propositional sign"
   },
   {
+    "de": "scheinbares Urzeichen",
+    "uk": [
+      {
+        "term": "псевдопервинний знак",
+        "occurrences": [
+          "5.461"
+        ]
+      }
+    ],
+    "ogden": "apparent primitive sign",
+    "pears": "apparently primitive sign"
+  },
+  {
     "de": "Scheinsatz",
     "uk": [
       {
