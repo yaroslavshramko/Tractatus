@@ -5303,6 +5303,20 @@
     "pears": "language"
   },
   {
+    "de": "Sprachlogik",
+    "uk": [
+      {
+        "term": "логіка мови",
+        "occurrences": [
+          "4.002",
+          "4.003"
+        ]
+      }
+    ],
+    "ogden": "logic of language",
+    "pears": "logic of language"
+  },
+  {
     "de": "Struktur",
     "uk": [
       {
