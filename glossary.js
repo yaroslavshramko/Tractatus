@@ -20,7 +20,7 @@
     const terms = ukrainianTerms(item);
     return terms.map((entry, index) => {
       const occurrences = Array.isArray(entry.occurrences) ? entry.occurrences : [];
-      return `<button type="button" class="glossary-uk-term" data-occurrences="${escapeHtml(JSON.stringify(occurrences))}">${escapeHtml(entry.term)}</button>${item.de === 'sinnlich wahrnehmbar' ? (index < terms.length - 1 ? '<br>' : '') : (index < terms.length - 1 ? ', ' : '')}`;
+      return `<button type="button" class="glossary-uk-term" data-occurrences="${escapeHtml(JSON.stringify(occurrences))}">${escapeHtml(entry.term)}</button>${index < terms.length - 1 ? ', ' : ''}`;
     }).join('');
   };
 
