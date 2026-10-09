@@ -6988,6 +6988,30 @@
     "pears": "essential; essentially; essence; unessential"
   },
   {
+    "de": "Wesentliche",
+    "uk": [
+      {
+        "term": "суттєве",
+        "occurrences": [
+          "3.341",
+          "4.5",
+          "6.232"
+        ]
+      },
+      {
+        "term": "суть",
+        "occurrences": [
+          "4.013",
+          "4.016",
+          "4.465",
+          "6.2341"
+        ]
+      }
+    ],
+    "ogden": "essential; essence",
+    "pears": "essential; essence; essential point; essential characteristic"
+  },
+  {
     "de": "widerspiegeln",
     "uk": [
       {
