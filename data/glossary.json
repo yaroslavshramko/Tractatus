@@ -7633,6 +7633,19 @@
     "pears": "composite"
   },
   {
+    "de": "Zusammengesetztheit",
+    "uk": [
+      {
+        "term": "складеність",
+        "occurrences": [
+          "5.47"
+        ]
+      }
+    ],
+    "ogden": "composition",
+    "pears": "compositeness"
+  },
+  {
     "de": "Zusammenhang",
     "uk": [
       {
