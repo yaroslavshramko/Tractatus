@@ -6083,6 +6083,23 @@
     "pears": "generalization"
   },
   {
+    "de": "vergleichen",
+    "uk": [
+      {
+        "term": "порівнювати",
+        "occurrences": [
+          "2.223",
+          "4.04",
+          "4.05",
+          "6.2321",
+          "6.3611"
+        ]
+      }
+    ],
+    "ogden": "compare; cf.",
+    "pears": "compare"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
