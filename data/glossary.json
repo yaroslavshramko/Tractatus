@@ -5999,6 +5999,19 @@
     "pears": "judgement stroke"
   },
   {
+    "de": "variable Zahl",
+    "uk": [
+      {
+        "term": "змінне число",
+        "occurrences": [
+          "6.022"
+        ]
+      }
+    ],
+    "ogden": "variable number",
+    "pears": "variable number"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
