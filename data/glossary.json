@@ -5235,6 +5235,19 @@
     "pears": "solipsism"
   },
   {
+    "de": "spiegeln, sich",
+    "uk": [
+      {
+        "term": "віддзеркалюватися",
+        "occurrences": [
+          "4.121"
+        ]
+      }
+    ],
+    "ogden": "mirror itself",
+    "pears": "be mirrored; find its reflection"
+  },
+  {
     "de": "Sprache",
     "uk": [
       {
@@ -6152,6 +6165,19 @@
     "pears": "description of the world"
   },
   {
+    "de": "weltspiegelnd",
+    "uk": [
+      {
+        "term": "такий, що віддзеркалює світ",
+        "occurrences": [
+          "5.511"
+        ]
+      }
+    ],
+    "ogden": "mirror the world",
+    "pears": "mirror the world"
+  },
+  {
     "de": "Wert",
     "uk": [
       {
@@ -6173,6 +6199,32 @@
     ],
     "ogden": "value",
     "pears": "value"
+  },
+  {
+    "de": "widerspiegeln",
+    "uk": [
+      {
+        "term": "віддзеркалювати",
+        "occurrences": [
+          "5.512"
+        ]
+      }
+    ],
+    "ogden": "mirror",
+    "pears": "mirror"
+  },
+  {
+    "de": "widerspiegeln, sich",
+    "uk": [
+      {
+        "term": "віддзеркалюватися",
+        "occurrences": [
+          "5.514"
+        ]
+      }
+    ],
+    "ogden": "be mirrored",
+    "pears": "be mirrored"
   },
   {
     "de": "Wille",
