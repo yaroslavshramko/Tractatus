@@ -7586,6 +7586,19 @@
     "pears": "feature"
   },
   {
+    "de": "Zukunft",
+    "uk": [
+      {
+        "term": "майбутнє",
+        "occurrences": [
+          "5.1361"
+        ]
+      }
+    ],
+    "ogden": "future",
+    "pears": "future"
+  },
+  {
     "de": "Zuordnung",
     "uk": [
       {
