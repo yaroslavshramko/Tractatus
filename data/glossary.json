@@ -5521,6 +5521,24 @@
     "pears": "substance"
   },
   {
+    "de": "successive Anwendung",
+    "uk": [
+      {
+        "term": "послідовне застосування",
+        "occurrences": [
+          "5.2521",
+          "5.2523",
+          "5.32",
+          "5.5",
+          "6.001",
+          "6.126"
+        ]
+      }
+    ],
+    "ogden": "successive application; applying in succession",
+    "pears": "successive application; successively applying"
+  },
+  {
     "de": "Symbol",
     "uk": [
       {
