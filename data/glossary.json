@@ -7107,6 +7107,19 @@
     "pears": "arbitrary"
   },
   {
+    "de": "wirkliches Urzeichen",
+    "uk": [
+      {
+        "term": "справжній первинний знак",
+        "occurrences": [
+          "5.461"
+        ]
+      }
+    ],
+    "ogden": "real primitive sign",
+    "pears": "primitive sign"
+  },
+  {
     "de": "Wirklichkeit",
     "uk": [
       {
