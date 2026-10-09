@@ -5970,6 +5970,19 @@
     "pears": "ungeneralized"
   },
   {
+    "de": "unvollständig",
+    "uk": [
+      {
+        "term": "неповний",
+        "occurrences": [
+          "5.156"
+        ]
+      }
+    ],
+    "ogden": "incomplete",
+    "pears": "incomplete"
+  },
+  {
     "de": "unwesentlich",
     "uk": [
       {
