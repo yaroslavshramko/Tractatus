@@ -5729,6 +5729,19 @@
     "pears": "independent; independently"
   },
   {
+    "de": "unanalysierbar",
+    "uk": [
+      {
+        "term": "не піддається аналізу",
+        "occurrences": [
+          "4.1274"
+        ]
+      }
+    ],
+    "ogden": "unanalysable",
+    "pears": "unanalysable"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
