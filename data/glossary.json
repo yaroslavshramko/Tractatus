@@ -134,6 +134,19 @@
     "pears": "give sharp boundaries; set limits to"
   },
   {
+    "de": "absprechen",
+    "uk": [
+      {
+        "term": "заперечувати",
+        "occurrences": [
+          "4.124"
+        ]
+      }
+    ],
+    "ogden": "deny",
+    "pears": "deny"
+  },
+  {
     "de": "allgemeine Form",
     "uk": [
       {
@@ -6693,5 +6706,18 @@
     ],
     "ogden": "hang together",
     "pears": "be connected"
+  },
+  {
+    "de": "zusprechen",
+    "uk": [
+      {
+        "term": "приписувати",
+        "occurrences": [
+          "4.124"
+        ]
+      }
+    ],
+    "ogden": "ascribe",
+    "pears": "assert"
   }
 ]
