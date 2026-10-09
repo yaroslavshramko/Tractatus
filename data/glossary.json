@@ -5855,6 +5855,27 @@
     "pears": "infinite; infinitely"
   },
   {
+    "de": "unlogisch",
+    "uk": [
+      {
+        "term": "нелогічний",
+        "occurrences": [
+          "3.03",
+          "3.031"
+        ]
+      },
+      {
+        "term": "нелогічно",
+        "occurrences": [
+          "3.03",
+          "5.4731"
+        ]
+      }
+    ],
+    "ogden": "unlogical; unlogically; illogically",
+    "pears": "illogical; illogically"
+  },
+  {
     "de": "Unsinn",
     "uk": [
       {
