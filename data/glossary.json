@@ -4958,6 +4958,19 @@
     "pears": "pseudo-concept"
   },
   {
+    "de": "Scheinbeziehung",
+    "uk": [
+      {
+        "term": "псевдостосунок",
+        "occurrences": [
+          "5.461"
+        ]
+      }
+    ],
+    "ogden": "apparent relation",
+    "pears": "pseudo-relation"
+  },
+  {
     "de": "Scheinsatz",
     "uk": [
       {
