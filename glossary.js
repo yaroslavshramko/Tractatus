@@ -29,7 +29,7 @@
     for (const item of items) {
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td><i>${escapeHtml(item.de)}</i></td>
+        <td><i>${item.de === "sinnlich wahrnehmbar" ? "sinnlich<br>wahrnehmbar" : escapeHtml(item.de)}</i></td>
         <td>${renderUkrainian(item)}<div class="glossary-occurrences" hidden></div></td>
         <td>${escapeHtml(item.ogden || '—')}</td>
         <td>${escapeHtml(item.pears || '—')}</td>`;
