@@ -1645,6 +1645,30 @@
     "pears": "contain; be contained"
   },
   {
+    "de": "entsprechen",
+    "uk": [
+      {
+        "term": "відповідати",
+        "occurrences": [
+          "2.13",
+          "3.2",
+          "3.21",
+          "3.315",
+          "4.0621",
+          "4.063",
+          "4.1121",
+          "4.28",
+          "4.441",
+          "4.466",
+          "5.5542",
+          "6.341"
+        ]
+      }
+    ],
+    "ogden": "correspond",
+    "pears": "correspond"
+  },
+  {
     "de": "entsprechend",
     "uk": [
       {
