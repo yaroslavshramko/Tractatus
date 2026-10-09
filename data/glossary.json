@@ -4987,6 +4987,30 @@
     "pears": "pseudo-proposition"
   },
   {
+    "de": "schließen",
+    "uk": [
+      {
+        "term": "зробити висновок",
+        "occurrences": [
+          "2.062",
+          "4.002",
+          "5.633",
+          "6.211"
+        ]
+      },
+      {
+        "term": "вивести",
+        "occurrences": [
+          "5.1311",
+          "5.132",
+          "5.135"
+        ]
+      }
+    ],
+    "ogden": "infer; conclude; make an inference",
+    "pears": "infer; make an inference; inference"
+  },
+  {
     "de": "Schluss",
     "uk": [
       {
