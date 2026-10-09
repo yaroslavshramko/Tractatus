@@ -5742,6 +5742,19 @@
     "pears": "unanalysable"
   },
   {
+    "de": "unanalysiert",
+    "uk": [
+      {
+        "term": "непроаналізований",
+        "occurrences": [
+          "5.5562"
+        ]
+      }
+    ],
+    "ogden": "unanalysed",
+    "pears": "unanalyzed"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
