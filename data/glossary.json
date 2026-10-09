@@ -6100,6 +6100,25 @@
     "pears": "compare"
   },
   {
+    "de": "verstehen",
+    "uk": [
+      {
+        "term": "розуміти",
+        "occurrences": [
+          "3.334",
+          "4.003",
+          "4.016",
+          "4.02",
+          "4.021",
+          "4.024",
+          "5.02"
+        ]
+      }
+    ],
+    "ogden": "understand",
+    "pears": "understand"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
