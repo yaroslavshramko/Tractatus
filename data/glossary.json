@@ -7038,6 +7038,22 @@
     "pears": "be mirrored"
   },
   {
+    "de": "widersprechen",
+    "uk": [
+      {
+        "term": "суперечити",
+        "occurrences": [
+          "3.032",
+          "4.1211",
+          "5.1241",
+          "6.1201"
+        ]
+      }
+    ],
+    "ogden": "contradict",
+    "pears": "contradict"
+  },
+  {
     "de": "Wille",
     "uk": [
       {
