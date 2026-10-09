@@ -120,6 +120,25 @@
     "pears": "what it depicts"
   },
   {
+    "de": "abgeleitet",
+    "uk": [
+      {
+        "term": "виведений",
+        "occurrences": [
+          "4.243"
+        ]
+      },
+      {
+        "term": "вивідний",
+        "occurrences": [
+          "6.127"
+        ]
+      }
+    ],
+    "ogden": "deduced",
+    "pears": "derived"
+  },
+  {
     "de": "abgrenzen",
     "uk": [
       {
