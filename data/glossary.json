@@ -6012,6 +6012,20 @@
     "pears": "variable number"
   },
   {
+    "de": "variabler Name",
+    "uk": [
+      {
+        "term": "змінне ім'я",
+        "occurrences": [
+          "3.314",
+          "4.1272"
+        ]
+      }
+    ],
+    "ogden": "variable name",
+    "pears": "variable name"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
