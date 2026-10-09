@@ -5986,6 +5986,19 @@
     "pears": "cause"
   },
   {
+    "de": "Urteilsstrich",
+    "uk": [
+      {
+        "term": "штрих судження",
+        "occurrences": [
+          "4.442"
+        ]
+      }
+    ],
+    "ogden": "assertion sign",
+    "pears": "judgement stroke"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
