@@ -5956,6 +5956,23 @@
     "pears": "nonsense"
   },
   {
+    "de": "unwesentlich",
+    "uk": [
+      {
+        "term": "несуттєвий",
+        "occurrences": [
+          "3.317",
+          "4.1121",
+          "4.4661",
+          "5.501",
+          "6.126"
+        ]
+      }
+    ],
+    "ogden": "not essential; unessential",
+    "pears": "not essential; unessential"
+  },
+  {
     "de": "Übereinstimmung",
     "uk": [
       {
