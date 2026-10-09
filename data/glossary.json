@@ -6920,6 +6920,30 @@
     "pears": "value"
   },
   {
+    "de": "Wesen",
+    "uk": [
+      {
+        "term": "сутність",
+        "occurrences": [
+          "3.1431",
+          "3.3421",
+          "4.016",
+          "4.027",
+          "5.471",
+          "5.4711"
+        ]
+      },
+      {
+        "term": "суть",
+        "occurrences": [
+          "5.3"
+        ]
+      }
+    ],
+    "ogden": "essence; nature; essential nature; essential",
+    "pears": "essence; essential nature"
+  },
+  {
     "de": "widerspiegeln",
     "uk": [
       {
