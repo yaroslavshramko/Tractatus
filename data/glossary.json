@@ -5045,6 +5045,20 @@
     "pears": "propositional form"
   },
   {
+    "de": "Satzgefüge",
+    "uk": [
+      {
+        "term": "побудова речення",
+        "occurrences": [
+          "3.3442",
+          "4.442"
+        ]
+      }
+    ],
+    "ogden": "propositional structure; proposition",
+    "pears": "proposition"
+  },
+  {
     "de": "Satzvariable",
     "uk": [
       {
