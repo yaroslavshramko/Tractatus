@@ -438,6 +438,32 @@
     "pears": "argument-place"
   },
   {
+    "de": "auflösen, sich",
+    "uk": [
+      {
+        "term": "розкладатися",
+        "occurrences": [
+          "3.3442"
+        ]
+      }
+    ],
+    "ogden": "resolve",
+    "pears": "resolve"
+  },
+  {
+    "de": "Auflösung",
+    "uk": [
+      {
+        "term": "розкладання",
+        "occurrences": [
+          "3.3442"
+        ]
+      }
+    ],
+    "ogden": "resolution",
+    "pears": "analysis"
+  },
+  {
     "de": "Ausdruck",
     "uk": [
       {
