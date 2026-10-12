@@ -1702,6 +1702,37 @@
     "pears": "contain; be contained"
   },
   {
+    "de": "entnehmen",
+    "uk": [
+      {
+        "term": "вичленувати",
+        "occurrences": [
+          "4.002"
+        ]
+      },
+      {
+        "term": "видобути",
+        "occurrences": [
+          "4.0141"
+        ]
+      },
+      {
+        "term": "встановити",
+        "occurrences": [
+          "5.132"
+        ]
+      },
+      {
+        "term": "зрозуміти",
+        "occurrences": [
+          "5.154"
+        ]
+      }
+    ],
+    "ogden": "gather (4.002); read (4.0141); be understood (5.132; 5.154)",
+    "pears": "gather (4.002; 5.132; 5.154); obtain (4.0141)"
+  },
+  {
     "de": "entsprechen",
     "uk": [
       {
