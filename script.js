@@ -40,8 +40,20 @@ function propositionElement(item) {
     button.textContent = kind === "note" ? "i" : "К";
     button.title = label;
     button.setAttribute("aria-label", `${label} до положення ${item.number}`);
-    text.appendChild(document.createTextNode(" "));
-    text.appendChild(button);
+    if (kind === "note" && item.number === "4.0031") {
+      const first = text.firstChild;
+      const marker = "(Щоправда, не в сенсі Маутнера.)";
+      const pos = first && first.nodeType === Node.TEXT_NODE ? first.textContent.indexOf(marker) : -1;
+      if (pos !== -1) {
+        const rest = first.splitText(pos + marker.length);
+        text.insertBefore(button, rest);
+      } else {
+        text.appendChild(button);
+      }
+    } else {
+      text.appendChild(document.createTextNode(" "));
+      text.appendChild(button);
+    }
     const panel = document.createElement("div");
     panel.className = kind === "note" ? "comment note" : "comment";
     panel.innerHTML = content;
@@ -49,7 +61,7 @@ function propositionElement(item) {
     button.addEventListener("click", event => { event.stopPropagation(); panel.classList.toggle("visible"); });
   }
 
-  if (item.number === "4.0031" && !item.note) item.note = "Фріц Маутнер (1849–1923) — філософ, письменник і журналіст, автор тритомної праці <em>Beiträge zu einer Kritik der Sprache</em> («Нариси до критики мови», 1901–1902), у якій розвинув скептичну концепцію критики мови (<em>Sprachkritik</em>). — Прим. перекл.";
+  if (item.number === "4.0031" && !item.note) item.note = "Фріц Маутнер (1849–1923) — філософ, письменник і журналіст, автор тритомної праці <em>Beiträge zu einer Kritik der Sprache</em> («Нариси до критики мови», 1901–1902), у якій розвинув скептичну концепцію критики мови (<em>Sprachkritik</em>).";
   if (item.note) addInfoButton("note", "Примітка перекладача", item.note);
   if (item.comment) addInfoButton("comment", "Коментар", item.comment);
 
