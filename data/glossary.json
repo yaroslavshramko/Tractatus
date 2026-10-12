@@ -3222,6 +3222,27 @@
     "pears": "causal nexus"
   },
   {
+    "de": "kennen",
+    "uk": [
+      {
+        "term": "знати",
+        "occurrences": [
+          "2.0123",
+          "2.01231",
+          "4.021",
+          "4.243",
+          "5.154",
+          "5.155",
+          "5.156",
+          "6.124",
+          "6.2322"
+        ]
+      }
+    ],
+    "ogden": "know; be acquainted with",
+    "pears": "know; knowledge"
+  },
+  {
     "de": "Klammer",
     "uk": [
       {
