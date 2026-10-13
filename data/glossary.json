@@ -7914,6 +7914,7 @@
       {
         "term": "звʼязок",
         "occurrences": [
+          "2.0122",
           "2.15",
           "4.03",
           "4.22",
@@ -7926,12 +7927,13 @@
       {
         "term": "контекст",
         "occurrences": [
-          "3.3"
+          "3.3",
+          "4.23"
         ]
       }
     ],
-    "ogden": "connexion",
-    "pears": "connexion"
+    "ogden": "connexion; context; connection",
+    "pears": "connexion; nexus"
   },
   {
     "de": "zusammenhängen",
