@@ -801,6 +801,22 @@
     "pears": "name"
   },
   {
+    "de": "beruhen",
+    "uk": [
+      {
+        "term": "грунтуватися",
+        "occurrences": [
+          "4.003",
+          "4.0312",
+          "5.02",
+          "6.2341"
+        ]
+      }
+    ],
+    "ogden": "result from; be based upon; depend on",
+    "pears": "arise from; be based on; be the result of; be because of"
+  },
+  {
     "de": "beschreiben",
     "uk": [
       {
