@@ -6652,6 +6652,22 @@
     "pears": "occurrence"
   },
   {
+    "de": "vorstellen",
+    "uk": [
+      {
+        "term": "представляти",
+        "occurrences": [
+          "2.11",
+          "2.15",
+          "4.0311",
+          "5.631"
+        ]
+      }
+    ],
+    "ogden": "present; represent",
+    "pears": "present; represent; entertain ideas"
+  },
+  {
     "de": "wahr",
     "uk": [
       {
