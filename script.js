@@ -40,7 +40,14 @@ function propositionElement(item) {
     button.textContent = kind === "note" ? "i" : "К";
     button.title = label;
     button.setAttribute("aria-label", `${label} до положення ${item.number}`);
-    if (kind === "note" && item.number === "4.0031") {
+    if (kind === "note" && item.number === "4.1272") {
+      const alephSubscript = [...text.querySelectorAll("sub")].find(el => el.previousSibling && el.previousSibling.textContent.endsWith("ℵ") && el.textContent === "0");
+      if (alephSubscript) {
+        alephSubscript.after(button);
+      } else {
+        text.appendChild(button);
+      }
+    } else if (kind === "note" && item.number === "4.0031") {
       const first = text.firstChild;
       const marker = "(Щоправда, не в сенсі Маутнера.)";
       const pos = first && first.nodeType === Node.TEXT_NODE ? first.textContent.indexOf(marker) : -1;
