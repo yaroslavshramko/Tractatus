@@ -1883,6 +1883,53 @@
     "pears": "elucidation"
   },
   {
+    "de": "ersetzbar",
+    "uk": [
+      {
+        "term": "замінний",
+        "occurrences": [
+          "4.241"
+        ]
+      },
+      {
+        "term": "взаємозамінний",
+        "occurrences": [
+          "6.23"
+        ]
+      }
+    ],
+    "ogden": "replaceable; be substituted for",
+    "pears": "be substituted for"
+  },
+  {
+    "de": "Ersetzbarkeit",
+    "uk": [
+      {
+        "term": "взаємозамінність",
+        "occurrences": [
+          "6.24"
+        ]
+      }
+    ],
+    "ogden": "substitutability",
+    "pears": "substitutability"
+  },
+  {
+    "de": "ersetzen",
+    "uk": [
+      {
+        "term": "замінювати",
+        "occurrences": [
+          "3.344",
+          "4.241",
+          "6.24"
+        ]
+      }
+    ],
+    "ogden": "replace",
+    "pears": "substitute"
+  },
+  {
     "de": "erzeugen",
     "uk": [
       {
