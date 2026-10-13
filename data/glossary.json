@@ -438,6 +438,48 @@
     "pears": "argument-place"
   },
   {
+    "de": "auffassen",
+    "uk": [
+      {
+        "term": "розуміти",
+        "occurrences": [
+          "3.314",
+          "6.1265",
+          "6.231"
+        ]
+      },
+      {
+        "term": "розглядати",
+        "occurrences": [
+          "6.3611"
+        ]
+      }
+    ],
+    "ogden": "conceive; regard",
+    "pears": "construe; regard"
+  },
+  {
+    "de": "Auffassung",
+    "uk": [
+      {
+        "term": "розуміння",
+        "occurrences": [
+          "2.1513",
+          "4.062",
+          "6.125"
+        ]
+      },
+      {
+        "term": "бачення",
+        "occurrences": [
+          "4.1213"
+        ]
+      }
+    ],
+    "ogden": "view; conception",
+    "pears": "conceived in this way; construed in the new way; point of view; conception"
+  },
+  {
     "de": "auflösen, sich",
     "uk": [
       {
