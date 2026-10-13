@@ -2522,6 +2522,20 @@
     "pears": "function"
   },
   {
+    "de": "Gebiet",
+    "uk": [
+      {
+        "term": "царина",
+        "occurrences": [
+          "4.113",
+          "5.4541"
+        ]
+      }
+    ],
+    "ogden": "sphere",
+    "pears": "sphere; realm"
+  },
+  {
     "de": "Gebilde",
     "uk": [
       {
