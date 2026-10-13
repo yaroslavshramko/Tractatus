@@ -5246,6 +5246,19 @@
     "pears": "propositional variable"
   },
   {
+    "de": "Satzverband",
+    "uk": [
+      {
+        "term": "складне речення",
+        "occurrences": [
+          "4.221"
+        ]
+      }
+    ],
+    "ogden": "propositional connexion",
+    "pears": "combination into propositions"
+  },
+  {
     "de": "Satzzeichen",
     "uk": [
       {
