@@ -6558,16 +6558,18 @@
     "de": "vertreten",
     "uk": [
       {
-        "term": "представляти",
+        "term": "заміщати",
         "occurrences": [
           "2.131",
+          "3.22",
           "3.221",
-          "4.0312"
+          "4.0312",
+          "5.501"
         ]
       }
     ],
-    "ogden": "stand for",
-    "pears": "be the representatives"
+    "ogden": "stand for; represent",
+    "pears": "be the representative of"
   },
   {
     "de": "Vertretung",
