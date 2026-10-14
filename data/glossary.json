@@ -5514,6 +5514,19 @@
     "pears": "inference"
   },
   {
+    "de": "Schlussgesetz",
+    "uk": [
+      {
+        "term": "закон виводу",
+        "occurrences": [
+          "5.132"
+        ]
+      }
+    ],
+    "ogden": "law of inference",
+    "pears": "law of inference"
+  },
+  {
     "de": "Sinn",
     "uk": [
       {
