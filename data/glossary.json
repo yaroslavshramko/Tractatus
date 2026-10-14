@@ -6669,6 +6669,23 @@
     "pears": "disguise"
   },
   {
+    "de": "verneinen",
+    "uk": [
+      {
+        "term": "заперечувати",
+        "occurrences": [
+          "4.0641",
+          "5.1241",
+          "5.44",
+          "5.5",
+          "5.512"
+        ]
+      }
+    ],
+    "ogden": "deny",
+    "pears": "negate"
+  },
+  {
     "de": "verneinende Satz",
     "uk": [
       {
