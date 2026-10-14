@@ -5449,6 +5449,19 @@
     "pears": "infer; make an inference; inference"
   },
   {
+    "de": "Schließen",
+    "uk": [
+      {
+        "term": "виведення",
+        "occurrences": [
+          "6.1224"
+        ]
+      }
+    ],
+    "ogden": "inference",
+    "pears": "inference"
+  },
+  {
     "de": "Schluß",
     "uk": [
       {
