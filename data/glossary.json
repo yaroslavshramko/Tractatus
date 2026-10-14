@@ -2300,17 +2300,31 @@
     "pears": "follow"
   },
   {
+    "de": "folgern",
+    "uk": [
+      {
+        "term": "виводити",
+        "occurrences": [
+          "5.132",
+          "5.134"
+        ]
+      }
+    ],
+    "ogden": "infer",
+    "pears": "deduce"
+  },
+  {
     "de": "Folgern",
     "uk": [
       {
-        "term": "висновування",
+        "term": "виведення",
         "occurrences": [
           "5.133"
         ]
       }
     ],
     "ogden": "inference",
-    "pears": "inference"
+    "pears": "deduction"
   },
   {
     "de": "Form",
