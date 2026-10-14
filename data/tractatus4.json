@@ -397,7 +397,7 @@
       "children": [
         {
           "number": "4.31",
-          "text": "Істиннісні можливості ми можемо репрезентувати схемами такого виду («І» означає «істинне», «Х» — «хибне». Рядки з «І» і «Х» під рядком елементарних речень означають у легко зрозумілій символіці їхні істиннісні можливості):<br><br><pre>p q r    p q    p\nІ І І    І І    І\nХ І І    Х І    Х\nІ Х І    І Х\nІ І Х    Х Х\nХ Х І\nХ І Х\nІ Х Х\nХ Х Х</pre>"
+          "text": "Істиннісні можливості ми можемо репрезентувати схемами такого виду («І» означає «істинне», «Х» — «хибне». Рядки з «І» і «Х» під рядком елементарних речень означають у легко зрозумілій символіці їхні істиннісні можливості):<br><br><div class=\"truth-tables\"><table class=\"truth-table\" aria-label=\"Істиннісні можливості для 3 елементарних речень\"><thead><tr><th scope=\"col\">p</th><th scope=\"col\">q</th><th scope=\"col\">r</th></tr></thead><tbody><tr><td>І</td><td>І</td><td>І</td></tr><tr><td>Х</td><td>І</td><td>І</td></tr><tr><td>І</td><td>Х</td><td>І</td></tr><tr><td>І</td><td>І</td><td>Х</td></tr><tr><td>Х</td><td>Х</td><td>І</td></tr><tr><td>Х</td><td>І</td><td>Х</td></tr><tr><td>І</td><td>Х</td><td>Х</td></tr><tr><td>Х</td><td>Х</td><td>Х</td></tr></tbody></table><table class=\"truth-table\" aria-label=\"Істиннісні можливості для 2 елементарних речень\"><thead><tr><th scope=\"col\">p</th><th scope=\"col\">q</th></tr></thead><tbody><tr><td>І</td><td>І</td></tr><tr><td>Х</td><td>І</td></tr><tr><td>І</td><td>Х</td></tr><tr><td>Х</td><td>Х</td></tr></tbody></table><table class=\"truth-table\" aria-label=\"Істиннісні можливості для 1 елементарних речень\"><thead><tr><th scope=\"col\">p</th></tr></thead><tbody><tr><td>І</td></tr><tr><td>Х</td></tr></tbody></table></div>"
         }
       ]
     },
