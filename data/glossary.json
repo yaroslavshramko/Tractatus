@@ -846,6 +846,24 @@
     "pears": "assert"
   },
   {
+    "de": "bejahen",
+    "uk": [
+      {
+        "term": "стверджувати",
+        "occurrences": [
+          "4.064",
+          "5.124",
+          "5.1241",
+          "5.44",
+          "5.513",
+          "5.514"
+        ]
+      }
+    ],
+    "ogden": "assert; affirm",
+    "pears": "affirm"
+  },
+  {
     "de": "benennen",
     "uk": [
       {
