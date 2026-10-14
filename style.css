@@ -6,3 +6,12 @@
 .truth-table th,.truth-table td{border:0;border-bottom:1px solid currentColor;padding:0.14em 0.55em;font-weight:normal;text-align:center;white-space:nowrap}
 .truth-table th:not(:last-child),.truth-table td:not(:last-child){border-right:1px solid currentColor}
 .truth-table thead th{font-style:italic;border-bottom:3px double currentColor}
+
+/* Wittgenstein's proposition sign in 4.442: unboxed grid with diagonal quotation marks. */
+.truth-sign-442{position:relative;display:inline-block;vertical-align:middle;margin:0.65em 1.1em 0.8em 1.4em;padding:0 0.15em}
+.truth-sign-table{border-collapse:collapse;border-spacing:0;margin:0;width:auto;font-family:Georgia,"Times New Roman",serif;font-size:1.08em;line-height:1.12}
+.truth-sign-table th,.truth-sign-table td{border:0;border-bottom:1px solid currentColor;padding:0.16em 0.52em;text-align:center;font-weight:normal;min-width:1.8em}
+.truth-sign-table th:not(:last-child),.truth-sign-table td:not(:last-child){border-right:1px solid currentColor}
+.truth-sign-table thead th{font-style:italic}
+.truth-sign-open{position:absolute;right:-0.9em;top:-0.42em;font-size:1.05em}
+.truth-sign-close{position:absolute;left:-0.85em;bottom:-0.3em;font-size:1.05em}
