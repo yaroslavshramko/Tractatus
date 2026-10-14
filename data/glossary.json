@@ -864,6 +864,21 @@
     "pears": "affirm"
   },
   {
+    "de": "Bejahung",
+    "uk": [
+      {
+        "term": "ствердження",
+        "occurrences": [
+          "4.064",
+          "5.44",
+          "6.231"
+        ]
+      }
+    ],
+    "ogden": "assertion; affirmation",
+    "pears": "affirmation"
+  },
+  {
     "de": "benennen",
     "uk": [
       {
