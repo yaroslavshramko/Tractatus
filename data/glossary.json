@@ -4699,6 +4699,23 @@
     "pears": "reality"
   },
   {
+    "de": "rechtfertigen",
+    "uk": [
+      {
+        "term": "виправдовувати",
+        "occurrences": [
+          "5.132",
+          "5.136",
+          "5.45",
+          "5.453",
+          "5.47321"
+        ]
+      }
+    ],
+    "ogden": "justify",
+    "pears": "justify"
+  },
+  {
     "de": "Rechtfertigung",
     "uk": [
       {
