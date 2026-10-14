@@ -5449,28 +5449,6 @@
     "pears": "infer; make an inference; inference"
   },
   {
-    "de": "Schluss",
-    "uk": [
-      {
-        "term": "вивід",
-        "occurrences": [
-          "5.132",
-          "5.136",
-          "5.1362",
-          "5.152"
-        ]
-      },
-      {
-        "term": "висновок",
-        "occurrences": [
-          "4.023"
-        ]
-      }
-    ],
-    "ogden": "inference; conclusion",
-    "pears": "inference"
-  },
-  {
     "de": "Schluß",
     "uk": [
       {
