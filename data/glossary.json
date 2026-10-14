@@ -831,6 +831,21 @@
     "pears": "conceptual notation"
   },
   {
+    "de": "behaupten",
+    "uk": [
+      {
+        "term": "стверджувати",
+        "occurrences": [
+          "4.122",
+          "4.21",
+          "6.2322"
+        ]
+      }
+    ],
+    "ogden": "assert",
+    "pears": "assert"
+  },
+  {
     "de": "benennen",
     "uk": [
       {
@@ -2888,34 +2903,6 @@
     "pears": "everything that is subject to law"
   },
   {
-    "de": "Gewisse",
-    "uk": [
-      {
-        "term": "певне",
-        "occurrences": [
-          "6.3211"
-        ]
-      }
-    ],
-    "ogden": "what is certain",
-    "pears": "what is certain"
-  },
-  {
-    "de": "Gewissheit",
-    "uk": [
-      {
-        "term": "певність",
-        "occurrences": [
-          "5.152",
-          "5.156",
-          "5.525"
-        ]
-      }
-    ],
-    "ogden": "certainty",
-    "pears": "certainty"
-  },
-  {
     "de": "gewiß",
     "uk": [
       {
@@ -2943,6 +2930,34 @@
     ],
     "ogden": "certain",
     "pears": "certain"
+  },
+  {
+    "de": "Gewisse",
+    "uk": [
+      {
+        "term": "певне",
+        "occurrences": [
+          "6.3211"
+        ]
+      }
+    ],
+    "ogden": "what is certain",
+    "pears": "what is certain"
+  },
+  {
+    "de": "Gewissheit",
+    "uk": [
+      {
+        "term": "певність",
+        "occurrences": [
+          "5.152",
+          "5.156",
+          "5.525"
+        ]
+      }
+    ],
+    "ogden": "certainty",
+    "pears": "certainty"
   },
   {
     "de": "gleichbedeutend",
@@ -4064,21 +4079,6 @@
     "pears": "model"
   },
   {
-    "de": "Mystische",
-    "uk": [
-      {
-        "term": "містичне",
-        "occurrences": [
-          "6.44",
-          "6.45",
-          "6.522"
-        ]
-      }
-    ],
-    "ogden": "the mystical",
-    "pears": "what is mystical, the mystical"
-  },
-  {
     "de": "möglich",
     "uk": [
       {
@@ -4159,6 +4159,21 @@
     ],
     "ogden": "possibility",
     "pears": "possibility"
+  },
+  {
+    "de": "Mystische",
+    "uk": [
+      {
+        "term": "містичне",
+        "occurrences": [
+          "6.44",
+          "6.45",
+          "6.522"
+        ]
+      }
+    ],
+    "ogden": "the mystical",
+    "pears": "what is mystical, the mystical"
   },
   {
     "de": "Name",
@@ -4577,6 +4592,38 @@
     "pears": "space"
   },
   {
+    "de": "räumlich",
+    "uk": [
+      {
+        "term": "просторовий",
+        "occurrences": [
+          "2.0121",
+          "2.0131",
+          "2.171",
+          "2.182",
+          "3.0321",
+          "3.1431",
+          "4.0412"
+        ]
+      }
+    ],
+    "ogden": "spatial; spatially",
+    "pears": "spatial; spatially"
+  },
+  {
+    "de": "Räumliche",
+    "uk": [
+      {
+        "term": "просторове",
+        "occurrences": [
+          "2.171"
+        ]
+      }
+    ],
+    "ogden": "spatial",
+    "pears": "spatial"
+  },
+  {
     "de": "Realität",
     "uk": [
       {
@@ -4711,38 +4758,6 @@
     ],
     "ogden": "right; rightly; correct; true",
     "pears": "correct; correctly; right; properly; aright"
-  },
-  {
-    "de": "räumlich",
-    "uk": [
-      {
-        "term": "просторовий",
-        "occurrences": [
-          "2.0121",
-          "2.0131",
-          "2.171",
-          "2.182",
-          "3.0321",
-          "3.1431",
-          "4.0412"
-        ]
-      }
-    ],
-    "ogden": "spatial; spatially",
-    "pears": "spatial; spatially"
-  },
-  {
-    "de": "Räumliche",
-    "uk": [
-      {
-        "term": "просторове",
-        "occurrences": [
-          "2.171"
-        ]
-      }
-    ],
-    "ogden": "spatial",
-    "pears": "spatial"
   },
   {
     "de": "Sache",
@@ -5968,6 +5983,25 @@
     ],
     "ogden": "death",
     "pears": "death"
+  },
+  {
+    "de": "Übereinstimmung",
+    "uk": [
+      {
+        "term": "узгодженість",
+        "occurrences": [
+          "2.222",
+          "4.2",
+          "4.4",
+          "4.42",
+          "4.43",
+          "4.431",
+          "4.462"
+        ]
+      }
+    ],
+    "ogden": "agreement",
+    "pears": "agreement"
   },
   {
     "de": "Umgangssprache",
@@ -7955,24 +7989,5 @@
     ],
     "ogden": "ascribe",
     "pears": "assert"
-  },
-  {
-    "de": "Übereinstimmung",
-    "uk": [
-      {
-        "term": "узгодженість",
-        "occurrences": [
-          "2.222",
-          "4.2",
-          "4.4",
-          "4.42",
-          "4.43",
-          "4.431",
-          "4.462"
-        ]
-      }
-    ],
-    "ogden": "agreement",
-    "pears": "agreement"
   }
 ]
