@@ -1989,6 +1989,19 @@
     "pears": "elucidation"
   },
   {
+    "de": "erschließen",
+    "uk": [
+      {
+        "term": "виводити",
+        "occurrences": [
+          "5.1361"
+        ]
+      }
+    ],
+    "ogden": "infer",
+    "pears": "infer"
+  },
+  {
     "de": "ersetzbar",
     "uk": [
       {
