@@ -985,6 +985,20 @@
     "pears": "constituent"
   },
   {
+    "de": "bestätigen",
+    "uk": [
+      {
+        "term": "підтверджувати",
+        "occurrences": [
+          "5.154",
+          "6.1222"
+        ]
+      }
+    ],
+    "ogden": "verify; confirm",
+    "pears": "confirm"
+  },
+  {
     "de": "bestehen",
     "uk": [
       {
