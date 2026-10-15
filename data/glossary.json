@@ -7325,6 +7325,28 @@
     "pears": "probability proposition"
   },
   {
+    "de": "Weise",
+    "uk": [
+      {
+        "term": "спосіб",
+        "occurrences": [
+          "2.0122",
+          "3.251",
+          "3.323",
+          "5.135",
+          "5.233",
+          "5.3",
+          "5.541",
+          "6.1203",
+          "6.341",
+          "6.4312"
+        ]
+      }
+    ],
+    "ogden": "way",
+    "pears": "way; manner (3.251); role (2.0122); no separate equivalent (6.4312)"
+  },
+  {
     "de": "Welt",
     "uk": [
       {
