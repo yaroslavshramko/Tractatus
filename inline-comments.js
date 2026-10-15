@@ -12,7 +12,7 @@
     { proposition: "4.123", after: "eo ipso" },
     { proposition: "4.1273", after: "circulus vitiosus" },
     { proposition: "5.451", after: "mutatis mutandis," },
-    { proposition: "5.4541", after: "Simplex sigillum veri" },
+    { proposition: "5.4541", after: "Simplex sigillum veri." },
     { proposition: "5.535", after: "Axiom of Infinity" },
     { proposition: "6.1232", after: "Axiom of Reducibility" },
     { proposition: "6.361", after: "Герца" },
