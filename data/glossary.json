@@ -3492,6 +3492,22 @@
     "pears": "know; knowledge"
   },
   {
+    "de": "kennzeichnen",
+    "uk": [
+      {
+        "term": "маркувати",
+        "occurrences": [
+          "3.31",
+          "3.3441",
+          "5.241",
+          "6.2323"
+        ]
+      }
+    ],
+    "ogden": "characterize; indicate (3.3441)",
+    "pears": "be the mark of; characterize (3.3441); mark (6.2323)"
+  },
+  {
     "de": "Klammer",
     "uk": [
       {
