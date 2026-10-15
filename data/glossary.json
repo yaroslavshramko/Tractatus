@@ -2586,6 +2586,20 @@
     "pears": "series of forms"
   },
   {
+    "de": "fortgesetzt",
+    "uk": [
+      {
+        "term": "повторюваний",
+        "occurrences": [
+          "5.154",
+          "5.2521"
+        ]
+      }
+    ],
+    "ogden": "continue (5.154); repeated (5.2521)",
+    "pears": "continue (5.154); repeatedly (5.2521)"
+  },
+  {
     "de": "Frage",
     "uk": [
       {
