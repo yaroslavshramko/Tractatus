@@ -4734,7 +4734,7 @@
       {
         "term": "виправдання",
         "occurrences": [
-          "5.1363",          
+          "5.1363",
           "5.452"
         ]
       }
@@ -6126,6 +6126,22 @@
     ],
     "ogden": "language of everyday life, colloquial language",
     "pears": "everyday language"
+  },
+  {
+    "de": "Umstände",
+    "uk": [
+      {
+        "term": "обставини",
+        "occurrences": [
+          "4.063",
+          "5.154",
+          "5.154",
+          "5.155"
+        ]
+      }
+    ],
+    "ogden": "circumstances; conditions (4.063)",
+    "pears": "circumstances"
   },
   {
     "de": "unabhängig",
