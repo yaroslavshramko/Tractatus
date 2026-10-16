@@ -2017,6 +2017,20 @@
     "pears": "experience"
   },
   {
+    "de": "erfüllen",
+    "uk": [
+      {
+        "term": "заповнювати",
+        "occurrences": [
+          "4.463",
+          "5.61"
+        ]
+      }
+    ],
+    "ogden": "fill",
+    "pears": "fill; pervade"
+  },
+  {
     "de": "ergeben",
     "uk": [
       {
