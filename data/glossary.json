@@ -8300,5 +8300,19 @@
     ],
     "ogden": "ascribe",
     "pears": "assert"
+  },
+  {
+    "de": "Zweck erfüllen",
+    "uk": [
+      {
+        "term": "мати призначення",
+        "occurrences": [
+          "3.341",
+          "5.47321"
+        ]
+      }
+    ],
+    "ogden": "fulfill the same purpose (3.341); serve one purpose, serve no purpose (5.47321)",
+    "pears": "serve the same purpose (3.341); serve one purpose, serve none (5.47321)"
   }
 ]
