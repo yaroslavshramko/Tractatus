@@ -62,7 +62,7 @@ function propositionElement(item) {
       let node;
       let placed = false;
       while ((node = walker.nextNode())) {
-        const match = "Axiom of Infinity,";
+        const match = "«Axiom of Infinity»,";
         const pos = node.textContent.indexOf(match);
         if (pos !== -1) {
           const rest = node.splitText(pos + match.length);
