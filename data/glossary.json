@@ -309,6 +309,22 @@
     "pears": "analytic proposition"
   },
   {
+    "de": "Angabe",
+    "uk": [
+      {
+        "term": "зазначення",
+        "occurrences": [
+          "3.317",
+          "4.26",
+          "5.501",
+          "5.554"
+        ]
+      }
+    ],
+    "ogden": "indicating; specification; giving; enumeration",
+    "pears": "give; adding"
+  },
+  {
     "de": "angeben",
     "uk": [
       {
