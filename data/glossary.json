@@ -1745,6 +1745,21 @@
     "pears": "insight"
   },
   {
+    "de": "Eintreffen",
+    "uk": [
+      {
+        "term": "настання",
+        "occurrences": [
+          "5.154",
+          "5.155",
+          "6.3611"
+        ]
+      }
+    ],
+    "ogden": "occurrence",
+    "pears": "occurrence"
+  },
+  {
     "de": "Element",
     "uk": [
       {
