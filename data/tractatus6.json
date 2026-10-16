@@ -16,7 +16,7 @@
     },
     {
       "number": "6.02",
-      "text": "І <em>так</em> приходимо ми до чисел: я означую<br><br>x = Ω<sup>0’</sup>’ x Def. і<br><br>Ω’Ω<sup>ν’</sup>’ x = Ω<sup>ν+1’</sup>’ x Def.<br><br>Отже, за цими правилами для знаків ми записуємо ряд<br><br>x, Ω’ x, Ω’Ω’ x, Ω’Ω’Ω’ x, ...<br><br>так:<br><br>Ω<sup>0,</sup> x, Ω<sup>0+1,</sup> x, Ω<sup>0+1+1,</sup> x, Ω<sup>0+1+1+1,</sup> x, ...<br><br>Отже, замість «[x, ξ, Ω’ξ]» я пишу:<br><br>«[Ω<sup>0,</sup> x, Ω<sup>ν,</sup> x, Ω<sup>ν+1,</sup> x]».<br><br>І означую:<br><br>0+1=1 Def.,<br><br>0+1+1=2 Def.,<br><br>0+1+1+1=3 Def.,<br><br>(і т. д.).",
+      "text": "І <em>так</em> приходимо ми до чисел: я означую<br><br>x = Ω<sup>0</sup>’ x Def. і<br><br>Ω’Ω<sup>ν</sup>’ x = Ω<sup>ν+1</sup>’ x Def.<br><br>Отже, за цими правилами для знаків ми записуємо ряд<br><br>x, Ω’x, Ω’Ω’x, Ω’Ω’Ω’x . . . . .<br><br>так:<br><br>Ω<sup>0</sup>’x, Ω<sup>0+1</sup>’x, Ω<sup>0+1+1</sup>’x, Ω<sup>0+1+1+1</sup>’x . . . . .<br><br>Отже, замість «[x, ξ, Ω’ξ]» я пишу:<br><br>«[Ω<sup>0,</sup> x, Ω<sup>ν,</sup> x, Ω<sup>ν+1,</sup> x]».<br><br>І означую:<br><br>0+1=1 Def.,<br><br>0+1+1=2 Def.,<br><br>0+1+1+1=3 Def.,<br><br>(і т. д.).",
       "children": [
         {
           "number": "6.021",
