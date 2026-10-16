@@ -678,7 +678,7 @@
               "children": [
                 {
                   "number": "5.6331",
-                  "text": "Адже поле зору не має якоїсь такої форми:<div class=\"tractatus-figure visual-field\"><svg viewBox=\"0 0 300 130\" role=\"img\" aria-label=\"Око і поле зору\"><text x=\"10\" y=\"72\" fill=\"currentColor\" font-family=\"Georgia, serif\" font-size=\"18\" font-weight=\"normal\">Око</text><circle cx=\"80\" cy=\"65\" r=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M82 65 C135 15 235 10 245 58 C255 105 155 118 82 65 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></div>"
+                  "text": "Адже поле зору не має якоїсь такої форми:<div class=\"tractatus-figure visual-field\"><svg viewBox=\"0 0 300 130\" role=\"img\" aria-label=\"Око і поле зору\"><text x=\"10\" y=\"72\" fill=\"currentColor\" font-family=\"Georgia, serif\" font-size=\"18\" font-weight=\"normal\">Око</text><circle cx=\"80\" cy=\"65\" r=\"2.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M82 65 C135 15 235 10 245 58 C255 105 155 118 82 65 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></div>"
                 }
               ]
             },
