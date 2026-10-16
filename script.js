@@ -57,6 +57,21 @@ function propositionElement(item) {
       } else {
         text.appendChild(button);
       }
+    } else if (kind === "note" && item.number === "5.535") {
+      const walker = document.createTreeWalker(text, NodeFilter.SHOW_TEXT);
+      let node;
+      let placed = false;
+      while ((node = walker.nextNode())) {
+        const match = "Axiom of Infinity,";
+        const pos = node.textContent.indexOf(match);
+        if (pos !== -1) {
+          const rest = node.splitText(pos + match.length);
+          text.insertBefore(button, rest);
+          placed = true;
+          break;
+        }
+      }
+      if (!placed) text.appendChild(button);
     } else if (kind === "note" && item.number === "5.451") {
       const walker = document.createTreeWalker(text, NodeFilter.SHOW_TEXT);
       let node;
