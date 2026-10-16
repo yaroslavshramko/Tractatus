@@ -8302,6 +8302,32 @@
     "pears": "assert"
   },
   {
+    "de": "Zweck",
+    "uk": [
+      {
+        "term": "мета",
+        "occurrences": [
+          "4.112",
+          "6.1202"
+        ]
+      },
+      {
+        "term": "ціль",
+        "occurrences": [
+          "4.002"
+        ]
+      },
+      {
+        "term": "задля цього",
+        "occurrences": [
+          "5.5351"
+        ]
+      }
+    ],
+    "ogden": "object; purpose",
+    "pears": "purposes; aim; purpose"
+  },
+  {
     "de": "Zweck erfüllen",
     "uk": [
       {
