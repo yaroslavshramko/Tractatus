@@ -900,6 +900,19 @@
     "pears": "conceptual notation"
   },
   {
+    "de": "Begriffswort",
+    "uk": [
+      {
+        "term": "поняттєве слово",
+        "occurrences": [
+          "4.1272"
+        ]
+      }
+    ],
+    "ogden": "concept word",
+    "pears": "concept-word"
+  },
+  {
     "de": "behaupten",
     "uk": [
       {
@@ -1643,17 +1656,26 @@
     "pears": "adjective"
   },
   {
-    "de": "Begriffswort",
+    "de": "eigentlich",
     "uk": [
       {
-        "term": "поняттєве слово",
+        "term": "справжній",
         "occurrences": [
-          "4.1272"
+          "3.3411",
+          "4.1272",
+          "5.46"
+        ]
+      },
+      {
+        "term": "власне",
+        "occurrences": [
+          "4.122",
+          "4.126"
         ]
       }
     ],
-    "ogden": "concept word",
-    "pears": "concept-word"
+    "ogden": "real, proper",
+    "pears": "real, proper"
   },
   {
     "de": "einfach",
