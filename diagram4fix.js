@@ -6,7 +6,11 @@
     if (!box) return false;
     const figures = box.querySelectorAll('.tractatus-figure');
     if (figures.length < 4) return false;
-    figures[3].innerHTML = '<img src="assets/t6-61203-4-new.svg?v=20261017-1" alt="Четверта схема до положення 6.1203" style="display:block;width:388px;max-width:100%;height:auto;margin:0.65rem auto;">';
+    const img = document.createElement('img');
+    img.src = 'assets/t6-61203-4-new.svg?v=20261017-1';
+    img.alt = 'Четверта схема до положення 6.1203';
+    img.style.cssText = 'display:block;width:388px;max-width:100%;height:auto;margin:0.65rem auto;';
+    figures[3].replaceWith(img);
     if (!document.querySelector('script[data-diagram1-clean]')) {
       const s = document.createElement('script');
       s.src = 'diagram1.js?v=20261017-1';
