@@ -116,7 +116,7 @@
         ]
       }
     ],
-    "ogden": "what it pictures; the pictured",
+    "ogden": "what it pictures, the pictured",
     "pears": "what it depicts"
   },
   {
@@ -144,8 +144,8 @@
         ]
       }
     ],
-    "ogden": "delimit sharply; limit",
-    "pears": "give sharp boundaries; set limits to"
+    "ogden": "delimit sharply, limit",
+    "pears": "give sharp boundaries, set limits to"
   },
   {
     "de": "ableiten",
@@ -158,7 +158,7 @@
         ]
       }
     ],
-    "ogden": "construct; deduce",
+    "ogden": "construct, deduce",
     "pears": "derive"
   },
   {
@@ -321,8 +321,8 @@
         ]
       }
     ],
-    "ogden": "indicating; specification; giving; enumeration",
-    "pears": "give; adding"
+    "ogden": "indicating, specification, giving, enumeration",
+    "pears": "give, adding"
   },
   {
     "de": "angeben",
@@ -348,8 +348,8 @@
         ]
       }
     ],
-    "ogden": "give; say; decide",
-    "pears": "give; say; answer; formulate"
+    "ogden": "give, say, decide",
+    "pears": "give, say, answer, formulate"
   },
   {
     "de": "Anschauung",
@@ -524,8 +524,8 @@
         ]
       }
     ],
-    "ogden": "conceive; regard; understand",
-    "pears": "construe; regard; conceive"
+    "ogden": "conceive, regard, understand",
+    "pears": "construe, regard, conceive"
   },
   {
     "de": "Auffassung",
@@ -545,8 +545,8 @@
         ]
       }
     ],
-    "ogden": "view; conception",
-    "pears": "conceived in this way; construed in the new way; point of view; conception"
+    "ogden": "view, conception",
+    "pears": "conceived in this way, construed in the new way, point of view, conception"
   },
   {
     "de": "auflösen, sich",
@@ -572,8 +572,8 @@
         ]
       }
     ],
-    "ogden": "resolution; dissolution",
-    "pears": "resolution; disintegration"
+    "ogden": "resolution, dissolution",
+    "pears": "resolution, disintegration"
   },
   {
     "de": "Ausdruck",
@@ -739,8 +739,8 @@
         ]
       }
     ],
-    "ogden": "assert; declare; say; express",
-    "pears": "put into words; say clearly"
+    "ogden": "assert, declare, say, express",
+    "pears": "put into words, say clearly"
   },
   {
     "de": "Basis (Basen)",
@@ -929,7 +929,7 @@
         ]
       }
     ],
-    "ogden": "assert; affirm",
+    "ogden": "assert, affirm",
     "pears": "affirm"
   },
   {
@@ -944,7 +944,7 @@
         ]
       }
     ],
-    "ogden": "assertion; affirmation",
+    "ogden": "assertion, affirmation",
     "pears": "affirmation"
   },
   {
@@ -974,8 +974,8 @@
         ]
       }
     ],
-    "ogden": "result from; be based upon; depend on",
-    "pears": "arise from; be based on; be the result of; be because of"
+    "ogden": "result from, be based upon, depend on",
+    "pears": "arise from, be based on, be the result of, be because of"
   },
   {
     "de": "beschreiben",
@@ -1064,7 +1064,7 @@
         ]
       }
     ],
-    "ogden": "verify; confirm",
+    "ogden": "verify, confirm",
     "pears": "confirm"
   },
   {
@@ -1680,8 +1680,8 @@
         ]
       }
     ],
-    "ogden": "simple; simply",
-    "pears": "simple; simply"
+    "ogden": "simple, simply",
+    "pears": "simple, simply"
   },
   {
     "de": "einfaches Symbol",
@@ -1728,8 +1728,8 @@
         ]
       }
     ],
-    "ogden": "obvious; self-evident",
-    "pears": "obvious; self-evident"
+    "ogden": "obvious, self-evident",
+    "pears": "obvious, self-evident"
   },
   {
     "de": "Einleuchten",
@@ -1877,8 +1877,8 @@
         ]
       }
     ],
-    "ogden": "opposite; opposed",
-    "pears": "opposite; opposed"
+    "ogden": "opposite, opposed",
+    "pears": "opposite, opposed"
   },
   {
     "de": "enthalten",
@@ -1904,8 +1904,8 @@
         ]
       }
     ],
-    "ogden": "contain; be contained",
-    "pears": "contain; be contained"
+    "ogden": "contain, be contained",
+    "pears": "contain, be contained"
   },
   {
     "de": "entnehmen",
@@ -1935,8 +1935,8 @@
         ]
       }
     ],
-    "ogden": "gather (4.002); read (4.0141); be understood (5.132; 5.154)",
-    "pears": "gather (4.002; 5.132; 5.154); obtain (4.0141)"
+    "ogden": "gather, read, be understood",
+    "pears": "gather, obtain"
   },
   {
     "de": "entsprechen",
@@ -1979,8 +1979,8 @@
         ]
       }
     ],
-    "ogden": "accordingly; adequate; in accordance with",
-    "pears": "suitably; suitable; in accordance with"
+    "ogden": "accordingly, adequate, in accordance with",
+    "pears": "suitably, suitable, in accordance with"
   },
   {
     "de": "Ereignis",
@@ -2026,7 +2026,7 @@
       }
     ],
     "ogden": "fill",
-    "pears": "fill; pervade"
+    "pears": "fill, pervade"
   },
   {
     "de": "ergeben",
@@ -2069,7 +2069,7 @@
         ]
       }
     ],
-    "ogden": "theory of knowledge; epistemology",
+    "ogden": "theory of knowledge, epistemology",
     "pears": "theory of knowledge"
   },
   {
@@ -2110,7 +2110,7 @@
         ]
       }
     ],
-    "ogden": "replaceable; be substituted for",
+    "ogden": "replaceable, be substituted for",
     "pears": "be substituted for"
   },
   {
@@ -2281,8 +2281,8 @@
         ]
       }
     ],
-    "ogden": "false; falsely",
-    "pears": "false; incorrectly; incorrect; mistaken; wrongly"
+    "ogden": "false, falsely",
+    "pears": "false, incorrectly, incorrect, mistaken, wrongly"
   },
   {
     "de": "Falschheit",
@@ -2694,8 +2694,8 @@
         ]
       }
     ],
-    "ogden": "continue (5.154); repeated (5.2521)",
-    "pears": "continue (5.154); repeatedly (5.2521)"
+    "ogden": "continue, repeated",
+    "pears": "continue, repeatedly"
   },
   {
     "de": "Frage",
@@ -2778,7 +2778,7 @@
       }
     ],
     "ogden": "sphere",
-    "pears": "sphere; realm"
+    "pears": "sphere, realm"
   },
   {
     "de": "Gebilde",
@@ -2962,8 +2962,8 @@
         ]
       }
     ],
-    "ogden": "what is common; that which is common",
-    "pears": "what is common; common factor"
+    "ogden": "what is common, that which is common",
+    "pears": "what is common, common factor"
   },
   {
     "de": "Geometrie",
@@ -3072,8 +3072,8 @@
         ]
       }
     ],
-    "ogden": "law; laws",
-    "pears": "law; laws"
+    "ogden": "law, laws",
+    "pears": "law, laws"
   },
   {
     "de": "Gesetzmäßigkeit",
@@ -3207,8 +3207,8 @@
         ]
       }
     ],
-    "ogden": "likeness; simile; model",
-    "pears": "likeness; imagery; simile"
+    "ogden": "likeness, simile, model",
+    "pears": "likeness, imagery, simile"
   },
   {
     "de": "Gleichung",
@@ -3418,8 +3418,8 @@
         ]
       }
     ],
-    "ogden": "distinguish; bring out; make prominent",
-    "pears": "distinguish; give prominence to"
+    "ogden": "distinguish, bring out, make prominent",
+    "pears": "distinguish, give prominence to"
   },
   {
     "de": "Identität",
@@ -3600,8 +3600,8 @@
         ]
       }
     ],
-    "ogden": "know; be acquainted with",
-    "pears": "know; knowledge"
+    "ogden": "know, be acquainted with",
+    "pears": "know, knowledge"
   },
   {
     "de": "kennzeichnen",
@@ -3616,8 +3616,8 @@
         ]
       }
     ],
-    "ogden": "characterize; indicate (3.3441)",
-    "pears": "be the mark of; characterize (3.3441); mark (6.2323)"
+    "ogden": "characterize, indicate",
+    "pears": "be the mark of, characterize, mark"
   },
   {
     "de": "Klammer",
@@ -4066,7 +4066,7 @@
       }
     ],
     "ogden": "logical proposition",
-    "pears": "logical proposition; proposition of logic"
+    "pears": "logical proposition, proposition of logic"
   },
   {
     "de": "logisches Bild",
@@ -4098,8 +4098,8 @@
         ]
       }
     ],
-    "ogden": "law of logic; logical law",
-    "pears": "law of logic; logical law"
+    "ogden": "law of logic, logical law",
+    "pears": "law of logic, logical law"
   },
   {
     "de": "logisches Operationszeichen",
@@ -4161,7 +4161,7 @@
       }
     ],
     "ogden": "material",
-    "pears": "material; point-mass"
+    "pears": "material, point-mass"
   },
   {
     "de": "materielle Eigenschaft",
@@ -4650,8 +4650,8 @@
         ]
       }
     ],
-    "ogden": "clear; obvious; obviously; palpably",
-    "pears": "obvious; obviously"
+    "ogden": "clear, obvious, obviously, palpably",
+    "pears": "obvious, obviously"
   },
   {
     "de": "Operation",
@@ -4840,8 +4840,8 @@
         ]
       }
     ],
-    "ogden": "spatial; spatially",
-    "pears": "spatial; spatially"
+    "ogden": "spatial, spatially",
+    "pears": "spatial, spatially"
   },
   {
     "de": "Räumliche",
@@ -5020,8 +5020,8 @@
         ]
       }
     ],
-    "ogden": "right; rightly; correct; true",
-    "pears": "correct; correctly; right; properly; aright"
+    "ogden": "right, rightly, correct, true",
+    "pears": "correct, correctly, right, properly, aright"
   },
   {
     "de": "Sache",
@@ -5466,8 +5466,8 @@
         ]
       }
     ],
-    "ogden": "proposition of logic; logical proposition",
-    "pears": "proposition of logic; logical proposition"
+    "ogden": "proposition of logic, logical proposition",
+    "pears": "proposition of logic, logical proposition"
   },
   {
     "de": "Satz der Naturwissenschaft",
@@ -5515,7 +5515,7 @@
         ]
       }
     ],
-    "ogden": "propositional structure; proposition",
+    "ogden": "propositional structure, proposition",
     "pears": "proposition"
   },
   {
@@ -5648,8 +5648,8 @@
         ]
       }
     ],
-    "ogden": "infer; conclude; make an inference",
-    "pears": "infer; make an inference; inference"
+    "ogden": "infer, conclude, make an inference",
+    "pears": "infer, make an inference, inference"
   },
   {
     "de": "Schließen",
@@ -5683,7 +5683,7 @@
         ]
       }
     ],
-    "ogden": "inference; conclusion; deduction",
+    "ogden": "inference, conclusion, deduction",
     "pears": "inference"
   },
   {
@@ -5787,8 +5787,8 @@
         ]
       }
     ],
-    "ogden": "perceptibly through the senses; sensibly perceptible; perceptible by the senses",
-    "pears": "perceived by the senses; perceptible; perceived"
+    "ogden": "sensibly perceptible, perceptible by the senses",
+    "pears": "perceived by the senses, perceptible, perceived"
   },
   {
     "de": "sinnlos",
@@ -5898,7 +5898,7 @@
       }
     ],
     "ogden": "mirror itself",
-    "pears": "be mirrored; find its reflection"
+    "pears": "be mirrored, find its reflection"
   },
   {
     "de": "Spielraum",
@@ -5974,8 +5974,8 @@
         ]
       }
     ],
-    "ogden": "speak; say",
-    "pears": "speak; talk about"
+    "ogden": "speak, say",
+    "pears": "speak, talk about"
   },
   {
     "de": "Struktur",
@@ -6091,8 +6091,8 @@
         ]
       }
     ],
-    "ogden": "successive application; applying in succession",
-    "pears": "successive application; successively applying"
+    "ogden": "successive application, applying in succession",
+    "pears": "successive application, successively applying"
   },
   {
     "de": "Symbol",
@@ -6299,7 +6299,7 @@
         ]
       }
     ],
-    "ogden": "circumstances; conditions (4.063)",
+    "ogden": "circumstances, conditions",
     "pears": "circumstances"
   },
   {
@@ -6331,8 +6331,8 @@
         ]
       }
     ],
-    "ogden": "independent; independently",
-    "pears": "independent; independently"
+    "ogden": "independent, independently",
+    "pears": "independent, independently"
   },
   {
     "de": "unanalysierbar",
@@ -6444,8 +6444,8 @@
         ]
       }
     ],
-    "ogden": "infinite; infinitely",
-    "pears": "infinite; infinitely"
+    "ogden": "infinite, infinitely",
+    "pears": "infinite, infinitely"
   },
   {
     "de": "unlogisch",
@@ -6465,8 +6465,8 @@
         ]
       }
     ],
-    "ogden": "unlogical; unlogically; illogically",
-    "pears": "illogical; illogically"
+    "ogden": "unlogical, unlogically, illogically",
+    "pears": "illogical, illogically"
   },
   {
     "de": "unmöglich",
@@ -6496,7 +6496,7 @@
         ]
       }
     ],
-    "ogden": "impossible; cannot possibly",
+    "ogden": "impossible, cannot possibly",
     "pears": "impossible"
   },
   {
@@ -6530,8 +6530,8 @@
         ]
       }
     ],
-    "ogden": "wrong; not correct",
-    "pears": "incorrect; wrong"
+    "ogden": "wrong, not correct",
+    "pears": "incorrect, wrong"
   },
   {
     "de": "Unsagbare",
@@ -6625,8 +6625,8 @@
         ]
       }
     ],
-    "ogden": "not essential; unessential",
-    "pears": "not essential; unessential"
+    "ogden": "not essential, unessential",
+    "pears": "not essential, unessential"
   },
   {
     "de": "Urbild",
@@ -6836,7 +6836,7 @@
         ]
       }
     ],
-    "ogden": "compare; cf.",
+    "ogden": "compare, cf.",
     "pears": "compare"
   },
   {
@@ -7010,7 +7010,7 @@
         ]
       }
     ],
-    "ogden": "stand for; represent",
+    "ogden": "stand for, represent",
     "pears": "be the representative of"
   },
   {
@@ -7061,8 +7061,8 @@
         ]
       }
     ],
-    "ogden": "complete; completely",
-    "pears": "complete; completely"
+    "ogden": "complete, completely",
+    "pears": "complete, completely"
   },
   {
     "de": "vorkommen",
@@ -7108,8 +7108,8 @@
         ]
       }
     ],
-    "ogden": "present; represent",
-    "pears": "present; represent; entertain ideas"
+    "ogden": "present, represent",
+    "pears": "present, represent, entertain ideas"
   },
   {
     "de": "wahr",
@@ -7230,7 +7230,7 @@
         ]
       }
     ],
-    "ogden": "concept of truth; truth-concept",
+    "ogden": "concept of truth, truth-concept",
     "pears": "concept of truth"
   },
   {
@@ -7414,7 +7414,7 @@
       }
     ],
     "ogden": "way",
-    "pears": "way; manner (3.251); role (2.0122); no separate equivalent (6.4312)"
+    "pears": "way, manner, role"
   },
   {
     "de": "Welt",
@@ -7556,8 +7556,8 @@
         ]
       }
     ],
-    "ogden": "essence; nature; essential nature; essential",
-    "pears": "essence; essential nature"
+    "ogden": "essence, nature, essential nature, essential",
+    "pears": "essence, essential nature"
   },
   {
     "de": "wesentlich",
@@ -7585,8 +7585,8 @@
         ]
       }
     ],
-    "ogden": "essential; essentially",
-    "pears": "essential; essentially; essence; unessential"
+    "ogden": "essential, essentially",
+    "pears": "essential, essentially, essence, unessential"
   },
   {
     "de": "Wesentliche",
@@ -7610,8 +7610,8 @@
         ]
       }
     ],
-    "ogden": "essential; essence",
-    "pears": "essential; essence; essential point; essential characteristic"
+    "ogden": "essential, essence",
+    "pears": "essential, essence, essential point, essential characteristic"
   },
   {
     "de": "widerspiegeln",
@@ -8077,8 +8077,8 @@
         ]
       }
     ],
-    "ogden": "show; point to; indicate",
-    "pears": "show; indicate"
+    "ogden": "show, point to, indicate",
+    "pears": "show, indicate"
   },
   {
     "de": "zeigen, sich",
@@ -8113,8 +8113,8 @@
         ]
       }
     ],
-    "ogden": "show itself; be shown; become clear; be recognized; appear",
-    "pears": "show itself; manifest itself; make itself manifest; be manifest; become clear; become manifest; be shown; be seen"
+    "ogden": "show itself, be shown, become clear, be recognized, appear",
+    "pears": "show itself, manifest itself, make itself manifest, be manifest, become clear, become manifest, be shown, be seen"
   },
   {
     "de": "Zeit",
@@ -8163,7 +8163,7 @@
         ]
       }
     ],
-    "ogden": "chance; accident",
+    "ogden": "chance, accident",
     "pears": "accident"
   },
   {
@@ -8181,8 +8181,8 @@
         ]
       }
     ],
-    "ogden": "accidental; accidentally; by accident",
-    "pears": "accidental; accidentally; an accident"
+    "ogden": "accidental, accidentally, by accident",
+    "pears": "accidental, accidentally, an accident"
   },
   {
     "de": "Zug",
@@ -8283,8 +8283,8 @@
         ]
       }
     ],
-    "ogden": "connexion; context; connection",
-    "pears": "connexion; nexus"
+    "ogden": "connexion, context, connection",
+    "pears": "connexion, nexus"
   },
   {
     "de": "zusammenhängen",
@@ -8336,8 +8336,8 @@
         ]
       }
     ],
-    "ogden": "object; purpose",
-    "pears": "purposes; aim; purpose"
+    "ogden": "object, purpose",
+    "pears": "purposes, aim, purpose"
   },
   {
     "de": "Zweck erfüllen",
@@ -8350,7 +8350,7 @@
         ]
       }
     ],
-    "ogden": "fulfill the same purpose (3.341); serve one purpose, serve no purpose (5.47321)",
-    "pears": "serve the same purpose (3.341); serve one purpose, serve none (5.47321)"
+    "ogden": "fulfill the same purpose, serve one purpose, serve no purpose",
+    "pears": "serve the same purpose, serve one purpose, serve none"
   }
 ]
