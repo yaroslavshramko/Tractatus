@@ -17,7 +17,7 @@
     const img = document.createElement('img');
     img.src = 'assets/t6-61203-2-new.svg?v=20261017-3';
     img.alt = 'Друга схема до положення 6.1203';
-    img.style.cssText = 'display:block;width:320px;max-width:100%;height:auto;margin:20px auto 8px;border:0;';
+    img.style.cssText = 'display:block;width:397px;max-width:100%;height:auto;margin:20px auto 8px;border:0;';
 
     figures[1].replaceWith(img);
     return true;
