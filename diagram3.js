@@ -8,7 +8,7 @@
     if (figures.length < 3) return false;
 
     figures[2].style.width = '';
-    figures[2].innerHTML = '<img src="assets/t6-61203-3-new.svg?v=20261017-1" alt="Третя схема до положення 6.1203" style="display:block;width:90px;max-width:100%;height:auto;margin:0.65rem auto;">';
+    figures[2].innerHTML = '<img src="assets/t6-61203-3-new.svg?v=20261017-2" alt="Третя схема до положення 6.1203" style="display:block;width:90px;max-width:100%;height:auto;margin:0.65rem auto;">';
     return true;
   };
 
