@@ -15,9 +15,9 @@
     if (figures.length < 2) return false;
 
     const img = document.createElement('img');
-    img.src = 'assets/tractatus6/diagram-2-final.png?v=20261005-final';
+    img.src = 'assets/t6-61203-2-new.svg?v=20261017-2';
     img.alt = 'Друга схема до положення 6.1203';
-    img.style.cssText = 'display:block;width:auto;max-width:100%;height:auto;margin:20px auto 8px;border:0;';
+    img.style.cssText = 'display:block;width:320px;max-width:100%;height:auto;margin:20px auto 8px;border:0;';
 
     figures[1].replaceWith(img);
     return true;
