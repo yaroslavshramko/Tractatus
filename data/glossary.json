@@ -515,20 +515,17 @@
         "term": "розуміти",
         "occurrences": [
           "3.314",
+          "4.1271",
+          "5.541",
+          "5.5421",
           "6.111",
-          "6.1265",
-          "6.231"
-        ]
-      },
-      {
-        "term": "розглядати",
-        "occurrences": [
+          "6.231",
           "6.3611"
         ]
       }
     ],
-    "ogden": "conceive; regard",
-    "pears": "construe; regard"
+    "ogden": "conceive; regard; understand",
+    "pears": "construe; regard; conceive"
   },
   {
     "de": "Auffassung",
