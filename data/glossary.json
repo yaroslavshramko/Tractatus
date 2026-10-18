@@ -443,6 +443,22 @@
     "pears": "indication, sign, mark"
   },
   {
+    "de": "anzeigen",
+    "uk": [
+      {
+        "term": "повідомляти",
+        "occurrences": [
+          "3.322",
+          "4.0411",
+          "6.121",
+          "6.124"
+        ]
+      }
+    ],
+    "ogden": "indicate, show",
+    "pears": "indicate, signalize"
+  },
+  {
     "de": "Argument",
     "uk": [
       {
