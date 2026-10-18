@@ -2988,6 +2988,49 @@
     "pears": "what is common, common factor"
   },
   {
+    "de": "genügen",
+    "uk": [
+      {
+        "term": "бути задовільним",
+        "occurrences": [
+          "4.0411",
+          "4.0411",
+          "4.0411",
+          "4.0411",
+          "4.0412"
+        ]
+      },
+      {
+        "term": "задовольняти",
+        "occurrences": [
+          "5.5301",
+          "5.5301",
+          "5.5422"
+        ]
+      },
+      {
+        "term": "годитися",
+        "occurrences": [
+          "5.5302"
+        ]
+      },
+      {
+        "term": "задовільний",
+        "occurrences": [
+          "6.1223"
+        ]
+      },
+      {
+        "term": "бути достатнім",
+        "occurrences": [
+          "6.123"
+        ]
+      }
+    ],
+    "ogden": "do; adequate; satisfy; sufficient",
+    "pears": "adequate; satisfy; enough"
+  },
+  {
     "de": "Geometrie",
     "uk": [
       {
