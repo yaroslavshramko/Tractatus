@@ -6426,6 +6426,25 @@
     "pears": "agreement"
   },
   {
+    "de": "übereinstimmen",
+    "uk": [
+      {
+        "term": "узгоджуватися",
+        "occurrences": [
+          "2.21"
+        ]
+      },
+      {
+        "term": "збігатися",
+        "occurrences": [
+          "3.411"
+        ]
+      }
+    ],
+    "ogden": "agree",
+    "pears": "agree, alike"
+  },
+  {
     "de": "Umgangssprache",
     "uk": [
       {
