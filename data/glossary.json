@@ -3472,6 +3472,49 @@
     "pears": "fundamental principle"
   },
   {
+    "de": "handeln von (etwas)",
+    "uk": [
+      {
+        "term": "говорити про",
+        "occurrences": [
+          "3.24",
+          "3.24",
+          "4.122",
+          "5.44",
+          "5.44",
+          "6.124",
+          "6.35"
+        ]
+      },
+      {
+        "term": "стосуватися",
+        "occurrences": [
+          "3.317"
+        ]
+      },
+      {
+        "term": "мати справу з",
+        "occurrences": [
+          "2.0121"
+        ]
+      },
+      {
+        "term": "йтися про",
+        "occurrences": [
+          "4.011"
+        ]
+      },
+      {
+        "term": "займатися",
+        "occurrences": [
+          "5.641"
+        ]
+      }
+    ],
+    "ogden": "about, deal with, treat of",
+    "pears": "about, concerned with, deal with, subject-matter"
+  },
+  {
     "de": "hervorbringen",
     "uk": [
       {
