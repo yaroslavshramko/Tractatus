@@ -5669,6 +5669,19 @@
     "pears": "proposition of natural science"
   },
   {
+    "de": "Satzbestandteil",
+    "uk": [
+      {
+        "term": "складник речення",
+        "occurrences": [
+          "4.025"
+        ]
+      }
+    ],
+    "ogden": "constituent part of proposition",
+    "pears": "constituent of proposition"
+  },
+  {
     "de": "Satzform",
     "uk": [
       {
@@ -6438,25 +6451,6 @@
     "pears": "death"
   },
   {
-    "de": "Übereinstimmung",
-    "uk": [
-      {
-        "term": "узгодженість",
-        "occurrences": [
-          "2.222",
-          "4.2",
-          "4.4",
-          "4.42",
-          "4.43",
-          "4.431",
-          "4.462"
-        ]
-      }
-    ],
-    "ogden": "agreement",
-    "pears": "agreement"
-  },
-  {
     "de": "übereinstimmen",
     "uk": [
       {
@@ -6474,6 +6468,25 @@
     ],
     "ogden": "agree",
     "pears": "agree, alike"
+  },
+  {
+    "de": "Übereinstimmung",
+    "uk": [
+      {
+        "term": "узгодженість",
+        "occurrences": [
+          "2.222",
+          "4.2",
+          "4.4",
+          "4.42",
+          "4.43",
+          "4.431",
+          "4.462"
+        ]
+      }
+    ],
+    "ogden": "agreement",
+    "pears": "agreement"
   },
   {
     "de": "Umgangssprache",
