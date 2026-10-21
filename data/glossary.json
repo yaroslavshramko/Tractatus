@@ -1169,6 +1169,20 @@
     "pears": "existence"
   },
   {
+    "de": "bestehend",
+    "uk": [
+      {
+        "term": "існуючий",
+        "occurrences": [
+          "2.04",
+          "2.05"
+        ]
+      }
+    ],
+    "ogden": "existent",
+    "pears": "existing"
+  },
+  {
     "de": "Bestehende",
     "uk": [
       {
