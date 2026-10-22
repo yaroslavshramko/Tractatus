@@ -1498,20 +1498,30 @@
         "term": "утворювати",
         "occurrences": [
           "2.021",
+          "2.0231",
           "2.0272",
-          "2.201",
-          "4.013",
           "4.51",
+          "5.4733",
           "5.475",
+          "5.501",
           "5.503",
+          "5.512",
+          "5.514",
+          "5.5151",
           "5.555",
           "6.126",
           "6.1271"
         ]
+      },
+      {
+        "term": "створювати",
+        "occurrences": [
+          "4.002"
+        ]
       }
     ],
-    "ogden": "form",
-    "pears": "make up, produce"
+    "ogden": "form, build, construct",
+    "pears": "make up, produce, design, construct, construction, create"
   },
   {
     "de": "darstellen",
