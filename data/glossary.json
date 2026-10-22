@@ -1580,6 +1580,21 @@
     "pears": "representational relation"
   },
   {
+    "de": "definieren",
+    "uk": [
+      {
+        "term": "означувати",
+        "occurrences": [
+          "3.261",
+          "5.42",
+          "6.02"
+        ]
+      }
+    ],
+    "ogden": "define",
+    "pears": "define"
+  },
+  {
     "de": "Definition",
     "uk": [
       {
