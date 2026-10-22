@@ -1587,13 +1587,16 @@
         "occurrences": [
           "3.24",
           "3.26",
+          "3.261",
+          "3.343",
           "4.241",
+          "5.452",
           "5.5302"
         ]
       }
     ],
     "ogden": "definition",
-    "pears": "defintion"
+    "pears": "definition"
   },
   {
     "de": "Denkbare",
