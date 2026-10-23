@@ -84,3 +84,6 @@
 .language-mode-de .author-note-uk{display:none}
 .language-mode-de .author-note-de{display:block}
 .language-mode-both .author-note-de{display:block}
+
+/* Translation commentary is unavailable in German-only mode. */
+.language-mode-de .proposition[data-has-german="true"]>.comment:not(.note){display:none}
