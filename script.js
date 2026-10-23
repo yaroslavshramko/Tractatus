@@ -41,6 +41,43 @@ const tractatusGerman = {
   "2.061": "Die Sachverhalte sind von einander unabhängig.",
   "2.062": "Aus dem Bestehen oder Nichtbestehen eines Sachverhaltes kann nicht auf das Bestehen oder Nichtbestehen eines anderen geschlossen werden.",
   "2.063": "Die gesamte Wirklichkeit ist die Welt.",
+  "2.1": "Wir machen uns Bilder der Tatsachen.",
+  "2.11": "Das Bild stellt die Sachlage im logischen Raume, das Bestehen und Nichtbestehen von Sachverhalten vor.",
+  "2.12": "Das Bild ist ein Modell der Wirklichkeit.",
+  "2.13": "Den Gegenständen entsprechen im Bilde die Elemente des Bildes.",
+  "2.131": "Die Elemente des Bildes vertreten im Bild die Gegenstände.",
+  "2.14": "Das Bild besteht darin, dass sich seine Elemente in bestimmter Art und Weise zu einander verhalten.",
+  "2.141": "Das Bild ist eine Tatsache.",
+  "2.15": "Dass sich die Elemente des Bildes in bestimmter Art und Weise zu einander verhalten, stellt vor, dass sich die Sachen so zu einander verhalten.<br><br>Dieser Zusammenhang der Elemente des Bildes heiße seine Struktur und ihre Möglichkeit seine Form der Abbildung.",
+  "2.151": "Die Form der Abbildung ist die Möglichkeit, dass sich die Dinge so zu einander verhalten, wie die Elemente des Bildes.",
+  "2.1511": "Das Bild ist so mit der Wirklichkeit verknüpft – es reicht bis zu ihr.",
+  "2.1512": "Es ist wie ein Maßstab an die Wirklichkeit angelegt.",
+  "2.15121": "Nur die äußersten Punkte der Teilstriche berühren den zu messenden Gegenstand.",
+  "2.1513": "Nach dieser Auffassung gehört also zum Bilde auch noch die abbildende Beziehung, die es zum Bild macht.",
+  "2.1514": "Die abbildende Beziehung besteht aus den Zuordnungen der Elemente des Bildes und der Sachen.",
+  "2.1515": "Diese Zuordnungen sind gleichsam die Fühler der Bildelemente, mit denen das Bild die Wirklichkeit berührt.",
+  "2.16": "Die Tatsache muss, um Bild zu sein, etwas mit dem Abgebildeten gemeinsam haben.",
+  "2.161": "In Bild und Abgebildetem muss etwas identisch sein, damit das eine überhaupt ein Bild des anderen sein kann.",
+  "2.17": "Was das Bild mit der Wirklichkeit gemein haben muss, um sie auf seine Art und Weise – richtig oder falsch – abbilden zu können, ist seine Form der Abbildung.",
+  "2.171": "Das Bild kann jede Wirklichkeit abbilden, deren Form es hat.<br><br>Das räumliche Bild alles Räumliche, das farbige alles Farbige, etc.",
+  "2.172": "Seine Form der Abbildung aber, kann das Bild nicht abbilden; es weist sie auf.",
+  "2.173": "Das Bild stellt sein Objekt von außerhalb dar (sein Standpunkt ist seine Form der Darstellung), darum stellt das Bild sein Objekt richtig oder falsch dar.",
+  "2.174": "Das Bild kann sich aber nicht außerhalb seiner Form der Darstellung stellen.",
+  "2.18": "Was jedes Bild, welcher Form immer, mit der Wirklichkeit gemein haben muss, um sie überhaupt – richtig oder falsch – abbilden zu können, ist die logische Form, das ist, die Form der Wirklichkeit.",
+  "2.181": "Ist die Form der Abbildung die logische Form, so heißt das Bild das logische Bild.",
+  "2.182": "Jedes Bild ist auch ein logisches. (Dagegen ist z. B. nicht jedes Bild ein räumliches.)",
+  "2.19": "Das logische Bild kann die Welt abbilden.",
+  "2.2": "Das Bild hat mit dem Abgebildeten die logische Form der Abbildung gemein.",
+  "2.201": "Das Bild bildet die Wirklichkeit ab, indem es eine Möglichkeit des Bestehens und Nichtbestehens von Sachverhalten darstellt.",
+  "2.202": "Das Bild stellt eine mögliche Sachlage im logischen Raume dar.",
+  "2.203": "Das Bild enthält die Möglichkeit der Sachlage, die es darstellt.",
+  "2.21": "Das Bild stimmt mit der Wirklichkeit überein oder nicht; es ist richtig oder unrichtig, wahr oder falsch.",
+  "2.22": "Das Bild stellt dar, was es darstellt, unabhängig von seiner Wahr- oder Falschheit, durch die Form der Abbildung.",
+  "2.221": "Was das Bild darstellt, ist sein Sinn.",
+  "2.222": "In der Übereinstimmung oder Nichtübereinstimmung seines Sinnes mit der Wirklichkeit, besteht seine Wahrheit oder Falschheit.",
+  "2.223": "Um zu erkennen, ob das Bild wahr oder falsch ist, müssen wir es mit der Wirklichkeit vergleichen.",
+  "2.224": "Aus dem Bild allein ist nicht zu erkennen, ob es wahr oder falsch ist.",
+  "2.225": "Ein a priori wahres Bild gibt es nicht.",
   "1": "Die Welt ist alles, was der Fall ist.",
   "1.1": "Die Welt ist die Gesamtheit der Tatsachen, nicht der Dinge.",
   "1.11": "Die Welt ist durch die Tatsachen bestimmt und dadurch, dass es alle Tatsachen sind.",
@@ -171,7 +208,7 @@ function propositionElement(item) {
   const germanText = document.createElement("span");
   germanText.className = "german-text";
   germanText.lang = "de";
-  germanText.textContent = tractatusGerman[item.number] ?? "";
+  germanText.innerHTML = tractatusGerman[item.number] ?? "";
   if (item.number === "1") germanText.append("*");
   if (item.number === "1.11") {
     const emphasized = document.createElement("em");
