@@ -1,4 +1,5 @@
 const tractatusGerman = {
+  "7": "Wovon man nicht sprechen kann, darüber muss man schweigen.",
   "6.3211": "Man hat ja auch davon eine Ahnung gehabt, dass es <em>ein</em> „Gesetz der kleinsten Wirkung“ geben müsse, ehe man genau wusste, wie es lautete. (Hier, wie immer, stellt sich das a priori Gewisse als etwas rein Logisches heraus.)",
   "6.33": "Wir <em>glauben</em> nicht a priori an ein Erhaltungsgesetz, sondern wir <em>wissen</em> a priori die Möglichkeit einer logischen Form.",
   "6.34": "Alle jene Sätze, wie der Satz vom Grunde, von der Kontinuität in der Natur, vom kleinsten Aufwande in der Natur etc. etc., alle diese sind Einsichten a priori über die mögliche Formgebung der Sätze der Wissenschaft.",
