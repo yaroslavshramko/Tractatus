@@ -133,6 +133,29 @@ function propositionElement(item) {
     );
   }
   row.append(number, text, germanText, controls);
+  // Trial alignment, proposition 2.0121 only.
+  if (item.number === "2.0121") {
+    const separator = /<br\s*\/?>(?:\s*<br\s*\/?>)+/gi;
+    const uk = String(item.text ?? "").split(separator);
+    const de = String(tractatusGerman[item.number] ?? "").split(separator);
+    if (uk.length === de.length) {
+      const aligned = document.createElement("div");
+      aligned.className = "aligned-paragraphs";
+      for (let i = 0; i < uk.length; i++) {
+        const left = document.createElement("div");
+        left.className = "aligned-uk";
+        left.innerHTML = uk[i];
+        const right = document.createElement("div");
+        right.className = "aligned-de";
+        right.lang = "de";
+        right.innerHTML = de[i];
+        aligned.append(left, right);
+      }
+      row.appendChild(aligned);
+      wrapper.classList.add("has-aligned-paragraphs");
+    }
+  }
+
   wrapper.insertBefore(row, wrapper.firstChild);
 
   if (hasChildren) {
