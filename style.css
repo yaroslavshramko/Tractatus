@@ -74,3 +74,7 @@
 .language-mode-both .preface-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
 .language-mode-both .preface-pair .preface-german{display:block;padding-left:18px;border-left:1px solid var(--line)}
 @media(max-width:650px){.language-mode-both .preface-pair{grid-template-columns:minmax(0,1fr);gap:10px}.language-mode-both .preface-pair .preface-german{padding-left:12px}}
+
+/* Original preface signature alignment: initials right, place and year left */
+.preface-initials-pair p{text-align:right}
+.preface-signature-pair p{text-align:left}
