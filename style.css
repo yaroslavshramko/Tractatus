@@ -93,8 +93,12 @@
 .language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.text,
 .language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.german-text{display:none}
 .language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.aligned-paragraphs{display:grid;grid-column:2 / 4;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:12px;row-gap:.45rem;align-items:start;min-width:0;font-size:1.12rem}
+.language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.number{grid-column:1;grid-row:1}
+.language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.aligned-paragraphs{grid-row:1}
+.language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>span:last-of-type:not(.german-text):not(.text):not(.number){grid-column:4;grid-row:1;justify-self:end}
 .language-mode-both .proposition.has-aligned-paragraphs .aligned-de{padding-left:14px;border-left:1px solid var(--line)}
 @media(max-width:650px){
 .language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.aligned-paragraphs{grid-column:2;grid-row:1 / span 2;grid-template-columns:minmax(0,1fr)}
+.language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>span:last-of-type:not(.german-text):not(.text):not(.number){grid-column:3;grid-row:1}
 .language-mode-both .proposition.has-aligned-paragraphs .aligned-de{padding-left:0;border-left:0;padding-top:8px;border-top:1px solid var(--line)}
 }
