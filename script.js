@@ -196,3 +196,54 @@ const navLinks=document.querySelectorAll(".nav-link"); const sections=document.q
     });
   }));
 })();
+
+/* Parallel German preface; Ukrainian paragraphs are preserved verbatim. */
+(function () {
+  const container = document.getElementById("preface-text");
+  const paragraphs = [...container.querySelectorAll(":scope > p")];
+  const originals = paragraphs.filter(p => !p.classList.contains("preface-place-date"));
+  const translations = ["Dieses Buch wird vielleicht nur der verstehen, der die Gedanken, die darin ausgedrückt sind – oder doch ähnliche Gedanken – schon selbst einmal gedacht hat. – Es ist also kein Lehrbuch. – Sein Zweck wäre erreicht, wenn es Einem, der es mit Verständnis liest Vergnügen bereitete.","Das Buch behandelt die philosophischen Probleme und zeigt – wie ich glaube – dass die Fragestellung dieser Probleme auf dem Mißverständnis der Logik unserer Sprache beruht. Man könnte den ganzen Sinn des Buches etwa in die Worte fassen: Was sich überhaupt sagen lässt, lässt sich klar sagen; und wovon man nicht reden kann, darüber muss man schweigen.","Das Buch will also dem Denken eine Grenze ziehen, oder vielmehr – nicht dem Denken, sondern dem Ausdruck der Gedanken: Denn um dem Denken eine Grenze zu ziehen, müssten wir beide Seiten dieser Grenze denken können (wir müssten also denken können, was sich nicht denken lässt).","Die Grenze wird also nur in der Sprache gezogen werden können und was jenseits der Grenze liegt, wird einfach Unsinn sein.","Wieweit meine Bestrebungen mit denen anderer Philosophen zusammenfallen, will ich nicht beurteilen. Ja, was ich hier geschrieben habe macht im Einzelnen überhaupt nicht den Anspruch auf Neuheit; und darum gebe ich auch keine Quellen an, weil es mir gleichgültig ist, ob das was ich gedacht habe, vor mir schon ein anderer gedacht hat.","Nur das will ich erwähnen, dass ich den großartigen Werken Freges und den Arbeiten meines Freundes Herrn Bertrand Russell einen großen Teil der Anregung zu meinen Gedanken schulde.","Wenn diese Arbeit einen Wert hat, so besteht er in Zweierlei. Erstens darin, dass in ihr Gedanken ausgedrückt sind, und dieser Wert wird umso größer sein, je besser die Gedanken ausgedrückt sind. Je mehr der Nagel auf den Kopf getroffen ist. – Hier bin ich mir bewusst, weit hinter dem Möglichen zurückgeblieben zu sein. Einfach darum, weil meine Kraft zur Bewältigung der Aufgabe zu gering ist. – Mögen andere kommen und es besser machen.","Dagegen scheint mir die Wahrheit der hier mitgeteilten Gedanken unantastbar und definitiv. Ich bin also der Meinung, die Probleme im Wesentlichen endgültig gelöst zu haben. Und wenn ich mich hierin nicht irre, so besteht nun der Wert dieser Arbeit zweitens darin, dass sie zeigt, wie wenig damit getan ist, dass diese Probleme gelöst sind."];
+  if (originals.length !== translations.length) {
+    console.error("Preface paragraph count mismatch");
+    return;
+  }
+  originals.forEach((uk, index) => {
+    const pair = document.createElement("div");
+    pair.className = "preface-pair";
+    const de = document.createElement("p");
+    de.className = "preface-german";
+    de.lang = "de";
+    if (index === 7) {
+      const full = translations[index];
+      const marker = "Wahrheit";
+      const position = full.indexOf(marker);
+      de.append(document.createTextNode(full.slice(0, position)));
+      const italic = document.createElement("em");
+      italic.textContent = marker;
+      de.append(italic, document.createTextNode(full.slice(position + marker.length)));
+    } else {
+      de.textContent = translations[index];
+    }
+    uk.classList.add("preface-ukrainian");
+    uk.before(pair);
+    pair.append(uk, de);
+  });
+  const date = container.querySelector(".preface-place-date");
+  if (date) {
+    const pair = document.createElement("div");
+    pair.className = "preface-pair preface-signature-pair";
+    date.before(pair);
+    const germanDate = document.createElement("p");
+    germanDate.className = "preface-german preface-place-date";
+    germanDate.lang = "de";
+    germanDate.textContent = "Wien, 1918";
+    pair.append(date, germanDate);
+  }
+  const label = document.querySelector("#preface-toggle > span:first-child");
+  document.querySelectorAll(".language-button").forEach(button => {
+    button.addEventListener("click", () => {
+      label.textContent = button.dataset.language === "de" ? "Vorwort" :
+        button.dataset.language === "both" ? "Передмова / Vorwort" : "Передмова";
+    });
+  });
+})();
