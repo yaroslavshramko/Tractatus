@@ -56,3 +56,5 @@
 
 .language-mode-both .subtitle .front-de{display:inline}
 .language-mode-both .subtitle .front-de::before{content:" · ";white-space:pre}
+
+.language-mode-both .intro .author .front-de{display:block}
