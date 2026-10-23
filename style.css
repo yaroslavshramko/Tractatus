@@ -58,3 +58,8 @@
 .language-mode-both .subtitle .front-de::before{content:" · ";white-space:pre}
 
 .language-mode-both .intro .author .front-de{display:block}
+
+/* Dedication in parallel mode */
+.language-mode-de .intro .dedication .front-de{display:block}
+.language-mode-both .intro .dedication .front-de{display:block;margin-top:16px}
+.intro .dedication p{margin:0}
