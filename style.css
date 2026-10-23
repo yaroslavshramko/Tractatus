@@ -42,3 +42,14 @@
 .language-mode-both .proposition[data-has-german="true"]>.proposition-row{grid-template-columns:64px minmax(0,1fr) minmax(0,1fr) auto}
 .language-mode-both .proposition[data-has-german="true"]>.proposition-row>.german-text{display:block;padding-left:14px;border-left:1px solid var(--line)}
 @media(max-width:650px){.header-top{align-items:flex-start;flex-direction:column;gap:8px}.header-top .site-title{display:block}.language-mode-both .proposition[data-has-german="true"]>.proposition-row{grid-template-columns:52px minmax(0,1fr) auto}.language-mode-both .proposition[data-has-german="true"]>.proposition-row>.german-text{grid-column:2;grid-row:2;padding-left:0;padding-top:8px;border-left:0;border-top:1px solid var(--line)}}
+
+/* Language variants for title and epigraph */
+.front-de{display:none}
+.language-mode-de .front-uk{display:none}
+.language-mode-de .front-de{display:inline}
+.language-mode-both .intro h1 .front-uk,.language-mode-both .intro h1 .front-de{display:block}
+.language-mode-both .intro h1 .front-de{font-size:.82em}
+.language-mode-both .site-title .front-uk,.language-mode-both .site-title .front-de{display:block}
+.language-mode-both .site-title .front-de{font-size:.87em}
+.language-mode-both .motto .front-de{display:block;margin-top:12px}
+.language-mode-de .motto .front-de{display:block}
