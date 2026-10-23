@@ -133,10 +133,10 @@ function propositionElement(item) {
     );
   }
   row.append(number, text, germanText, controls);
-  // Trial alignment, proposition 2.0121 only.
-  if (item.number === "2.0121") {
+  // Align corresponding paragraphs for every proposition with matching counts.
+  if (Object.prototype.hasOwnProperty.call(tractatusGerman, item.number)) {
     const separator = /<br\s*\/?>(?:\s*<br\s*\/?>)+/gi;
-    const uk = String(item.text ?? "").split(separator);
+    const uk = text.innerHTML.split(separator);
     const de = String(tractatusGerman[item.number] ?? "").split(separator);
     if (uk.length === de.length) {
       const aligned = document.createElement("div");
@@ -151,6 +151,16 @@ function propositionElement(item) {
         right.innerHTML = de[i];
         aligned.append(left, right);
       }
+      // Preserve interactive translator notes and comments in the aligned view.
+      const originalButtons = [...text.querySelectorAll("button.comment-button")];
+      const alignedButtons = [...aligned.querySelectorAll(".aligned-uk button.comment-button")];
+      alignedButtons.forEach((button, index) => {
+        const original = originalButtons[index];
+        if (original) button.addEventListener("click", event => {
+          event.stopPropagation();
+          original.click();
+        });
+      });
       row.appendChild(aligned);
       wrapper.classList.add("has-aligned-paragraphs");
     }
