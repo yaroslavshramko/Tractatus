@@ -26,3 +26,19 @@
 .truth-sign-table th:nth-child(2),.truth-sign-table td:nth-child(2){border-right:2px solid currentColor}
 .truth-sign-open{position:absolute;right:-0.9em;top:-0.42em;font-size:1.05em}
 .truth-sign-close{position:absolute;left:-0.85em;bottom:-0.3em;font-size:1.05em}
+
+/* Language-mode selector for the German text of proposition 1 */
+.header-top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+.header-top .site-title{margin-bottom:0}
+.language-switch{display:flex;align-items:center;gap:3px;padding:3px;border:1px solid var(--line);border-radius:5px;white-space:nowrap}
+.language-button{padding:4px 9px;border:0;border-radius:3px;background:transparent;color:var(--muted);font:inherit;font-size:.83rem;cursor:pointer}
+.language-button.active{background:var(--soft);color:var(--accent)}
+.language-button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.german-text{display:none;font-size:1.12rem;min-width:0}
+.german-comment-button{display:none}
+.language-mode-de .proposition[data-has-german="true"]>.proposition-row>.text{display:none}
+.language-mode-de .proposition[data-has-german="true"]>.proposition-row>.german-text{display:block}
+.language-mode-de .proposition[data-has-german="true"] .german-comment-button{display:inline-flex}
+.language-mode-both .proposition[data-has-german="true"]>.proposition-row{grid-template-columns:64px minmax(0,1fr) minmax(0,1fr) auto}
+.language-mode-both .proposition[data-has-german="true"]>.proposition-row>.german-text{display:block;padding-left:14px;border-left:1px solid var(--line)}
+@media(max-width:650px){.header-top{align-items:flex-start;flex-direction:column;gap:8px}.header-top .site-title{display:block}.language-mode-both .proposition[data-has-german="true"]>.proposition-row{grid-template-columns:52px minmax(0,1fr) auto}.language-mode-both .proposition[data-has-german="true"]>.proposition-row>.german-text{grid-column:2;grid-row:2;padding-left:0;padding-top:8px;border-left:0;border-top:1px solid var(--line)}}
