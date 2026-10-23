@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="862" height="594" viewBox="0 0 862 594" role="img" aria-label="Fünftes Schema zu 6.1203">
+<g fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M450 139 L474 119"/><path d="M375 187 L406 164"/><path d="M219 262 L267 304"/><path d="M165 363 L209 404"/><path d="M476 488 L501 515"/>
+<path d="M239 204 C259 141 299 155 347 173 C383 186 394 200 416 190 C418 215 463 228 490 246 C512 259 521 270 522 283"/>
+<path d="M239 212 C257 179 298 203 329 211 C341 215 345 208 348 205 C344 236 383 245 416 261 C436 271 440 278 444 288"/>
+<path d="M413 205 C388 239 380 275 380 313 C379 366 398 407 427 440 L454 466"/>
+<path d="M243 448 C271 456 294 432 314 431 Q326 427 330 436 C334 412 389 401 417 384 C438 371 444 356 443 340"/>
+<path d="M231 445 C249 480 271 492 311 487 C354 484 385 460 422 445 Q453 429 457 444 C453 422 479 403 500 386 C522 368 530 357 528 340"/>
+<path d="M333 444 C362 479 408 489 454 478"/>
+</g>
+<g fill="#111" font-family="Georgia, 'Times New Roman', serif" font-size="37" text-anchor="middle">
+<text x="430" y="149">W</text><text x="494" y="126">F</text>
+<text x="234" y="244">W</text>
+<text x="156" y="342">W</text><text x="224" y="345" font-style="italic">q</text><text x="287" y="347">F</text>
+<text x="440" y="323">W</text><text x="505" y="330" font-style="italic">p</text><text x="570" y="326">F</text>
+<text x="212" y="444">F</text><text x="473" y="480">F</text><text x="521" y="548">W</text>
+</g></svg>
