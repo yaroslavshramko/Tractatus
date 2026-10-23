@@ -230,6 +230,17 @@ const navLinks=document.querySelectorAll(".nav-link"); const sections=document.q
   });
   const date = container.querySelector(".preface-place-date");
   if (date) {
+    const signature = document.createElement("div");
+    signature.className = "preface-pair preface-initials-pair";
+    const ukInitials = document.createElement("p");
+    ukInitials.className = "preface-ukrainian";
+    ukInitials.textContent = "Л.В.";
+    const deInitials = document.createElement("p");
+    deInitials.className = "preface-german";
+    deInitials.lang = "de";
+    deInitials.textContent = "L. W.";
+    signature.append(ukInitials, deInitials);
+    date.before(signature);
     const pair = document.createElement("div");
     pair.className = "preface-pair preface-signature-pair";
     date.before(pair);
