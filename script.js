@@ -140,19 +140,6 @@ function propositionElement(item) {
       document.createTextNode(" Tatsachen sind.")
     );
   }
-  if (item.comment && wrapper.dataset.hasGerman === "true") {
-    const germanCommentButton = document.createElement("button");
-    germanCommentButton.type = "button";
-    germanCommentButton.className = "comment-button german-comment-button";
-    germanCommentButton.textContent = "К";
-    germanCommentButton.title = "Коментар";
-    germanCommentButton.setAttribute("aria-label", `Коментар до положення ${item.number}`);
-    germanCommentButton.addEventListener("click", event => {
-      event.stopPropagation();
-      wrapper.querySelector(".comment:not(.note)")?.classList.toggle("visible");
-    });
-    germanText.append(" ", germanCommentButton);
-  }
   row.append(number, text, germanText, controls);
   wrapper.insertBefore(row, wrapper.firstChild);
 
