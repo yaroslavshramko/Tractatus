@@ -130,6 +130,15 @@ function propositionElement(item) {
   germanText.className = "german-text";
   germanText.lang = "de";
   germanText.textContent = tractatusGerman[item.number] ?? "";
+  if (item.number === "1.11") {
+    const emphasized = document.createElement("em");
+    emphasized.textContent = "alle";
+    germanText.replaceChildren(
+      document.createTextNode("Die Welt ist durch die Tatsachen bestimmt und dadurch, dass es "),
+      emphasized,
+      document.createTextNode(" Tatsachen sind.")
+    );
+  }
   if (item.comment && wrapper.dataset.hasGerman === "true") {
     const germanCommentButton = document.createElement("button");
     germanCommentButton.type = "button";
