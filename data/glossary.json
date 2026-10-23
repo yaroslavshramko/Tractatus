@@ -292,14 +292,16 @@
       {
         "term": "позначення загальності",
         "occurrences": [
+          "3.24",
+          "4.0411",
           "5.522",
           "5.523",
           "6.1203"
         ]
       }
     ],
-    "ogden": "notation of generality",
-    "pears": "notation of generality"
+    "ogden": "notation for generality; generalization; symbolism of generality; generality symbol; sign of generality",
+    "pears": "notation for generality; generality-sign"
   },
   {
     "de": "Analyse",
