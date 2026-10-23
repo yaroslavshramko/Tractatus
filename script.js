@@ -130,6 +130,7 @@ function propositionElement(item) {
   germanText.className = "german-text";
   germanText.lang = "de";
   germanText.textContent = tractatusGerman[item.number] ?? "";
+  if (item.number === "1") germanText.append("*");
   if (item.number === "1.11") {
     const emphasized = document.createElement("em");
     emphasized.textContent = "alle";
