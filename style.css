@@ -53,3 +53,6 @@
 .language-mode-both .site-title .front-de{font-size:.87em}
 .language-mode-both .motto .front-de{display:block;margin-top:12px}
 .language-mode-de .motto .front-de{display:block}
+
+.language-mode-both .subtitle .front-de{display:inline}
+.language-mode-both .subtitle .front-de::before{content:" · ";white-space:pre}
