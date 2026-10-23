@@ -133,6 +133,31 @@ function propositionElement(item) {
     );
   }
   row.append(number, text, germanText, controls);
+  // Trial: align corresponding paragraphs only in proposition 2.0121.
+  if (item.number === "2.0121") {
+    const splitParagraphs = html => html.split(/<br\\s*\\/?>(?:\\s*<br\\s*\\/?>)+/gi);
+    const ukParagraphs = splitParagraphs(String(item.text ?? ""));
+    const deParagraphs = splitParagraphs(tractatusGerman[item.number] ?? "");
+    if (ukParagraphs.length === deParagraphs.length) {
+      const parallel = document.createElement("div");
+      parallel.className = "aligned-paragraphs";
+      for (let i = 0; i < ukParagraphs.length; i++) {
+        const uk = document.createElement("div");
+        uk.className = "aligned-paragraph aligned-uk";
+        uk.innerHTML = ukParagraphs[i];
+        const de = document.createElement("div");
+        de.className = "aligned-paragraph aligned-de";
+        de.lang = "de";
+        de.innerHTML = deParagraphs[i];
+        parallel.append(uk, de);
+      }
+      row.appendChild(parallel);
+      wrapper.classList.add("has-aligned-paragraphs");
+    } else {
+      console.warn("Paragraph count differs for 2.0121", ukParagraphs.length, deParagraphs.length);
+    }
+  }
+
   wrapper.insertBefore(row, wrapper.firstChild);
 
   if (hasChildren) {
