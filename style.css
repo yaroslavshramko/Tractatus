@@ -78,3 +78,9 @@
 /* Original preface signature alignment: initials right, place and year left */
 .preface-initials-pair p{text-align:right}
 .preface-signature-pair p{text-align:left}
+
+/* Author's note in the selected reading language */
+.author-note-de{display:none}
+.language-mode-de .author-note-uk{display:none}
+.language-mode-de .author-note-de{display:block}
+.language-mode-both .author-note-de{display:block}
