@@ -88,7 +88,7 @@
 /* Translation commentary is unavailable in German-only mode. */
 .language-mode-de .proposition[data-has-german="true"]>.comment:not(.note){display:none}
 
-/* Trial: paragraph alignment for proposition 2.0121 only. */
+/* Aligned bilingual paragraphs for all propositions. */
 .aligned-paragraphs{display:none}
 .language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.text,
 .language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>.german-text{display:none}
