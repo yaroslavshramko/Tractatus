@@ -155,7 +155,7 @@ async function loadTractatus() {
     const germanFiles = [1, 2, 3, 4, 5, 6, 7].map(number => `data/tractatus${number}_de.json`);
     const germanBranches = await Promise.all(germanFiles.map(path => fetchJson(path)));
     for (const branch of germanBranches) Object.assign(tractatusGerman, branch);
-    const tractatus = await fetchJson("data/tractatus1-2.json");
+    const tractatus = await Promise.all([fetchJson("data/tractatus1.json"), fetchJson("data/tractatus2.json")]);
     const branchFiles = [["3","data/tractatus3.json"],["4","data/tractatus4.json"],["5","data/tractatus5.json"],["6","data/tractatus6.json"],["7","data/tractatus7.json"]];
     for (const [number,path] of branchFiles) { try { const branch=await fetchBranch(path); const branchIndex=tractatus.findIndex(item=>item.number===number); if(branchIndex!==-1) tractatus[branchIndex]=branch; else tractatus.push(branch); } catch(error) { console.error(`Не вдалося завантажити ${path}:`,error); } }
     tractatus.sort((a,b)=>Number(a.number)-Number(b.number)); tree.replaceChildren(); tractatus.forEach(item=>tree.appendChild(propositionElement(item))); if (window.MathJax?.typesetPromise) await window.MathJax.typesetPromise([tree]);
