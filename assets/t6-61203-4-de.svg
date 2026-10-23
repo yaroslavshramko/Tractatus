@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1788 880" width="1788" height="880" role="img" aria-label="Viertes Schema zu 6.1203">
+<g fill="none" stroke="#171717" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M355 330 C355 242 403 187 510 187 L1029 187 Q1073 187 1091 140 Q1109 187 1152 187 L1483 187 C1582 187 1620 244 1623 329"/>
+<path d="M377 351 C400 313 437 301 497 301 L779 301 Q812 301 827 266 Q844 301 875 301 L1174 301 C1232 301 1261 320 1270 351"/>
+<path d="M196 471 C209 505 251 519 306 519 L544 519 Q581 519 595 555 Q610 519 651 519 L1165 519 C1215 519 1236 496 1243 472"/>
+<path d="M169 471 C181 565 249 619 332 619 L915 619 Q950 619 971 664 Q988 619 1032 619 L1342 619 C1445 619 1499 565 1509 471"/>
+<path d="M636 151 L595 553"/>
+<path d="M827 270 L953 693"/>
+<path d="M1091 143 L994 693"/>
+</g>
+<g fill="#171717" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+<text x="634" y="125" font-size="91">W</text>
+<text x="137" y="447" font-size="83">W</text>
+<text x="286" y="447" font-size="88" font-style="italic">ξ</text>
+<text x="465" y="447" font-size="83">F</text>
+<text x="1268" y="447" font-size="83">W</text>
+<text x="1456" y="447" font-size="88" font-style="italic">η</text>
+<text x="1620" y="447" font-size="83">F</text>
+<text x="974" y="790" font-size="91">F</text>
+</g></svg>
