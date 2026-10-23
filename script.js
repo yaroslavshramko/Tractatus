@@ -5,6 +5,7 @@ function propositionElement(item) {
   if (/^\d+\.0[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-secondary-direct");
   if (/^\d+\.00[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-tertiary-direct");
 
+  if (window.tractatusGerman?.[item.number]) wrapper.dataset.hasGerman = "true";
   const row = document.createElement("div");
   row.className = "proposition-row";
 
@@ -116,7 +117,11 @@ function propositionElement(item) {
     chevron.setAttribute("aria-hidden", "true");
     controls.appendChild(chevron);
   }
-  row.append(number, text, controls);
+  const german = document.createElement("span");
+  german.className = "german-text";
+  german.lang = "de";
+  german.textContent = window.tractatusGerman?.[item.number] ?? "";
+  row.append(number, text, german, controls);
   wrapper.insertBefore(row, wrapper.firstChild);
 
   if (hasChildren) {
@@ -145,3 +150,14 @@ async function loadTractatus() {
 loadTractatus();
 const prefaceToggle=document.getElementById("preface-toggle"); const prefaceText=document.getElementById("preface-text"); prefaceToggle.addEventListener("click",()=>{const open=prefaceToggle.getAttribute("aria-expanded")==="true";prefaceToggle.setAttribute("aria-expanded",String(!open));prefaceText.hidden=open;prefaceToggle.classList.toggle("open",!open);});
 const navLinks=document.querySelectorAll(".nav-link"); const sections=document.querySelectorAll(".page-section"); function showSection(id){sections.forEach(section=>section.classList.toggle("active-section",section.id===id));navLinks.forEach(link=>link.classList.toggle("active",link.dataset.section===id));history.replaceState(null,"",`#${id}`);window.scrollTo({top:0,behavior:"smooth"});} navLinks.forEach(link=>link.addEventListener("click",()=>showSection(link.dataset.section))); const initialSection=location.hash.replace("#",""); if([...sections].some(section=>section.id===initialSection))showSection(initialSection);
+
+// Пробний режим діє для положення 1 і його підположень; решта тексту не змінюється.
+(function(){
+ const buttons=[...document.querySelectorAll(".language-button")];
+ buttons.forEach(button=>button.addEventListener("click",()=>{
+  const mode=button.dataset.language;
+  document.body.classList.remove("language-mode-de","language-mode-both");
+  if(mode!=="uk")document.body.classList.add("language-mode-"+mode);
+  buttons.forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});
+ }));
+})();
