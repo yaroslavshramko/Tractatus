@@ -1,3 +1,12 @@
+const tractatusGerman = {
+  "1": "Die Welt ist alles, was der Fall ist.",
+  "1.1": "Die Welt ist die Gesamtheit der Tatsachen, nicht der Dinge.",
+  "1.11": "Die Welt ist durch die Tatsachen bestimmt und dadurch, dass es alle Tatsachen sind.",
+  "1.12": "Denn, die Gesamtheit der Tatsachen bestimmt, was der Fall ist und auch, was alles nicht der Fall ist.",
+  "1.13": "Die Tatsachen im logischen Raum sind die Welt.",
+  "1.2": "Die Welt zerfällt in Tatsachen.",
+  "1.21": "Eines kann der Fall sein oder nicht der Fall sein und alles übrige gleich bleiben."
+};
 function propositionElement(item) {
   const wrapper = document.createElement("div");
   wrapper.className = "proposition";
@@ -5,6 +14,7 @@ function propositionElement(item) {
   if (/^\d+\.0[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-secondary-direct");
   if (/^\d+\.00[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-tertiary-direct");
 
+  if (Object.prototype.hasOwnProperty.call(tractatusGerman, item.number)) wrapper.dataset.hasGerman = "true";
   const row = document.createElement("div");
   row.className = "proposition-row";
 
@@ -116,7 +126,24 @@ function propositionElement(item) {
     chevron.setAttribute("aria-hidden", "true");
     controls.appendChild(chevron);
   }
-  row.append(number, text, controls);
+  const germanText = document.createElement("span");
+  germanText.className = "german-text";
+  germanText.lang = "de";
+  germanText.textContent = tractatusGerman[item.number] ?? "";
+  if (item.comment && wrapper.dataset.hasGerman === "true") {
+    const germanCommentButton = document.createElement("button");
+    germanCommentButton.type = "button";
+    germanCommentButton.className = "comment-button german-comment-button";
+    germanCommentButton.textContent = "К";
+    germanCommentButton.title = "Коментар";
+    germanCommentButton.setAttribute("aria-label", `Коментар до положення ${item.number}`);
+    germanCommentButton.addEventListener("click", event => {
+      event.stopPropagation();
+      wrapper.querySelector(".comment:not(.note)")?.classList.toggle("visible");
+    });
+    germanText.append(" ", germanCommentButton);
+  }
+  row.append(number, text, germanText, controls);
   wrapper.insertBefore(row, wrapper.firstChild);
 
   if (hasChildren) {
@@ -145,3 +172,18 @@ async function loadTractatus() {
 loadTractatus();
 const prefaceToggle=document.getElementById("preface-toggle"); const prefaceText=document.getElementById("preface-text"); prefaceToggle.addEventListener("click",()=>{const open=prefaceToggle.getAttribute("aria-expanded")==="true";prefaceToggle.setAttribute("aria-expanded",String(!open));prefaceText.hidden=open;prefaceToggle.classList.toggle("open",!open);});
 const navLinks=document.querySelectorAll(".nav-link"); const sections=document.querySelectorAll(".page-section"); function showSection(id){sections.forEach(section=>section.classList.toggle("active-section",section.id===id));navLinks.forEach(link=>link.classList.toggle("active",link.dataset.section===id));history.replaceState(null,"",`#${id}`);window.scrollTo({top:0,behavior:"smooth"});} navLinks.forEach(link=>link.addEventListener("click",()=>showSection(link.dataset.section))); const initialSection=location.hash.replace("#",""); if([...sections].some(section=>section.id===initialSection))showSection(initialSection);
+
+// The original Ukrainian text remains the default. German is currently available for proposition 1 only.
+(function () {
+  const buttons = [...document.querySelectorAll(".language-button")];
+  buttons.forEach(button => button.addEventListener("click", () => {
+    const mode = button.dataset.language;
+    document.body.classList.remove("language-mode-de", "language-mode-both");
+    if (mode !== "uk") document.body.classList.add("language-mode-" + mode);
+    buttons.forEach(other => {
+      const active = other === button;
+      other.classList.toggle("active", active);
+      other.setAttribute("aria-pressed", String(active));
+    });
+  }));
+})();
