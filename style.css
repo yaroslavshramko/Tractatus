@@ -63,3 +63,14 @@
 .language-mode-de .intro .dedication .front-de{display:block}
 .language-mode-both .intro .dedication .front-de{display:block;margin-top:16px}
 .intro .dedication p{margin:0}
+
+/* Aligned bilingual preface */
+.preface-pair{margin:0 0 1.1em}
+.preface-pair p{margin:0}
+.preface-german{display:none}
+.language-mode-de .preface-pair .preface-ukrainian,
+.language-mode-de .preface-pair>.preface-place-date:not(.preface-german){display:none}
+.language-mode-de .preface-pair .preface-german{display:block}
+.language-mode-both .preface-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.language-mode-both .preface-pair .preface-german{display:block;padding-left:18px;border-left:1px solid var(--line)}
+@media(max-width:650px){.language-mode-both .preface-pair{grid-template-columns:minmax(0,1fr);gap:10px}.language-mode-both .preface-pair .preface-german{padding-left:12px}}
