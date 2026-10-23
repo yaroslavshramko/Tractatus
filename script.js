@@ -282,7 +282,7 @@ function propositionElement(item) {
   const germanText = document.createElement("span");
   germanText.className = "german-text";
   germanText.lang = "de";
-  germanText.innerHTML = tractatusGerman[item.number] ?? "";
+  germanText.innerHTML = (tractatusGerman[item.number] ?? "").replace(/<br\s*\/?>(?:\s*<br\s*\/?>)+/gi, '<span class="paragraph-gap"></span>');
   if (item.number === "1") germanText.append("*");
   if (item.number === "1.11") {
     const emphasized = document.createElement("em");
