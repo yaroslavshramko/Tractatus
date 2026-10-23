@@ -197,6 +197,24 @@
     "pears": "general form"
   },
   {
+    "de": "allgemeine Satzform",
+    "uk": [
+      {
+        "term": "загальна форма речення",
+        "occurrences": [
+          "4.5",
+          "4.53",
+          "5.47",
+          "5.471",
+          "5.472",
+          "5.54"
+        ]
+      }
+    ],
+    "ogden": "general form of proposition; general proposition form; general propositional form",
+    "pears": "general propositional form"
+  },
+  {
     "de": "allgemeiner Satz",
     "uk": [
       {
