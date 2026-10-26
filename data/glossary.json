@@ -665,12 +665,11 @@
     "pears": "expression"
   },
   {
-    "de": "ausdrücken",
+    "de": "ausdrücken (sich)",
     "uk": [
       {
         "term": "виражати",
         "occurrences": [
-          "3.1",
           "3.12",
           "3.13",
           "3.142",
@@ -686,7 +685,6 @@
           "4.0411",
           "4.121",
           "4.124",
-          "4.125",
           "4.126",
           "4.1272",
           "4.1273",
@@ -695,7 +693,6 @@
           "4.431",
           "4.441",
           "4.5",
-          "5.131",
           "5.242",
           "5.31",
           "5.503",
@@ -710,13 +707,24 @@
           "6.1264",
           "6.21",
           "6.2321",
+          "6.24",
           "6.42",
           "6.43"
         ]
+      },
+      {
+        "term": "виражатися",
+        "occurrences": [
+          "3.1",
+          "4.121",
+          "4.124",
+          "4.125",
+          "5.131"
+        ]
       }
     ],
-    "ogden": "express",
-    "pears": "express"
+    "ogden": "express, express itself",
+    "pears": "express, find an expression, find expression, express itself"
   },
   {
     "de": "Ausdrucksform",
