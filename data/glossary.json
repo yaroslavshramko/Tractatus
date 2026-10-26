@@ -3931,6 +3931,20 @@
     "pears": "bracket"
   },
   {
+    "de": "Klammerausdruck",
+    "uk": [
+      {
+        "term": "вираз у дужках",
+        "occurrences": [
+          "5.2522",
+          "5.501"
+        ]
+      }
+    ],
+    "ogden": "expression in brackets",
+    "pears": "bracketed expression"
+  },
+  {
     "de": "Klasse",
     "uk": [
       {
