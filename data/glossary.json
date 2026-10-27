@@ -1049,13 +1049,12 @@
       {
         "term": "називати",
         "occurrences": [
-          "3.144",
-          "3.221"
+          "3.144"
         ]
       }
     ],
     "ogden": "name",
-    "pears": "name"
+    "pears": "give names"
   },
   {
     "de": "beruhen",
