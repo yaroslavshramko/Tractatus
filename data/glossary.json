@@ -7708,6 +7708,19 @@
     "pears": "truth-value"
   },
   {
+    "de": "wahrnehmen",
+    "uk": [
+      {
+        "term": "сприймати",
+        "occurrences": [
+          "5.5423"
+        ]
+      }
+    ],
+    "ogden": "perceive",
+    "pears": "perceive"
+  },
+  {
     "de": "wahrscheinlich",
     "uk": [
       {
