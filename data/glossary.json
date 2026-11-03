@@ -2242,31 +2242,21 @@
     "de": "entnehmen",
     "uk": [
       {
-        "term": "вичленувати",
+        "term": "видобувати",
         "occurrences": [
-          "4.002"
-        ]
-      },
-      {
-        "term": "видобути",
-        "occurrences": [
-          "4.0141"
-        ]
-      },
-      {
-        "term": "встановити",
-        "occurrences": [
+          "4.002",
+          "4.0141",
           "5.132"
         ]
       },
       {
-        "term": "зрозуміти",
+        "term": "розуміти",
         "occurrences": [
           "5.154"
         ]
       }
     ],
-    "ogden": "gather, read, be understood",
+    "ogden": "gather, read, understand",
     "pears": "gather, obtain"
   },
   {
