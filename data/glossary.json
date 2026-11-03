@@ -2035,6 +2035,19 @@
     "pears": "occurrence"
   },
   {
+    "de": "eintreffen",
+    "uk": [
+      {
+        "term": "наставати",
+        "occurrences": [
+          "5.153"
+        ]
+      }
+    ],
+    "ogden": "occur",
+    "pears": "occur"
+  },
+  {
     "de": "Element",
     "uk": [
       {
