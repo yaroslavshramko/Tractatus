@@ -665,35 +665,6 @@
     "pears": "expression"
   },
   {
-    "de": "Ausdrucksform",
-    "uk": [
-      {
-        "term": "форма вираження",
-        "occurrences": [
-          "3.143"
-        ]
-      }
-    ],
-    "ogden": "form of expression",
-    "pears": "form of expression"
-  },
-  {
-    "de": "Ausdrucksweise",
-    "uk": [
-      {
-        "term": "спосіб вираження",
-        "occurrences": [
-          "4.015",
-          "5.21",
-          "5.526",
-          "6.361"
-        ]
-      }
-    ],
-    "ogden": "language, manner of expression, way of expression, terminology",
-    "pears": "pictorial modes of expression, mode of expression, terminology"
-  },
-  {
     "de": "ausdrücken (sich)",
     "uk": [
       {
@@ -754,6 +725,35 @@
     ],
     "ogden": "express, express itself",
     "pears": "express, express itself, find expression"
+  },
+  {
+    "de": "Ausdrucksform",
+    "uk": [
+      {
+        "term": "форма вираження",
+        "occurrences": [
+          "3.143"
+        ]
+      }
+    ],
+    "ogden": "form of expression",
+    "pears": "form of expression"
+  },
+  {
+    "de": "Ausdrucksweise",
+    "uk": [
+      {
+        "term": "спосіб вираження",
+        "occurrences": [
+          "4.015",
+          "5.21",
+          "5.526",
+          "6.361"
+        ]
+      }
+    ],
+    "ogden": "language, manner of expression, way of expression, terminology",
+    "pears": "pictorial modes of expression, mode of expression, terminology"
   },
   {
     "de": "Aussage",
@@ -1149,6 +1149,20 @@
     "pears": "constituent"
   },
   {
+    "de": "bestätigen",
+    "uk": [
+      {
+        "term": "підтверджувати",
+        "occurrences": [
+          "5.154",
+          "6.1222"
+        ]
+      }
+    ],
+    "ogden": "verify, confirm",
+    "pears": "confirm"
+  },
+  {
     "de": "bestehen",
     "uk": [
       {
@@ -1330,20 +1344,6 @@
     ],
     "ogden": "determination",
     "pears": "determination, method of determining"
-  },
-  {
-    "de": "bestätigen",
-    "uk": [
-      {
-        "term": "підтверджувати",
-        "occurrences": [
-          "5.154",
-          "6.1222"
-        ]
-      }
-    ],
-    "ogden": "verify, confirm",
-    "pears": "confirm"
   },
   {
     "de": "Beweis",
@@ -2483,6 +2483,21 @@
     ],
     "ogden": "external relation",
     "pears": "external relation"
+  },
+  {
+    "de": "Fall",
+    "uk": [
+      {
+        "term": "випадок",
+        "occurrences": [
+          "4.46",
+          "5.501",
+          "6.3631"
+        ]
+      }
+    ],
+    "ogden": "case, course of events",
+    "pears": "case, eventuality"
   },
   {
     "de": "falsch",
@@ -4668,21 +4683,6 @@
     "pears": "model"
   },
   {
-    "de": "Mystische",
-    "uk": [
-      {
-        "term": "містичне",
-        "occurrences": [
-          "6.44",
-          "6.45",
-          "6.522"
-        ]
-      }
-    ],
-    "ogden": "the mystical",
-    "pears": "what is mystical, the mystical"
-  },
-  {
     "de": "möglich",
     "uk": [
       {
@@ -4763,6 +4763,21 @@
     ],
     "ogden": "possibility",
     "pears": "possibility"
+  },
+  {
+    "de": "Mystische",
+    "uk": [
+      {
+        "term": "містичне",
+        "occurrences": [
+          "6.44",
+          "6.45",
+          "6.522"
+        ]
+      }
+    ],
+    "ogden": "the mystical",
+    "pears": "what is mystical, the mystical"
   },
   {
     "de": "Name",
@@ -5140,6 +5155,20 @@
     "pears": "positive fact"
   },
   {
+    "de": "präjudizieren",
+    "uk": [
+      {
+        "term": "закладати наперед",
+        "occurrences": [
+          "2.012",
+          "5.44"
+        ]
+      }
+    ],
+    "ogden": "pre-judged, prejudged",
+    "pears": "written into"
+  },
+  {
     "de": "Projektion",
     "uk": [
       {
@@ -5166,20 +5195,6 @@
     ],
     "ogden": "method of projection",
     "pears": "method of projection"
-  },
-  {
-    "de": "präjudizieren",
-    "uk": [
-      {
-        "term": "закладати наперед",
-        "occurrences": [
-          "2.012",
-          "5.44"
-        ]
-      }
-    ],
-    "ogden": "pre-judged, prejudged",
-    "pears": "written into"
   },
   {
     "de": "Psychologie",
@@ -5223,6 +5238,38 @@
     ],
     "ogden": "space",
     "pears": "space"
+  },
+  {
+    "de": "räumlich",
+    "uk": [
+      {
+        "term": "просторовий",
+        "occurrences": [
+          "2.0121",
+          "2.0131",
+          "2.171",
+          "2.182",
+          "3.0321",
+          "3.1431",
+          "4.0412"
+        ]
+      }
+    ],
+    "ogden": "spatial, spatially",
+    "pears": "spatial, spatially"
+  },
+  {
+    "de": "Räumliche",
+    "uk": [
+      {
+        "term": "просторове",
+        "occurrences": [
+          "2.171"
+        ]
+      }
+    ],
+    "ogden": "spatial",
+    "pears": "spatial"
   },
   {
     "de": "Realität",
@@ -5390,38 +5437,6 @@
     ],
     "ogden": "right, rightly, correct, true",
     "pears": "correct, correctly, right, properly, aright"
-  },
-  {
-    "de": "räumlich",
-    "uk": [
-      {
-        "term": "просторовий",
-        "occurrences": [
-          "2.0121",
-          "2.0131",
-          "2.171",
-          "2.182",
-          "3.0321",
-          "3.1431",
-          "4.0412"
-        ]
-      }
-    ],
-    "ogden": "spatial, spatially",
-    "pears": "spatial, spatially"
-  },
-  {
-    "de": "Räumliche",
-    "uk": [
-      {
-        "term": "просторове",
-        "occurrences": [
-          "2.171"
-        ]
-      }
-    ],
-    "ogden": "spatial",
-    "pears": "spatial"
   },
   {
     "de": "Sache",
@@ -6668,6 +6683,44 @@
     ],
     "ogden": "death",
     "pears": "death"
+  },
+  {
+    "de": "übereinstimmen",
+    "uk": [
+      {
+        "term": "узгоджуватися",
+        "occurrences": [
+          "2.21"
+        ]
+      },
+      {
+        "term": "збігатися",
+        "occurrences": [
+          "3.411"
+        ]
+      }
+    ],
+    "ogden": "agree",
+    "pears": "agree, alike"
+  },
+  {
+    "de": "Übereinstimmung",
+    "uk": [
+      {
+        "term": "узгодженість",
+        "occurrences": [
+          "2.222",
+          "4.2",
+          "4.4",
+          "4.42",
+          "4.43",
+          "4.431",
+          "4.462"
+        ]
+      }
+    ],
+    "ogden": "agreement",
+    "pears": "agreement"
   },
   {
     "de": "Umgangssprache",
@@ -8779,43 +8832,5 @@
     ],
     "ogden": "fulfill the same purpose, serve one purpose, serve no purpose",
     "pears": "serve the same purpose, serve one purpose, serve none"
-  },
-  {
-    "de": "übereinstimmen",
-    "uk": [
-      {
-        "term": "узгоджуватися",
-        "occurrences": [
-          "2.21"
-        ]
-      },
-      {
-        "term": "збігатися",
-        "occurrences": [
-          "3.411"
-        ]
-      }
-    ],
-    "ogden": "agree",
-    "pears": "agree, alike"
-  },
-  {
-    "de": "Übereinstimmung",
-    "uk": [
-      {
-        "term": "узгодженість",
-        "occurrences": [
-          "2.222",
-          "4.2",
-          "4.4",
-          "4.42",
-          "4.43",
-          "4.431",
-          "4.462"
-        ]
-      }
-    ],
-    "ogden": "agreement",
-    "pears": "agreement"
   }
 ]
