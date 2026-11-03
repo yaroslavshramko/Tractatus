@@ -1918,6 +1918,26 @@
     "pears": "simple"
   },
   {
+    "de": "einfach (Adv.)",
+    "uk": [
+      {
+        "term": "просто",
+        "occurrences": [
+          "3.24",
+          "3.323",
+          "4.51",
+          "5.501",
+          "5.526",
+          "5.5301",
+          "6.1271",
+          "6.342"
+        ]
+      }
+    ],
+    "ogden": "simply, merely",
+    "pears": "simply, merely"
+  },
+  {
     "de": "einfaches Symbol",
     "uk": [
       {
