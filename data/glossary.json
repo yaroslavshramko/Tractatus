@@ -1989,13 +1989,20 @@
     "de": "Einleuchten",
     "uk": [
       {
+        "term": "очевидність",
+        "occurrences": [
+          "5.1363",
+          "6.1271"
+        ]
+      },
+      {
         "term": "самоочевидність",
         "occurrences": [
           "5.4731"
         ]
       }
     ],
-    "ogden": "self-evidence",
+    "ogden": "obviousness, self-evidence",
     "pears": "self-evidence"
   },
   {
