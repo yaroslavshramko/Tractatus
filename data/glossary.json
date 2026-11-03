@@ -1899,7 +1899,7 @@
     "pears": "in fact, actually, really"
   },
   {
-    "de": "einfach",
+    "de": "einfach (Adj.)",
     "uk": [
       {
         "term": "простий",
@@ -1907,24 +1907,15 @@
           "2.02",
           "4.21",
           "5.4541",
-          "5.553"
-        ]
-      },
-      {
-        "term": "просто",
-        "occurrences": [
-          "3.24",
-          "3.323",
-          "4.51",
-          "5.501",
-          "5.526",
-          "5.5301",
-          "6.1271"
+          "5.553",
+          "6.341",
+          "6.363",
+          "6.3631"
         ]
       }
     ],
-    "ogden": "simple, simply",
-    "pears": "simple, simply"
+    "ogden": "simple, neat",
+    "pears": "simple"
   },
   {
     "de": "einfaches Symbol",
