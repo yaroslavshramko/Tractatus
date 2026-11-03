@@ -616,6 +616,27 @@
     "pears": "resolution, disintegration"
   },
   {
+    "de": "auftreten",
+    "uk": [
+      {
+        "term": "виступати",
+        "occurrences": [
+          "2.0122",
+          "5.4733",
+          "5.523"
+        ]
+      },
+      {
+        "term": "з’являтися",
+        "occurrences": [
+          "5.233"
+        ]
+      }
+    ],
+    "ogden": "occur",
+    "pears": "appear, make one's appearance, occur"
+  },
+  {
     "de": "Ausdruck",
     "uk": [
       {
