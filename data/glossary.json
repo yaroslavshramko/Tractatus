@@ -2048,6 +2048,27 @@
     "pears": "occur"
   },
   {
+    "de": "eintreten",
+    "uk": [
+      {
+        "term": "відбуватися",
+        "occurrences": [
+          "5.441",
+          "6.3611",
+          "6.3631"
+        ]
+      },
+      {
+        "term": "поставати",
+        "occurrences": [
+          "5.641"
+        ]
+      }
+    ],
+    "ogden": "occur, happen",
+    "pears": "occur, bring into, be realized"
+  },
+  {
     "de": "Element",
     "uk": [
       {
