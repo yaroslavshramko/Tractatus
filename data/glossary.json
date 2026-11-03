@@ -1879,6 +1879,26 @@
     "pears": "real, proper"
   },
   {
+    "de": "eigentlich (Adv.)",
+    "uk": [
+      {
+        "term": "насправді",
+        "occurrences": [
+          "4.003"
+        ]
+      },
+      {
+        "term": "власне",
+        "occurrences": [
+          "6.211",
+          "6.53"
+        ]
+      }
+    ],
+    "ogden": "really",
+    "pears": "in fact, actually, really"
+  },
+  {
     "de": "einfach",
     "uk": [
       {
