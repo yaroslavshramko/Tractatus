@@ -1673,6 +1673,19 @@
     "pears": "representational relation"
   },
   {
+    "de": "das Ethische",
+    "uk": [
+      {
+        "term": "етичне",
+        "occurrences": [
+          "6.423"
+        ]
+      }
+    ],
+    "ogden": "the ethical",
+    "pears": "ethical attributes"
+  },
+  {
     "de": "definieren",
     "uk": [
       {
@@ -2509,8 +2522,7 @@
       {
         "term": "етичний",
         "occurrences": [
-          "6.422",
-          "6.423"
+          "6.422"
         ]
       }
     ],
