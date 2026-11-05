@@ -2475,15 +2475,18 @@
     "de": "erzeugen",
     "uk": [
       {
-        "term": "генерувати",
+        "term": "утворювати",
         "occurrences": [
+          "4.1273",
+          "5.3",
           "5.44",
+          "6.002",
           "6.126"
         ]
       }
     ],
-    "ogden": "generate",
-    "pears": "generate"
+    "ogden": "generate, create, produce",
+    "pears": "produce, generate"
   },
   {
     "de": "Ethik",
