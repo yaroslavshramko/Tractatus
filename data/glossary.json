@@ -2291,18 +2291,14 @@
         "term": "відповідний",
         "occurrences": [
           "4.5",
-          "6.122"
-        ]
-      },
-      {
-        "term": "відповідно до",
-        "occurrences": [
-          "6.24"
+          "6.122",
+          "6.24",
+          "6.341"
         ]
       }
     ],
-    "ogden": "accordingly, adequate, in accordance with",
-    "pears": "suitably, suitable, in accordance with"
+    "ogden": "accordingly, adequate, in accordance with, sufficiently",
+    "pears": "suitably, suitable, in accordance with, sufficiently"
   },
   {
     "de": "Ereignis",
