@@ -2355,11 +2355,12 @@
     "de": "ergeben",
     "uk": [
       {
-        "term": "давати (продукувати)",
+        "term": "давати",
         "occurrences": [
-          "3.3411",
+          "4.032",
           "6.12",
-          "6.1201"
+          "6.1201",
+          "6.1221"
         ]
       }
     ],
@@ -2373,13 +2374,13 @@
         "term": "виходити",
         "occurrences": [
           "3.3411",
-          "6.12",
-          "6.1201"
+          "6.1203",
+          "6.122"
         ]
       }
     ],
-    "ogden": "follow",
-    "pears": "prove to be"
+    "ogden": "follow, it is seen that",
+    "pears": "prove to be, the result will be, follow"
   },
   {
     "de": "Erkenntnistheorie",
