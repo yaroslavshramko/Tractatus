@@ -2735,6 +2735,19 @@
     "pears": "coloured"
   },
   {
+    "de": "farblos",
+    "uk": [
+      {
+        "term": "безколірний",
+        "occurrences": [
+          "2.0232"
+        ]
+      }
+    ],
+    "ogden": "colourless",
+    "pears": "colourless"
+  },
+  {
     "de": "Feste",
     "uk": [
       {
