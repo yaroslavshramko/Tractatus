@@ -2709,6 +2709,19 @@
     "pears": "colour"
   },
   {
+    "de": "Färbigkeit",
+    "uk": [
+      {
+        "term": "колірність",
+        "occurrences": [
+          "2.0251"
+        ]
+      }
+    ],
+    "ogden": "colouredness",
+    "pears": "being coloured"
+  },
+  {
     "de": "Farbenraum",
     "uk": [
       {
