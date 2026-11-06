@@ -2826,6 +2826,19 @@
     "pears": "follow"
   },
   {
+    "de": "Folgen",
+    "uk": [
+      {
+        "term": "наслідки",
+        "occurrences": [
+          "6.422"
+        ]
+      }
+    ],
+    "ogden": "consequences",
+    "pears": "consequences"
+  },
+  {
     "de": "folgern",
     "uk": [
       {
