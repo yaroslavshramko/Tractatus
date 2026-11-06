@@ -2839,6 +2839,19 @@
     "pears": "consequences"
   },
   {
+    "de": "Folgesätze",
+    "uk": [
+      {
+        "term": "речення, що випливають",
+        "occurrences": [
+          "5.123"
+        ]
+      }
+    ],
+    "ogden": "propositions consequent on them",
+    "pears": "propositions that follow from them"
+  },
+  {
     "de": "folgern",
     "uk": [
       {
