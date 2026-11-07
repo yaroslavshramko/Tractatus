@@ -108,7 +108,15 @@ function propositionElement(item) {
 
   if (item.number === "4.0031" && !item.note) item.note = "Фріц Маутнер (1849–1923) — філософ, письменник і журналіст, автор тритомної праці <em>Beiträge zu einer Kritik der Sprache</em> («Нариси до критики мови», 1901–1902), у якій розвинув скептичну концепцію критики мови (<em>Sprachkritik</em>).";
   if (item.note) addInfoButton("note", "Примітка перекладача", item.note);
-  if (item.comment) addInfoButton("comment", "Коментар", item.comment);
+  if (Array.isArray(item.comments) && item.comments.length) {
+    item.comments.forEach((comment, index) => {
+      if (typeof comment === "string" && comment.trim()) {
+        addInfoButton("comment", `Коментар ${index + 1}`, comment);
+      }
+    });
+  } else if (item.comment) {
+    addInfoButton("comment", "Коментар", item.comment);
+  }
 
   const controls = document.createElement("span");
   if (hasChildren) {
