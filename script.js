@@ -110,11 +110,13 @@ function propositionElement(item) {
   if (item.note) addInfoButton("note", "Примітка перекладача", item.note);
   if (Array.isArray(item.comments) && item.comments.length) {
     item.comments.forEach((comment, index) => {
-      if (typeof comment === "string" && comment.trim()) {
-        addInfoButton("comment", `Коментар ${index + 1}`, comment);
+      const content = typeof comment === "string" ? comment : comment?.text;
+      const hidden = typeof comment === "object" && comment !== null && comment.hidden === true;
+      if (!hidden && typeof content === "string" && content.trim()) {
+        addInfoButton("comment", `Коментар ${index + 1}`, content);
       }
     });
-  } else if (item.comment) {
+  } else if (item.comment && item.comment_hidden !== true) {
     addInfoButton("comment", "Коментар", item.comment);
   }
 
