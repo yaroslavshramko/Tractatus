@@ -1226,6 +1226,27 @@
     "pears": "consist of, constitute"
   },
   {
+    "de": "bestehen in",
+    "uk": [
+      {
+        "term": "полягати",
+        "occurrences": [
+          "2.14",
+          "2.222",
+          "3.14",
+          "4.0141",
+          "5.1362",
+          "5.4731",
+          "6.126",
+          "6.363",
+          "6.521"
+        ]
+      }
+    ],
+    "ogden": "consist in, lie in, prove ... by, be the process of",
+    "pears": "constitute, consist in, make"
+  },
+  {
     "de": "Bestehen",
     "uk": [
       {
