@@ -1205,6 +1205,27 @@
     "pears": "exist, subsist, hold, existence"
   },
   {
+    "de": "bestehen aus",
+    "uk": [
+      {
+        "term": "складатися з",
+        "occurrences": [
+          "2.023",
+          "2.034",
+          "2.1514",
+          "4.112",
+          "4.22",
+          "4.221",
+          "4.2211",
+          "5.55",
+          "6.342"
+        ]
+      }
+    ],
+    "ogden": "consist of, construct ... out of",
+    "pears": "consist of, constitute"
+  },
+  {
     "de": "Bestehen",
     "uk": [
       {
