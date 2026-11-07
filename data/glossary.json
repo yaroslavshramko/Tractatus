@@ -1187,7 +1187,7 @@
     "de": "bestehen",
     "uk": [
       {
-        "term": "існувати",
+        "term": "бути наявним",
         "occurrences": [
           "2.0121",
           "2.024",
@@ -1199,38 +1199,10 @@
           "6.36111",
           "6.51"
         ]
-      },
-      {
-        "term": "складатися",
-        "occurrences": [
-          "2.023",
-          "2.034",
-          "2.1514",
-          "4.112",
-          "4.22",
-          "4.221",
-          "4.2211",
-          "5.55",
-          "6.342"
-        ]
-      },
-      {
-        "term": "полягати",
-        "occurrences": [
-          "2.14",
-          "2.222",
-          "3.14",
-          "4.0141",
-          "5.1362",
-          "5.4731",
-          "6.126",
-          "6.363",
-          "6.521"
-        ]
       }
     ],
-    "ogden": "exist, consist, hold, lie",
-    "pears": "exist, subsist, consist, constitute, hold"
+    "ogden": "exist, hold",
+    "pears": "exist, subsist, hold, existence"
   },
   {
     "de": "Bestehen",
