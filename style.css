@@ -111,3 +111,8 @@
 .comments-index-table th:first-child,.comments-index-table td:first-child{width:22%}
 .comments-index-empty{color:var(--muted);font-style:italic;text-align:center!important;padding:22px 14px!important}
 @media(max-width:600px){.comments-index-table th,.comments-index-table td{padding:10px 8px}.comments-index-table th:first-child,.comments-index-table td:first-child{width:30%}}
+
+/* Direct links from the commentary index and sticky-header scroll clearance. */
+.comments-index-link{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+.comments-index-link:hover,.comments-index-link:focus-visible{border-bottom-color:currentColor;text-decoration:none}
+.proposition>.comment{scroll-margin-top:125px}
