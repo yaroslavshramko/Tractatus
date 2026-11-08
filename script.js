@@ -225,6 +225,9 @@ window.openIndexedComment = async function (number, commentIndex = 0) {
   );
   if (!panel) return false;
 
+  if (document.body.classList.contains("language-mode-de")) {
+    document.querySelector(".language-button[data-language=\"uk\"]")?.click();
+  }
   showSection("tractatus");
   let parent = proposition.parentElement?.closest(".proposition");
   while (parent) {
