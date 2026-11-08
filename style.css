@@ -102,3 +102,12 @@
 .language-mode-both .proposition.has-aligned-paragraphs>.proposition-row>span:last-of-type:not(.german-text):not(.text):not(.number){grid-column:3;grid-row:1}
 .language-mode-both .proposition.has-aligned-paragraphs .aligned-de{padding-left:0;border-left:0;padding-top:8px;border-top:1px solid var(--line)}
 }
+
+/* Comments index: layout only; entries will be added separately. */
+.comments-intro{max-width:850px;margin-bottom:24px}
+.comments-index-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.comments-index-table th,.comments-index-table td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.comments-index-table th{font-weight:600;background:var(--soft)}
+.comments-index-table th:first-child,.comments-index-table td:first-child{width:22%}
+.comments-index-empty{color:var(--muted);font-style:italic;text-align:center!important;padding:22px 14px!important}
+@media(max-width:600px){.comments-index-table th,.comments-index-table td{padding:10px 8px}.comments-index-table th:first-child,.comments-index-table td:first-child{width:30%}}
