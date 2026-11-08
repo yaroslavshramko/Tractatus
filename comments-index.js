@@ -29,7 +29,19 @@
         const number = document.createElement("td");
         number.textContent = entry.number;
         const title = document.createElement("td");
-        title.innerHTML = entry.title;
+        const link = document.createElement("a");
+        link.className = "comments-index-link";
+        link.href = "#tractatus";
+        link.innerHTML = entry.title;
+        link.addEventListener("click", async event => {
+          event.preventDefault();
+          const opened = await window.openIndexedComment(entry.number, entry.commentIndex ?? 0);
+          if (!opened) {
+            console.warn("Comment not found:", entry.number, entry.commentIndex);
+            alert("Не вдалося знайти цей коментар у тексті.");
+          }
+        });
+        title.appendChild(link);
         row.append(number, title);
         fragment.appendChild(row);
       });
