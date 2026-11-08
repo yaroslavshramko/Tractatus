@@ -2,6 +2,7 @@ const tractatusGerman = Object.create(null);
 function propositionElement(item) {
   const wrapper = document.createElement("div");
   wrapper.className = "proposition";
+  wrapper.dataset.number = item.number;
 
   if (/^\d+\.0[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-secondary-direct");
   if (/^\d+\.00[1-9]$/.test(item.number)) wrapper.classList.add("tractatus-tertiary-direct");
@@ -27,7 +28,7 @@ function propositionElement(item) {
   text.innerHTML = String(item.text ?? "");
 
 
-  function addInfoButton(kind, label, content) {
+  function addInfoButton(kind, label, content, commentIndex = 0) {
     const button = document.createElement("button");
     button.className = kind === "note" ? "comment-button note-button" : "comment-button";
     button.textContent = kind === "note" ? "i" : "К";
@@ -102,6 +103,7 @@ function propositionElement(item) {
     const panel = document.createElement("div");
     panel.className = kind === "note" ? "comment note" : "comment";
     panel.innerHTML = content;
+    if (kind === "comment") panel.dataset.commentIndex = String(commentIndex);
     wrapper.appendChild(panel);
     button.addEventListener("click", event => { event.stopPropagation(); panel.classList.toggle("visible"); });
   }
@@ -113,7 +115,7 @@ function propositionElement(item) {
       const content = typeof comment === "string" ? comment : comment?.text;
       const hidden = typeof comment === "object" && comment !== null && comment.hidden === true;
       if (!hidden && typeof content === "string" && content.trim()) {
-        addInfoButton("comment", `Коментар ${index + 1}`, content);
+        addInfoButton("comment", `Коментар ${index + 1}`, content, index);
       }
     });
   } else if (item.comment && item.comment_hidden !== true) {
@@ -204,9 +206,38 @@ async function loadTractatus() {
     tractatus.sort((a,b)=>Number(a.number)-Number(b.number)); tree.replaceChildren(); tractatus.forEach(item=>tree.appendChild(propositionElement(item))); if (window.MathJax?.typesetPromise) await window.MathJax.typesetPromise([tree]);
   } catch(error) { console.error("Не вдалося завантажити основний текст Трактату:",error); tree.textContent="Не вдалося завантажити текст. Будь ласка, оновіть сторінку."; }
 }
-loadTractatus();
+window.tractatusReady = loadTractatus();
 const prefaceToggle=document.getElementById("preface-toggle"); const prefaceText=document.getElementById("preface-text"); prefaceToggle.addEventListener("click",()=>{const open=prefaceToggle.getAttribute("aria-expanded")==="true";prefaceToggle.setAttribute("aria-expanded",String(!open));prefaceText.hidden=open;prefaceToggle.classList.toggle("open",!open);});
 const navLinks=document.querySelectorAll(".nav-link"); const sections=document.querySelectorAll(".page-section"); function showSection(id){sections.forEach(section=>section.classList.toggle("active-section",section.id===id));navLinks.forEach(link=>link.classList.toggle("active",link.dataset.section===id));history.replaceState(null,"",`#${id}`);window.scrollTo({top:0,behavior:"smooth"});} navLinks.forEach(link=>link.addEventListener("click",()=>showSection(link.dataset.section))); const initialSection=location.hash.replace("#",""); if([...sections].some(section=>section.id===initialSection))showSection(initialSection);
+
+// Open an indexed commentary, including those nested in collapsed branches.
+window.openIndexedComment = async function (number, commentIndex = 0) {
+  await window.tractatusReady;
+  const tree = document.getElementById("tractatus-tree");
+  const proposition = [...tree.querySelectorAll(".proposition")].find(element =>
+    element.dataset.number === String(number)
+  );
+  if (!proposition) return false;
+  const panel = [...proposition.children].find(element =>
+    element.classList.contains("comment") &&
+    !element.classList.contains("note") &&
+    element.dataset.commentIndex === String(commentIndex)
+  );
+  if (!panel) return false;
+
+  showSection("tractatus");
+  let parent = proposition.parentElement?.closest(".proposition");
+  while (parent) {
+    parent.classList.add("open");
+    parent.querySelector(":scope > .proposition-row")?.setAttribute("aria-expanded", "true");
+    parent = parent.parentElement?.closest(".proposition");
+  }
+  panel.classList.add("visible");
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
+  return true;
+};
 
 // The original Ukrainian text remains the default. German is currently available for proposition 1 only.
 (function () {
