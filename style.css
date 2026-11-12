@@ -116,3 +116,18 @@
 .comments-index-link{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
 .comments-index-link:hover,.comments-index-link:focus-visible{border-bottom-color:currentColor;text-decoration:none}
 .proposition>.comment{scroll-margin-top:125px}
+
+/* Philosophical commentary after each main chapter. */
+.comments-subsection{margin-top:34px}
+.comments-subsection + .comments-subsection{margin-top:52px;padding-top:22px;border-top:1px solid var(--line)}
+.comments-subsection h2{font-size:1.4rem;font-weight:normal;margin:0 0 15px}
+.section-commentary{margin:26px 0 48px;padding:20px 10px 0;border-top:1px solid var(--line);scroll-margin-top:125px}
+.section-commentary-toggle{display:block;width:100%;padding:9px 8px;border:0;background:transparent;color:var(--text);font:normal 1.28rem Georgia,"Times New Roman",serif;text-align:left;cursor:pointer}
+.section-commentary-toggle::after{content:"▸";float:right;color:var(--muted);font-size:.85rem}
+.section-commentary-toggle[aria-expanded="true"]::after{content:"▾"}
+.section-commentary-toggle:hover,.section-commentary-toggle:focus-visible{background:var(--soft);outline:none}
+.section-commentary-content{margin:10px 8px 0;padding:8px 0 0;max-width:800px}
+.section-commentary-content[hidden]{display:none}
+.section-commentary-content h3{font-size:1.15rem;font-weight:normal;margin:0 0 18px}
+.section-commentary-body{font-size:1.04rem;line-height:1.65}
+.section-commentary-body p{margin:0 0 1em}
