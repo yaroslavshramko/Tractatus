@@ -185,7 +185,22 @@ function propositionElement(item) {
     children.className = "children";
     item.children.forEach(child => children.appendChild(propositionElement(child)));
     wrapper.appendChild(children);
-    const toggle = () => { const open = wrapper.classList.toggle("open"); row.setAttribute("aria-expanded", String(open)); };
+    const toggle = () => {
+      const open = wrapper.classList.toggle("open");
+      row.setAttribute("aria-expanded", String(open));
+      if (!open) {
+        wrapper.querySelectorAll(".proposition.open").forEach(descendant => {
+          descendant.classList.remove("open");
+          descendant.querySelector(":scope > .proposition-row")?.setAttribute("aria-expanded", "false");
+        });
+        const sectionComment = wrapper.nextElementSibling;
+        if (sectionComment?.classList.contains("section-commentary")) {
+          sectionComment.querySelector(".section-commentary-toggle")?.setAttribute("aria-expanded", "false");
+          const content = sectionComment.querySelector(".section-commentary-content");
+          if (content) content.hidden = true;
+        }
+      }
+    };
     row.addEventListener("click", toggle);
     row.addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } });
   }
