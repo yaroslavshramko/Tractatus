@@ -312,10 +312,22 @@ window.openSectionCommentary = async function (section) {
       node.querySelector(":scope > .proposition-row")?.setAttribute("aria-expanded", "true");
     };
     openNode(chapter);
-    let last = chapter.querySelector(".children > .proposition:last-child");
-    while (last) {
-      openNode(last);
-      last = last.querySelector(":scope > .children > .proposition:last-child");
+    // Open the actual path to the commentary's final proposition (1.21),
+    // not merely the last-child chain, which can select a different branch.
+    const target = [...chapter.querySelectorAll(".proposition")]
+      .find(node => node.dataset.number === (block.dataset.section === "1" ? "1.21" : ""));
+    if (target) {
+      let node = target;
+      while (node && node !== chapter) {
+        if (node.classList.contains("proposition")) openNode(node);
+        node = node.parentElement;
+      }
+    } else {
+      let last = chapter.querySelector(".children > .proposition:last-child");
+      while (last) {
+        openNode(last);
+        last = last.querySelector(":scope > .children > .proposition:last-child");
+      }
     }
   }
   if (document.body.classList.contains("language-mode-de")) document.querySelector('.language-button[data-language="uk"]')?.click();
