@@ -286,7 +286,13 @@ window.openSectionCommentary = async function (section) {
 };
 window.tractatusReady.then(() => {
   const match = location.hash.match(/^#commentary-([1-7])$/);
-  if (match) window.openSectionCommentary(match[1]);
+  if (!match) return;
+  const navigation = performance.getEntriesByType("navigation")[0];
+  if (navigation?.type === "reload") {
+    history.replaceState(null, "", "#tractatus");
+    return;
+  }
+  window.openSectionCommentary(match[1]);
 });
 
 const prefaceToggle=document.getElementById("preface-toggle"); const prefaceText=document.getElementById("preface-text"); prefaceToggle.addEventListener("click",()=>{const open=prefaceToggle.getAttribute("aria-expanded")==="true";prefaceToggle.setAttribute("aria-expanded",String(!open));prefaceText.hidden=open;prefaceToggle.classList.toggle("open",!open);});
