@@ -195,6 +195,8 @@ function propositionElement(item) {
         });
         const sectionComment = wrapper.nextElementSibling;
         if (sectionComment?.classList.contains("section-commentary")) {
+          sectionComment.hidden = true;
+          wrapper.querySelector(".section-commentary-icon")?.setAttribute("aria-expanded", "false");
           sectionComment.querySelector(".section-commentary-toggle")?.setAttribute("aria-expanded", "false");
           const content = sectionComment.querySelector(".section-commentary-content");
           if (content) content.hidden = true;
@@ -255,6 +257,29 @@ async function loadTractatus() {
             content.hidden = expanded;
           });
           block.append(toggle, content);
+          block.hidden = true;
+          const iconButton = document.createElement("button");
+          iconButton.type = "button";
+          iconButton.className = "section-commentary-icon";
+          iconButton.title = "Філософський коментар до розділу " + entry.section;
+          iconButton.setAttribute("aria-label", iconButton.title);
+          iconButton.setAttribute("aria-expanded", "false");
+          iconButton.setAttribute("aria-controls", block.id);
+          iconButton.innerHTML = '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-2.7-1.7-5.7-2-9-1.4v13c3.3-.6 6.3-.3 9 1.4 2.7-1.7 5.7-2 9-1.4v-13c-3.3-.6-6.3-.3-9 1.4Z"/><path d="M12 7v13"/></svg>';
+          iconButton.addEventListener("click", event => {
+            event.stopPropagation();
+            const reveal = block.hidden;
+            block.hidden = !reveal;
+            iconButton.setAttribute("aria-expanded", String(reveal));
+            if (!reveal) {
+              toggle.setAttribute("aria-expanded", "false");
+              content.hidden = true;
+            }
+          });
+          const lastBranch = [...chapter.querySelectorAll(".proposition")].find(node => node.dataset.number === (entry.range || "").split("–").at(-1));
+          const iconContainer = lastBranch?.parentElement;
+          if (iconContainer?.classList.contains("children")) iconContainer.appendChild(iconButton);
+          else chapter.appendChild(iconButton);
           chapter.after(block);
         });
       }
@@ -283,6 +308,8 @@ window.openSectionCommentary = async function (section) {
     }
   }
   if (document.body.classList.contains("language-mode-de")) document.querySelector('.language-button[data-language="uk"]')?.click();
+  block.hidden = false;
+  chapter?.querySelector(".section-commentary-icon")?.setAttribute("aria-expanded", "true");
   const toggle = block.querySelector(".section-commentary-toggle");
   const content = block.querySelector(".section-commentary-content");
   if (toggle && content) { toggle.setAttribute("aria-expanded", "true"); content.hidden = false; }
