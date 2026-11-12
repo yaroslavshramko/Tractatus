@@ -3052,13 +3052,12 @@
         "term": "форма предмета",
         "occurrences": [
           "2.0141",
-          "2.023",
           "2.0251"
         ]
       }
     ],
-    "ogden": "form of the object, forms of objects",
-    "pears": "form of an object, forms of objects"
+    "ogden": "form of the object",
+    "pears": "form of an object"
   },
   {
     "de": "formale Eigenschaft",
