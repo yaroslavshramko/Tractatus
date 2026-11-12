@@ -131,3 +131,8 @@
 .section-commentary-content h3{font-size:1.15rem;font-weight:normal;margin:0 0 18px}
 .section-commentary-body{font-size:1.04rem;line-height:1.65}
 .section-commentary-body p{margin:0 0 1em}
+
+/* Reveal a chapter commentary only after the final proposition is expanded. */
+#tractatus-tree > .section-commentary{display:none}
+#tractatus-tree > .proposition.open:has(.proposition[data-number="1.2"].open) + .section-commentary[data-section="1"]{display:block}
+body.language-mode-de #tractatus-tree > .section-commentary{display:none!important}
