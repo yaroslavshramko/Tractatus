@@ -52,3 +52,37 @@
       showMessage("Не вдалося завантажити перелік коментарів.");
     });
 })();
+
+(() => {
+  const body = document.getElementById("section-comments-index-body");
+  if (!body) return;
+  fetch("data/section-commentaries.json")
+    .then(response => { if (!response.ok) throw new Error("Could not load section commentaries"); return response.json(); })
+    .then(entries => {
+      if (!Array.isArray(entries)) throw new Error("Invalid section commentaries");
+      if (!entries.length) { body.innerHTML = '<tr><td colspan="2" class="comments-index-empty">Коментарів поки немає.</td></tr>'; return; }
+      const fragment = document.createDocumentFragment();
+      entries.forEach(entry => {
+        const row = document.createElement("tr");
+        const section = document.createElement("td");
+        section.textContent = entry.section;
+        const topic = document.createElement("td");
+        const link = document.createElement("a");
+        link.className = "comments-index-link";
+        link.href = "#commentary-" + entry.section;
+        link.textContent = entry.title || "Коментар до розділу " + entry.section;
+        link.addEventListener("click", async event => {
+          event.preventDefault();
+          if (!await window.openSectionCommentary(entry.section)) alert("Не вдалося знайти коментар до розділу.");
+        });
+        topic.appendChild(link);
+        row.append(section, topic);
+        fragment.appendChild(row);
+      });
+      body.replaceChildren(fragment);
+    })
+    .catch(error => {
+      console.error("Section comments index:", error);
+      body.innerHTML = '<tr><td colspan="2" class="comments-index-empty">Не вдалося завантажити покажчик.</td></tr>';
+    });
+})();
