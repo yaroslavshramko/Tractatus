@@ -233,16 +233,22 @@ async function loadTractatus() {
           toggle.type = "button";
           toggle.className = "section-commentary-toggle";
           toggle.setAttribute("aria-expanded", "false");
-          toggle.textContent = "Коментар до розділу " + entry.section + (entry.title ? " (" + entry.title + ")" : "");
+          const headingLabel = document.createElement("span");
+          headingLabel.className = "section-commentary-label";
+          headingLabel.textContent = "Коментар до розділу " + entry.section;
+          const headingTitle = document.createElement("span");
+          headingTitle.className = "section-commentary-title";
+          headingTitle.textContent = entry.title || "";
+          toggle.append(headingLabel, headingTitle);
           const content = document.createElement("div");
           content.className = "section-commentary-content";
           content.hidden = true;
-          const heading = document.createElement("h3");
-          heading.textContent = entry.title || "";
+          content.id = "commentary-content-" + entry.section;
+          toggle.setAttribute("aria-controls", content.id);
           const body = document.createElement("div");
           body.className = "section-commentary-body";
           body.innerHTML = entry.content || "";
-          content.append(heading, body);
+          content.appendChild(body);
           toggle.addEventListener("click", () => {
             const expanded = toggle.getAttribute("aria-expanded") === "true";
             toggle.setAttribute("aria-expanded", String(!expanded));
