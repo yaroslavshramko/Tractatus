@@ -218,7 +218,7 @@ async function loadTractatus() {
           toggle.type = "button";
           toggle.className = "section-commentary-toggle";
           toggle.setAttribute("aria-expanded", "false");
-          toggle.textContent = "Коментар до розділу " + entry.section;
+          toggle.textContent = "Коментар до розділу " + entry.section + (entry.title ? " (" + entry.title + ")" : "");
           const content = document.createElement("div");
           content.className = "section-commentary-content";
           content.hidden = true;
@@ -247,6 +247,21 @@ window.openSectionCommentary = async function (section) {
   const block = document.getElementById("commentary-" + section);
   if (!block) return false;
   showSection("tractatus");
+  const chapter = [...document.querySelectorAll("#tractatus-tree > .proposition")].find(node => node.dataset.number === String(section));
+  if (chapter) {
+    const openNode = node => {
+      if (!node) return;
+      node.classList.add("open");
+      node.querySelector(":scope > .proposition-row")?.setAttribute("aria-expanded", "true");
+    };
+    openNode(chapter);
+    let last = chapter.querySelector(".children > .proposition:last-child");
+    while (last) {
+      openNode(last);
+      last = last.querySelector(":scope > .children > .proposition:last-child");
+    }
+  }
+  if (document.body.classList.contains("language-mode-de")) document.querySelector('.language-button[data-language="uk"]')?.click();
   const toggle = block.querySelector(".section-commentary-toggle");
   const content = block.querySelector(".section-commentary-content");
   if (toggle && content) { toggle.setAttribute("aria-expanded", "true"); content.hidden = false; }
