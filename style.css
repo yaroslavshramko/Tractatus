@@ -148,3 +148,14 @@ body.language-mode-de #tractatus-tree > .section-commentary{display:none!importa
 #tractatus-tree > .section-commentary[hidden]{display:none!important}
 body.language-mode-de .section-commentary-icon{display:none!important}
 @media(max-width:650px){.section-commentary-icon{left:-56px}}
+
+/* Quiet editorial typography for the long chapter commentary. */
+.section-commentary-content{background:var(--paper);padding:16px 19px 18px;border-color:var(--line)}
+.section-commentary-body{font-size:.89rem;line-height:1.62;color:#46443f}
+.section-commentary-body p{margin:0 0 .8em}
+.section-commentary-body h2{margin:1.5em 0 .55em;font-size:1.06rem;line-height:1.4;font-weight:600;color:var(--text)}
+.section-commentary-body h3{margin:1.2em 0 .45em;font-size:.96rem;line-height:1.4;font-weight:600;color:var(--text)}
+.section-commentary-body h2:first-child,.section-commentary-body h3:first-child{margin-top:0}
+.section-commentary-body .section-commentary-bibliography{margin:.4em 0 0;padding-left:1.6em;font-size:.91em;line-height:1.5}
+.section-commentary-body .section-commentary-bibliography li{padding-left:.2em;margin:0 0 .5em}
+@media(max-width:600px){.section-commentary-content{padding:13px 14px}.section-commentary-body{font-size:.87rem}}
