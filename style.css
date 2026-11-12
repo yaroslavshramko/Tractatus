@@ -142,8 +142,9 @@
 body.language-mode-de #tractatus-tree > .section-commentary{display:none!important}
 
 /* Book marker stays to the left of the final nested branch's vertical rule. */
-.section-commentary-icon{display:flex;align-items:center;justify-content:center;position:relative;left:-36px;width:26px;height:26px;margin:3px 0 0;padding:2px;border:0;border-radius:4px;background:transparent;color:var(--muted);cursor:pointer}
+.section-commentary-icon{display:flex;align-items:center;justify-content:center;position:relative;left:-110px;width:26px;height:26px;margin:3px 0 0;padding:2px;border:0;border-radius:4px;background:transparent;color:var(--muted);cursor:pointer}
 .section-commentary-icon:hover,.section-commentary-icon:focus-visible{color:var(--accent);background:var(--soft)}
 .section-commentary-icon:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #tractatus-tree > .section-commentary[hidden]{display:none!important}
 body.language-mode-de .section-commentary-icon{display:none!important}
+@media(max-width:650px){.section-commentary-icon{left:-56px}}
