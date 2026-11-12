@@ -193,6 +193,17 @@ function propositionElement(item) {
           descendant.classList.remove("open");
           descendant.querySelector(":scope > .proposition-row")?.setAttribute("aria-expanded", "false");
         });
+        const sectionIcon = wrapper.querySelector(".section-commentary-icon");
+        if (sectionIcon) {
+          const controlled = document.getElementById(sectionIcon.getAttribute("aria-controls"));
+          if (controlled) {
+            controlled.hidden = true;
+            controlled.querySelector(".section-commentary-toggle")?.setAttribute("aria-expanded", "false");
+            const body = controlled.querySelector(".section-commentary-content");
+            if (body) body.hidden = true;
+          }
+          sectionIcon.setAttribute("aria-expanded", "false");
+        }
         const sectionComment = wrapper.nextElementSibling;
         if (sectionComment?.classList.contains("section-commentary")) {
           sectionComment.hidden = true;
