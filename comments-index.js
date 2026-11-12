@@ -65,7 +65,7 @@
       entries.forEach(entry => {
         const row = document.createElement("tr");
         const section = document.createElement("td");
-        section.textContent = entry.section;
+        section.textContent = entry.range ? `${entry.section} (${entry.range})` : entry.section;
         const topic = document.createElement("td");
         const link = document.createElement("a");
         link.className = "comments-index-link";
