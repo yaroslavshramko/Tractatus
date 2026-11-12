@@ -1,12 +1,4 @@
 (() => {
-  const comments = [
-    {
-      proposition: "4.1252",
-      after: "формальними рядами.",
-      html: "Німецький термін <em>Formenreihe</em> буквально означає «ряд форм». Зі стилістичних міркувань у цьому перекладі його передано як «формальний ряд»."
-    }
-  ];
-
   const notes = [
     { proposition: "4.032", after: "ambulo»" },
     { proposition: "4.123", after: "eo ipso" },
@@ -86,7 +78,6 @@
   }
 
   function applyAll() {
-    comments.forEach(applyComment);
     notes.forEach(applyNote);
   }
 
