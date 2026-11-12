@@ -203,10 +203,62 @@ async function loadTractatus() {
     const tractatus = await Promise.all([fetchJson("data/tractatus1.json"), fetchJson("data/tractatus2.json")]);
     const branchFiles = [["3","data/tractatus3.json"],["4","data/tractatus4.json"],["5","data/tractatus5.json"],["6","data/tractatus6.json"],["7","data/tractatus7.json"]];
     for (const [number,path] of branchFiles) { try { const branch=await fetchBranch(path); const branchIndex=tractatus.findIndex(item=>item.number===number); if(branchIndex!==-1) tractatus[branchIndex]=branch; else tractatus.push(branch); } catch(error) { console.error(`Не вдалося завантажити ${path}:`,error); } }
-    tractatus.sort((a,b)=>Number(a.number)-Number(b.number)); tree.replaceChildren(); tractatus.forEach(item=>tree.appendChild(propositionElement(item))); if (window.MathJax?.typesetPromise) await window.MathJax.typesetPromise([tree]);
+    tractatus.sort((a,b)=>Number(a.number)-Number(b.number)); tree.replaceChildren(); tractatus.forEach(item=>tree.appendChild(propositionElement(item)));
+    try {
+      const sectionComments = await fetchJson("data/section-commentaries.json");
+      if (Array.isArray(sectionComments)) {
+        sectionComments.forEach(entry => {
+          const chapter = [...tree.children].find(node => node.dataset.number === String(entry.section));
+          if (!chapter) return;
+          const block = document.createElement("section");
+          block.className = "section-commentary";
+          block.id = "commentary-" + entry.section;
+          block.dataset.section = String(entry.section);
+          const toggle = document.createElement("button");
+          toggle.type = "button";
+          toggle.className = "section-commentary-toggle";
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.textContent = "Коментар до розділу " + entry.section;
+          const content = document.createElement("div");
+          content.className = "section-commentary-content";
+          content.hidden = true;
+          const heading = document.createElement("h3");
+          heading.textContent = entry.title || "";
+          const body = document.createElement("div");
+          body.className = "section-commentary-body";
+          body.innerHTML = entry.content || "";
+          content.append(heading, body);
+          toggle.addEventListener("click", () => {
+            const expanded = toggle.getAttribute("aria-expanded") === "true";
+            toggle.setAttribute("aria-expanded", String(!expanded));
+            content.hidden = expanded;
+          });
+          block.append(toggle, content);
+          chapter.after(block);
+        });
+      }
+    } catch (error) { console.error("Не вдалося завантажити філософські коментарі:", error); }
+    if (window.MathJax?.typesetPromise) await window.MathJax.typesetPromise([tree]);
   } catch(error) { console.error("Не вдалося завантажити основний текст Трактату:",error); tree.textContent="Не вдалося завантажити текст. Будь ласка, оновіть сторінку."; }
 }
 window.tractatusReady = loadTractatus();
+window.openSectionCommentary = async function (section) {
+  await window.tractatusReady;
+  const block = document.getElementById("commentary-" + section);
+  if (!block) return false;
+  showSection("tractatus");
+  const toggle = block.querySelector(".section-commentary-toggle");
+  const content = block.querySelector(".section-commentary-content");
+  if (toggle && content) { toggle.setAttribute("aria-expanded", "true"); content.hidden = false; }
+  history.replaceState(null, "", "#commentary-" + section);
+  requestAnimationFrame(() => requestAnimationFrame(() => block.scrollIntoView({ behavior: "smooth", block: "start" })));
+  return true;
+};
+window.tractatusReady.then(() => {
+  const match = location.hash.match(/^#commentary-([1-7])$/);
+  if (match) window.openSectionCommentary(match[1]);
+});
+
 const prefaceToggle=document.getElementById("preface-toggle"); const prefaceText=document.getElementById("preface-text"); prefaceToggle.addEventListener("click",()=>{const open=prefaceToggle.getAttribute("aria-expanded")==="true";prefaceToggle.setAttribute("aria-expanded",String(!open));prefaceText.hidden=open;prefaceToggle.classList.toggle("open",!open);});
 const navLinks=document.querySelectorAll(".nav-link"); const sections=document.querySelectorAll(".page-section"); function showSection(id){sections.forEach(section=>section.classList.toggle("active-section",section.id===id));navLinks.forEach(link=>link.classList.toggle("active",link.dataset.section===id));history.replaceState(null,"",`#${id}`);window.scrollTo({top:0,behavior:"smooth"});} navLinks.forEach(link=>link.addEventListener("click",()=>showSection(link.dataset.section))); const initialSection=location.hash.replace("#",""); if([...sections].some(section=>section.id===initialSection))showSection(initialSection);
 
