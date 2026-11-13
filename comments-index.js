@@ -79,6 +79,13 @@
         row.append(section, topic);
         fragment.appendChild(row);
       });
+      const pendingRow = document.createElement("tr");
+      const pendingSection = document.createElement("td");
+      pendingSection.textContent = "2 (2–2.225)";
+      const pendingTopic = document.createElement("td");
+      pendingTopic.textContent = "Від онтології до пізнання: стани справ та образи";
+      pendingRow.append(pendingSection, pendingTopic);
+      fragment.appendChild(pendingRow);
       body.replaceChildren(fragment);
     })
     .catch(error => {
