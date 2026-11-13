@@ -93,6 +93,13 @@
       thirdTopic.textContent = "Епістемологія «Трактату»: думка і речення";
       thirdRow.append(thirdSection, thirdTopic);
       fragment.appendChild(thirdRow);
+      const fourthRow = document.createElement("tr");
+      const fourthSection = document.createElement("td");
+      fourthSection.textContent = "4 (4–4.53)";
+      const fourthTopic = document.createElement("td");
+      fourthTopic.textContent = "Філософія мови: речення і дійсність";
+      fourthRow.append(fourthSection, fourthTopic);
+      fragment.appendChild(fourthRow);
       body.replaceChildren(fragment);
     })
     .catch(error => {
