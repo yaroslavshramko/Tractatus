@@ -107,6 +107,13 @@
       fifthTopic.textContent = "Філософія логіки: логічні операції та логічна необхідність";
       fifthRow.append(fifthSection, fifthTopic);
       fragment.appendChild(fifthRow);
+      const sixthRow = document.createElement("tr");
+      const sixthSection = document.createElement("td");
+      sixthSection.textContent = "6 (6–6.54)";
+      const sixthTopic = document.createElement("td");
+      sixthTopic.textContent = "Межі мови і світу: логіка, етика і містичне";
+      sixthRow.append(sixthSection, sixthTopic);
+      fragment.appendChild(sixthRow);
       body.replaceChildren(fragment);
     })
     .catch(error => {
