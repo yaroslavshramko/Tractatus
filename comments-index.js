@@ -100,6 +100,13 @@
       fourthTopic.textContent = "Філософія мови: речення і дійсність";
       fourthRow.append(fourthSection, fourthTopic);
       fragment.appendChild(fourthRow);
+      const fifthRow = document.createElement("tr");
+      const fifthSection = document.createElement("td");
+      fifthSection.textContent = "5 (5–5.641)";
+      const fifthTopic = document.createElement("td");
+      fifthTopic.textContent = "Філософія логіки: логічні операції та логічна необхідність";
+      fifthRow.append(fifthSection, fifthTopic);
+      fragment.appendChild(fifthRow);
       body.replaceChildren(fragment);
     })
     .catch(error => {
