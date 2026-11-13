@@ -114,6 +114,13 @@
       sixthTopic.textContent = "Межі мови і світу: логіка, етика і містичне";
       sixthRow.append(sixthSection, sixthTopic);
       fragment.appendChild(sixthRow);
+      const seventhRow = document.createElement("tr");
+      const seventhSection = document.createElement("td");
+      seventhSection.textContent = "7";
+      const seventhTopic = document.createElement("td");
+      seventhTopic.textContent = "Межі філософії: підсумки «Трактату»";
+      seventhRow.append(seventhSection, seventhTopic);
+      fragment.appendChild(seventhRow);
       body.replaceChildren(fragment);
     })
     .catch(error => {
