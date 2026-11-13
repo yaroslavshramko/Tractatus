@@ -86,6 +86,13 @@
       pendingTopic.textContent = "Від онтології до пізнання: стани справ та образи";
       pendingRow.append(pendingSection, pendingTopic);
       fragment.appendChild(pendingRow);
+      const thirdRow = document.createElement("tr");
+      const thirdSection = document.createElement("td");
+      thirdSection.textContent = "3 (3–3.5)";
+      const thirdTopic = document.createElement("td");
+      thirdTopic.textContent = "Епістемологія «Трактату»: думка і речення";
+      thirdRow.append(thirdSection, thirdTopic);
+      fragment.appendChild(thirdRow);
       body.replaceChildren(fragment);
     })
     .catch(error => {
