@@ -3808,14 +3808,12 @@
         "occurrences": [
           "5.451",
           "5.5562",
-          "6.34",
-          "6.35",
           "6.3631"
         ]
       }
     ],
-    "ogden": "reason",
-    "pears": "reason, source"
+    "ogden": "reason, grounds",
+    "pears": "reason, source, grounds"
   },
   {
     "de": "Grundbegriff",
