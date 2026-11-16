@@ -3502,8 +3502,8 @@
         ]
       }
     ],
-    "ogden": "total",
-    "pears": "sum-total"
+    "ogden": "total, whole",
+    "pears": "sum-total, whole"
   },
   {
     "de": "Gesamtheit",
