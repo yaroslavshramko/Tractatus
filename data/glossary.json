@@ -3773,7 +3773,7 @@
         ]
       }
     ],
-    "ogden": "limit",
+    "ogden": "limit, boundary",
     "pears": "limit"
   },
   {
