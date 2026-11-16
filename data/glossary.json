@@ -3673,8 +3673,8 @@
         ]
       }
     ],
-    "ogden": "identity, equality",
-    "pears": "identity, equivalence"
+    "ogden": "identity",
+    "pears": "identity"
   },
   {
     "de": "Gleichheitszeichen",
