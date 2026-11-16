@@ -85,6 +85,11 @@
     "title": "<em>Formenreihe</em>: формальний ряд"
   },
   {
+    "number": "5.02",
+    "commentIndex": 0,
+    "title": "<em>Sätze der Logik</em>: речення логіки та закони логіки"
+  },
+  {
     "number": "5.132",
     "commentIndex": 0,
     "title": "Дієслова <em>folgen</em>, <em>schließen</em>, <em>folgern</em> та поняття логічного слідування"
@@ -118,10 +123,5 @@
     "number": "7",
     "commentIndex": 0,
     "title": "«Не можна»: неможливість, а не заборона"
-  },
-  {
-    "number": "5.02",
-    "commentIndex": 0,
-    "title": "<em>Sätze der Logik</em>: речення логіки та закони логіки"
   }
 ]
