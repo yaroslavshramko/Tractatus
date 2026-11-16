@@ -3684,6 +3684,7 @@
         "occurrences": [
           "3.323",
           "5.4733",
+          "5.53",
           "5.5301",
           "5.533",
           "6.23",
@@ -3691,8 +3692,8 @@
         ]
       }
     ],
-    "ogden": "sign of equality, sign of identity",
-    "pears": "sign for identity, identity-sign"
+    "ogden": "sign of equality, sign of identity, identity sign",
+    "pears": "sign for identity, identity-sign, sign of equality"
   },
   {
     "de": "Gleichnis",
