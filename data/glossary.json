@@ -2427,6 +2427,19 @@
     "pears": "law of conservation"
   },
   {
+    "de": "Erkennen",
+    "uk": [
+      {
+        "term": "розпізнавання",
+        "occurrences": [
+          "6.1262"
+        ]
+      }
+    ],
+    "ogden": "recognition",
+    "pears": "recognition"
+  },
+  {
     "de": "erkennen",
     "uk": [
       {
@@ -2443,8 +2456,7 @@
           "4.002",
           "6.113",
           "6.1203",
-          "6.122",
-          "6.1262"
+          "6.122"
         ]
       },
       {
@@ -2454,8 +2466,8 @@
         ]
       }
     ],
-    "ogden": "discover, recognize, perceive, recognition",
-    "pears": "tell, recognizable, reveal, recognize, recognition"
+    "ogden": "discover, recognize, perceive",
+    "pears": "tell, recognizable, reveal, recognize"
   },
   {
     "de": "Erkenntnistheorie",
