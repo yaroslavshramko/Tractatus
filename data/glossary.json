@@ -2427,6 +2427,37 @@
     "pears": "law of conservation"
   },
   {
+    "de": "erkennen",
+    "uk": [
+      {
+        "term": "з’ясовувати",
+        "occurrences": [
+          "2.223",
+          "2.224"
+        ]
+      },
+      {
+        "term": "розпізнавати",
+        "occurrences": [
+          "3.05",
+          "4.002",
+          "6.113",
+          "6.1203",
+          "6.122",
+          "6.1262"
+        ]
+      },
+      {
+        "term": "визнавати",
+        "occurrences": [
+          "6.54"
+        ]
+      }
+    ],
+    "ogden": "discover, recognize, perceive, recognition",
+    "pears": "tell, recognizable, reveal, recognize, recognition"
+  },
+  {
     "de": "Erkenntnistheorie",
     "uk": [
       {
