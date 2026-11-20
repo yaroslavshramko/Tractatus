@@ -4346,21 +4346,6 @@
     "pears": "configuration"
   },
   {
-    "de": "Konfiguration von Gegenständen",
-    "uk": [
-      {
-        "term": "конфігурація предметів",
-        "occurrences": [
-          "2.0231",
-          "2.0272",
-          "3.21"
-        ]
-      }
-    ],
-    "ogden": "configuration of the objects",
-    "pears": "configuration of objects"
-  },
-  {
     "de": "konstant",
     "uk": [
       {
