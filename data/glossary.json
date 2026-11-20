@@ -4203,6 +4203,19 @@
     "pears": "know, knowledge"
   },
   {
+    "de": "Kennzeichen",
+    "uk": [
+      {
+        "term": "маркер",
+        "occurrences": [
+          "5.5261"
+        ]
+      }
+    ],
+    "ogden": "characteristic",
+    "pears": "mark"
+  },
+  {
     "de": "kennzeichnen",
     "uk": [
       {
