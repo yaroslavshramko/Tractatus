@@ -149,6 +149,9 @@ body.language-mode-de #tractatus-tree > .section-commentary{display:none!importa
 #tractatus-tree > .section-commentary[hidden]{display:none!important}
 body.language-mode-de .section-commentary-icon{display:none!important}
 @media(max-width:650px){.section-commentary-icon{left:-56px}}
+/* Move only chapter 2 book marker one nesting column further left. */
+#tractatus-tree > .proposition[data-number="2"] .section-commentary-icon{left:-170px}
+@media(max-width:650px){#tractatus-tree > .proposition[data-number="2"] .section-commentary-icon{left:-116px}}
 
 /* Quiet editorial typography for the long chapter commentary. */
 .section-commentary-content{background:var(--paper);padding:16px 19px 18px;border-color:var(--line)}
