@@ -288,9 +288,15 @@ async function loadTractatus() {
             }
           });
           const lastBranch = [...chapter.querySelectorAll(".proposition")].find(node => node.dataset.number === (entry.range || "").split("–").at(-1));
-          const iconContainer = lastBranch?.parentElement;
-          if (iconContainer?.classList.contains("children")) iconContainer.appendChild(iconButton);
-          else chapter.appendChild(iconButton);
+          if (String(entry.section) === "2") {
+            const chapterRow = chapter.querySelector(":scope > .proposition-row");
+            iconButton.classList.add("section-commentary-icon-at-heading");
+            chapterRow?.appendChild(iconButton);
+          } else {
+            const iconContainer = lastBranch?.parentElement;
+            if (iconContainer?.classList.contains("children")) iconContainer.appendChild(iconButton);
+            else chapter.appendChild(iconButton);
+          }
           chapter.after(block);
         });
       }
