@@ -164,3 +164,6 @@ body.language-mode-de .section-commentary-icon{display:none!important}
 .section-commentary-body .section-commentary-bibliography li{padding-left:.2em;margin:0 0 .5em}
 @media(max-width:600px){.section-commentary-content{padding:13px 14px}.section-commentary-body{font-size:.87rem}}
 
+
+/* Centered, one-fifth-width divider before the chapter 2 conclusion. */
+#commentary-2 .section-commentary-body hr{width:20%;margin:1.5em auto;border:0;border-top:1px solid var(--line)}
