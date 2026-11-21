@@ -139,6 +139,7 @@
 /* Reveal a chapter commentary only after the final proposition is expanded. */
 #tractatus-tree > .section-commentary{display:none}
 #tractatus-tree > .proposition.open:has(.proposition[data-number="1.2"].open) + .section-commentary[data-section="1"]{display:block}
+#tractatus-tree > .proposition[data-number="2"].open + .section-commentary[data-section="2"]{display:block}
 body.language-mode-de #tractatus-tree > .section-commentary{display:none!important}
 
 /* Book marker stays to the left of the final nested branch's vertical rule. */
@@ -159,3 +160,7 @@ body.language-mode-de .section-commentary-icon{display:none!important}
 .section-commentary-body .section-commentary-bibliography{margin:.4em 0 0;padding-left:1.6em;font-size:.91em;line-height:1.5}
 .section-commentary-body .section-commentary-bibliography li{padding-left:.2em;margin:0 0 .5em}
 @media(max-width:600px){.section-commentary-content{padding:13px 14px}.section-commentary-body{font-size:.87rem}}
+
+/* Chapter 2 book marker aligned with the main proposition number. */
+#tractatus-tree > .proposition[data-number="2"] > .proposition-row{position:relative}
+#tractatus-tree > .proposition[data-number="2"] > .proposition-row > .section-commentary-icon-at-heading{position:absolute;left:-29px;top:7px;margin:0;width:26px;height:26px}
