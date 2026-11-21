@@ -242,6 +242,7 @@ async function loadTractatus() {
           block.className = "section-commentary";
           block.id = "commentary-" + entry.section;
           block.dataset.section = String(entry.section);
+          block.dataset.range = entry.range || "";
           const toggle = document.createElement("button");
           toggle.type = "button";
           toggle.className = "section-commentary-toggle";
@@ -312,10 +313,10 @@ window.openSectionCommentary = async function (section) {
       node.querySelector(":scope > .proposition-row")?.setAttribute("aria-expanded", "true");
     };
     openNode(chapter);
-    // Open the actual path to the commentary's final proposition (1.21),
-    // not merely the last-child chain, which can select a different branch.
+    // Open the path to the final proposition in this chapter's commentary range.
+    const lastNumber = block.dataset.range?.split("–").at(-1);
     const target = [...chapter.querySelectorAll(".proposition")]
-      .find(node => node.dataset.number === (block.dataset.section === "1" ? "1.21" : ""));
+      .find(node => node.dataset.number === lastNumber);
     if (target) {
       let node = target;
       while (node && node !== chapter) {
