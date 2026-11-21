@@ -79,13 +79,6 @@
         row.append(section, topic);
         fragment.appendChild(row);
       });
-      const pendingRow = document.createElement("tr");
-      const pendingSection = document.createElement("td");
-      pendingSection.textContent = "2 (2–2.225)";
-      const pendingTopic = document.createElement("td");
-      pendingTopic.textContent = "Від буття до пізнання: стани справ та образи";
-      pendingRow.append(pendingSection, pendingTopic);
-      fragment.appendChild(pendingRow);
       const thirdRow = document.createElement("tr");
       const thirdSection = document.createElement("td");
       thirdSection.textContent = "3 (3–3.5)";
