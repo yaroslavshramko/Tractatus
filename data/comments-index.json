@@ -25,21 +25,6 @@
     "title": "Предмет (<em>Gegenstand, Ding, Sache</em>)"
   },
   {
-    "number": "2.0123",
-    "commentIndex": 0,
-    "title": "Дієслово <em>kennen</em> та поняття знання"
-  },
-  {
-    "number": "2.0122",
-    "commentIndex": 0,
-    "title": "<em>Satz</em>: речення як логіко-семантичне поняття"
-  },
-  {
-    "number": "2.0211",
-    "commentIndex": 0,
-    "title": "<em>Sinn</em>: «смисл» і «сенс»"
-  },
-  {
     "number": "2.1",
     "commentIndex": 0,
     "title": "<em>Bild</em>: «образ» і «картина»"
@@ -50,9 +35,24 @@
     "title": "<em>Nichtbestehen</em>: «ненаявність» і логічне заперечення"
   },
   {
+    "number": "2.0122",
+    "commentIndex": 0,
+    "title": "<em>Satz</em>: речення як логіко-семантичне поняття"
+  },
+  {
+    "number": "2.0123",
+    "commentIndex": 0,
+    "title": "Дієслово <em>kennen</em> та поняття знання"
+  },
+  {
     "number": "2.131",
     "commentIndex": 0,
     "title": "Дієслово <em>vertreten</em> та відношення елементів образу до предметів"
+  },
+  {
+    "number": "2.0211",
+    "commentIndex": 0,
+    "title": "<em>Sinn</em>: «смисл» і «сенс»"
   },
   {
     "number": "3.05",
@@ -105,6 +105,16 @@
     "title": "Дієслова <em>folgen</em>, <em>schließen</em>, <em>folgern</em> та поняття логічного слідування"
   },
   {
+    "number": "5.156",
+    "commentIndex": 0,
+    "title": "<em>kennen</em> та <em>wissen</em> у контексті знання фактів"
+  },
+  {
+    "number": "5.475",
+    "commentIndex": 0,
+    "title": "Зворот <em>es kommt darauf an</em>"
+  },
+  {
     "number": "5.1361",
     "commentIndex": 0,
     "title": "Подія (<em>Ereignis</em>) як онтологічна категорія"
@@ -118,16 +128,6 @@
     "number": "5.1361",
     "commentIndex": 2,
     "title": "Лист Вітгенштайна до Огдена про причиновий зв’язок"
-  },
-  {
-    "number": "5.156",
-    "commentIndex": 0,
-    "title": "<em>kennen</em> та <em>wissen</em> у контексті знання фактів"
-  },
-  {
-    "number": "5.475",
-    "commentIndex": 0,
-    "title": "Зворот <em>es kommt darauf an</em>"
   },
   {
     "number": "6.233",
